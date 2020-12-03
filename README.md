@@ -1,5 +1,5 @@
 [ashlink]: https://ashcss.rocks/
-[ashlogo]: https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@master/public/logo.svg
+[ashlogo]: https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@main/public/logo.svg
 
 [![ASH CSS][ashlogo]][ashlink]
 
@@ -23,7 +23,7 @@ Download compiled CSS to use in your self-hosted project. This includes compiled
 ### CDN
 Use the code below to drop-in ASH CSS to your project from our CDN. The CDN will be cached, minified, and gzipped.
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@master/dist/ash/ash.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@main/dist/ash/ash.min.css">
 ```
 
 ### NPM
@@ -91,4 +91,4 @@ Support this project and possibly other open-source projects by becoming a spons
 >Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
 
 ## Copyright and license
-Code and documentation copyright 2020 the [ASH CSS Authors](https://github.com/ash-rocks/ash-css/graphs/contributors). Code and documentation released under the [MIT](https://github.com/ash-rocks/ash-css/blob/master/LICENSE) License.
+Code and documentation copyright 2020 the [ASH CSS Authors](https://github.com/ash-rocks/ash-css/graphs/contributors). Code and documentation released under the [MIT](https://github.com/ash-rocks/ash-css/blob/main/LICENSE) License.
