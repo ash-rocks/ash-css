@@ -1,0 +1,23 @@
+each(@displays, {
+  .\--@{value} {
+    display: @value !important;
+  }
+});
+
+.\--hidden {
+  display: none !important;
+}
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@displays, .(@dvalue, @dkey, @di) {
+      .\--@{bkey}-@{dvalue} {
+        display: @dvalue !important;
+      }
+    });
+
+    .\--@{bkey}-hidden {
+      display: none !important;
+    }
+  }
+});

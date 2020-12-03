@@ -1,0 +1,151 @@
+.off-canvas {
+  display: flex;
+  flex-flow: nowrap;
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  > label {
+    cursor: pointer;
+    left: @margin[4];
+    position: fixed;
+    top: @margin[5];
+    z-index: 600;
+  }
+
+  > nav {
+    padding-left: @padding[8];
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+  }
+
+  > aside {
+    bottom: 0;
+    left: 0;
+    margin-top: 4rem;
+    min-width: 12rem;
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 100ms;
+    z-index: 400;
+
+    .links ul li label {
+      display: block;
+      font-size: inherit;
+      font-weight: inherit;
+      padding: 0;
+      text-transform: none;
+    }
+
+    .dropdown {
+      max-width: 160px;
+
+      > .content {
+        min-width: 160px;
+      }
+    }
+  }
+
+  > .content {
+    flex: 1 1 auto;
+    height: 100%;
+
+    > .container {
+      margin-top: 5rem;
+
+      .alert.-fixed {
+        &.-top {
+          top: 64px;
+        }
+      }
+    }
+  }
+
+  > .overlay {
+    background-color: rgba(43, 43, 43, 0.5);
+    border: none;
+    bottom: 0;
+    cursor: auto;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  > .canvas-toggle {
+    display: none;
+  }
+
+  > .canvas-toggle:checked {
+    ~ aside {
+      padding-top: @padding[4];
+      transform: translateX(0);
+    }
+
+    ~ .overlay {
+      display: block;
+      z-index: 100;
+    }
+
+    ~ .content {
+      overflow: hidden;
+    }
+  }
+}
+
+.jump::before {
+  display: block;
+  content: " ";
+  margin-top: -3rem;
+  height: 5rem;
+  visibility: hidden;
+}
+
+@media (min-width: @breakpoint[xl]) {
+  .off-canvas {
+    &.show {
+      > nav {
+        padding-left: @padding[8];
+        position: fixed;
+        width: 100%;
+        z-index: 500;
+      }
+
+      > .content {
+        padding-left: 12rem;
+
+        > .container {
+          margin-top: 5rem;
+
+          .alert.-fixed {
+            left: 12rem;
+            width: calc(100% - 12rem);
+
+            &.-top {
+              top: 64px;
+            }
+          }
+        }
+      }
+
+      > .overlay {
+        display: none !important;
+      }
+
+      > aside {
+        flex: 0 0 auto;
+        position: fixed;
+        transform: none;
+      }
+
+      > .canvas-toggle + label {
+        display: none;
+      }
+    }
+  }
+}

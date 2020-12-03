@@ -1,0 +1,23 @@
+body.dark {
+  .menu {
+    background-color: @color[black-lighter];
+
+    .divider {
+      border-bottom: 0.05rem solid @color[black-lighten];
+    }
+
+    li {
+      & > a {
+        color: inherit;
+
+        &:active,
+        &.active,
+        &:focus,
+        &:hover {
+          background-color: @color[black-lighten];
+          color: @color[blue];
+        }
+      }
+    }
+  }
+}

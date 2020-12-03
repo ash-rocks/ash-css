@@ -1,0 +1,61 @@
+.\--margin-auto {
+  margin: auto !important;
+}
+
+.\--margin-y-auto {
+  margin-bottom: auto !important;
+  margin-top: auto !important;
+}
+
+.\--margin-x-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+each(@sides, {
+  .\--margin-@{value}-auto {
+    margin-@{value}: auto !important;
+  }
+});
+
+.\--margin-0 {
+  margin: 0 !important;
+}
+
+.\--margin-y-0 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+.\--margin-x-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+each(@sides, {
+  .\--margin-@{value}-0 {
+    margin-@{value}: 0 !important;
+  }
+});
+
+each(@margin, .(@mvalue, @mkey, @mindex) {
+  .\--margin-@{mkey} {
+    margin: @mvalue !important;
+  }
+
+  .\--margin-y-@{mkey} {
+    margin-bottom: @mvalue !important;
+    margin-top: @mvalue !important;
+  }
+
+  .\--margin-x-@{mkey} {
+    margin-left: @mvalue !important;
+    margin-right: @mvalue !important;
+  }
+
+  each(@sides, .(@svalue, @skey, @sindex) {
+    .\--margin-@{svalue}-@{mkey} {
+      margin-@{svalue}: @mvalue !important;
+    }
+  });
+});

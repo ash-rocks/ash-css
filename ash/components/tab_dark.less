@@ -1,0 +1,26 @@
+body.dark {
+  .tabs {
+    background-color: @color[black-lighten];
+
+    > label {
+      background-color: @color[black-lighten];
+      color: @color[gray-darken];
+
+      &:hover {
+        background-color: @color[black-lighten];
+        color: @color[gray-darker];
+      }
+    }
+
+    > input:checked + label {
+      background-color: @color[black-lighter];
+      border-bottom: 2px solid @color[blue-lighten];
+      color: @color[blue-lighten];
+    }
+
+    > .content {
+      background-color: @color[black-lighter];
+      border-top: 1px solid @color[black-lighten];
+    }
+  }
+}

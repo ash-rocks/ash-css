@@ -1,0 +1,71 @@
+aside {
+  background-color: @color[white];
+  box-shadow: @box-shadow[shadow];
+  color: @color[gray-darkest];
+  overflow-y: auto;
+  padding-top: @padding[4];
+
+  .link {
+    color: @color[gray-darkest];
+    display: block;
+    font-size: @font-size[sm];
+    font-weight: @font-weight[medium];
+    padding: @padding[2];
+    text-transform: uppercase;
+
+    &.active {
+      color: @color[blue];
+    }
+
+    &:focus {
+      color: @color[blue];
+    }
+
+    &:hover {
+      color: @color[blue];
+    }
+  }
+
+  details {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+
+    > summary {
+      background-color: @color[transparent];
+      color: @color[gray-darkest];
+      padding: @padding[2];
+
+      &:hover {
+        background-color: @color[transparent];
+        color: @color[blue];
+      }
+    }
+
+    > .content {
+      padding: 0 @padding[2];
+    }
+
+    .link {
+      color: @color[gray-darker];
+      font-size: inherit;
+      font-weight: normal;
+      padding: @padding[1] @padding[2];
+      text-transform: none;
+
+      &.active {
+        color: @color[blue];
+      }
+
+      &:hover {
+        color: @color[blue];
+      }
+    }
+  }
+
+  details[open] {
+    > summary {
+      border-bottom: none;
+    }
+  }
+}

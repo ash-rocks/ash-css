@@ -1,0 +1,17 @@
+body.dark {
+  nav {
+    background-color: @color[black-lighter];
+
+    &.-transparent {
+      background-color: transparent;
+    }
+  }
+}
+
+@media (max-width: @breakpoint[lg]) {
+  body.dark {
+    nav .nav-toggle:checked ~ .group.-collapse {
+      background-color: @color[black-light];
+    }
+  }
+}

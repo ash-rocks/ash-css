@@ -1,0 +1,71 @@
+.pagination {
+  display: flex;
+  list-style: none;
+  margin: @margin[1] 0;
+  padding: @padding[1] 0;
+
+  > li {
+    margin: @margin[1] 0.05rem;
+
+    .title {
+      display: block;
+      margin: 0;
+    }
+
+    .subtitle {
+      display: block;
+      margin: 0;
+      opacity: 0.75;
+    }
+
+    span {
+      display: inline-block;
+      padding: @padding[1] @padding[1];
+    }
+
+    a {
+      display: inline-block;
+      padding: @padding[1] @padding[2];
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        color: @color[blue];
+      }
+    }
+
+    &.-disabled {
+      a {
+        cursor: default;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
+
+    &.-active {
+      a {
+        background-color: @primary[background];
+        color: @primary[color];
+      }
+    }
+
+    &.-prev,
+    &.-next {
+      flex: 1 0 50%;
+    }
+
+    &.-next {
+      text-align: right;
+    }
+  }
+
+  &.-block {
+    display: flex;
+    width: 100%;
+
+    > li {
+      flex: 1 0 auto;
+      text-align: center;
+    }
+  }
+}

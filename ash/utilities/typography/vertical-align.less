@@ -1,0 +1,15 @@
+each(@vertical-align, {
+  .\--vertical-@{key} {
+    vertical-align: @value;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@vertical-align, .(@vvalue, @vkey, @vi) {
+      .\--@{bkey}-vertical-@{vkey} {
+        text-align: @vvalue !important;
+      }
+    });
+  }
+});

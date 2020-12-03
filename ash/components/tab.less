@@ -1,0 +1,61 @@
+.tabs {
+  background-color: @color[gray-lighter];
+  border-radius: @radius;
+  box-shadow: @box-shadow[shadow];
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+
+  > input[type="checkbox"],
+  > input[type="radio"] {
+    display: none;
+  }
+
+  > label {
+    background-color: @color[gray-lighter];
+    color: @color[gray-darken];
+    cursor: pointer;
+    display: flex;
+    font-size: @font-size[sm];
+    font-weight: @font-weight[medium];
+    padding: @padding[4] @padding[8];
+
+    &:hover {
+      background-color: @color[gray-lighter];
+      color: @color[gray-darker];
+    }
+  }
+
+  > input:checked + label {
+    background-color: @color[white];
+    border-bottom: 2px solid @color[blue-lighten];
+    color: @color[blue-lighten];
+    z-index: 200;
+  }
+
+  > input:checked + label + .content {
+    display: block;
+  }
+
+  > .content {
+    border-top: 1px solid @color[gray-lighter];
+    display: none;
+    order: 99;
+    padding: @padding[6];
+    background-color: @color[white];
+    margin-top: -1px;
+  }
+}
+
+@media (min-width: @breakpoint[md]) {
+  .tabs {
+    > label {
+      width: auto;
+    }
+
+    > .content {
+      order: 99;
+    }
+  }
+}

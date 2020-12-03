@@ -1,0 +1,92 @@
+body.dark {
+  ::placeholder {
+    color: @color[gray-lighten];
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: @color[black-lightest];
+    border: 1px solid @color[gray-darken];
+    color: @color[gray-lighter];
+
+    &[readonly] {
+      background-color: @color[black-lighten];
+      border: 1px solid @color[black-lighter];
+      color: @color[gray-darken];
+
+      &:focus {
+        background-color: @color[black-lighten];
+      }
+    }
+
+    &[disabled] {
+      background-color: @color[black-lighten];
+      border: 1px solid @color[black-lighter];
+      color: @color[gray-darken];
+    }
+
+    &:focus {
+      &:invalid {
+        border-color: @color[red-darken];
+      }
+
+      &:not([disabled]):not([readonly]) {
+        border-color: @color[blue-lighten];
+        outline: 0;
+      }
+    }
+
+    each(@swatches, .(@value, @key, @index) {
+      &.-@{value} {
+        border-color: if(@value = dark, @color[black-light], @@value[border]);
+
+        &:focus {
+          border-color: if(@value = dark, @color[black], @@value[active-border]);
+        }
+      }
+    });
+  }
+
+  select {
+    color: @color[gray-lighter];
+
+    option {
+      color: @color[gray-lighter];
+    }
+
+    &:invalid,
+    option[value=""] {
+      color: @color[gray-lighten];
+    }
+  }
+
+  fieldset {
+    border: 1px solid @color[gray-darker];
+  }
+
+  legend {
+    color: @color[gray-lighter];
+  }
+
+  label {
+    &.checkbox,
+    &.radio,
+    &.switch {
+      input {
+        &:checked + i {
+          &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+            background-color: @color[gray-darken];
+            border-color: @color[gray-darken];
+          }
+        }
+      }
+    }
+  }
+
+  .inputs {
+    .addon:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+      border: 1px solid @color[gray-darken];
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <%= process.env.NODE_ENV === 'production' ? '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@master/dist/ash/ash.min.css">' : '' %>
+    <%= process.env.NODE_ENV === 'production' ? '' : '<link rel="stylesheet" href="/vendor/font-awesome/all.min.css">' %>
+    <%= process.env.NODE_ENV === 'production' ? '<script src="https://kit.fontawesome.com/58f7a59cf2.js" crossorigin="anonymous"></script>' : '<script src="/vendor/font-awesome/all.min.js"></script>' %>
+    <title>ASH</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but ash doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

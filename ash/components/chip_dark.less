@@ -1,0 +1,27 @@
+body.dark {
+  .chip {
+    &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+      background-color: @color[black-lightest];
+      border: 1px solid @color[black-lightest];
+      color: @color[gray-lightest];
+
+      &.-outline {
+        background-color: @color[transparent];
+        border: 1px solid @color[gray-lighten];
+      }
+    }
+
+    &.-warning {
+      &.-outline {
+        color: @color[gray-lightest];
+      }
+    }
+
+    &.-dark {
+      &.-outline {
+        border: 1px solid @color[black-light];
+        color: @color[gray-lightest];
+      }
+    }
+  }
+}

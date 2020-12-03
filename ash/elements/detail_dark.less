@@ -1,0 +1,28 @@
+body.dark {
+  details {
+    border: 1px solid @color[gray-darken];
+
+    > summary {
+      background-color: @color[black-lightest];
+      color: @color[gray-lightest];
+
+      &:hover {
+        background-color: @color[gray-darken];
+      }
+
+      .icon {
+        color: @color[gray-lighter];
+      }
+    }
+
+    > .content {
+      background-color: @color[black-lighter];
+    }
+  }
+
+  details[open] {
+    > summary {
+      border-bottom: 1px solid @color[gray-darken];
+    }
+  }
+}

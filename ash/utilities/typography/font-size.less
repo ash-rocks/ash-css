@@ -1,0 +1,15 @@
+each(@font-size, {
+  .\--size-@{key} {
+    font-size: @value !important;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@font-size, .(@fvalue, @fkey, @fi) {
+      .\--@{bkey}-size-@{fkey} {
+        text-align: @fvalue !important;
+      }
+    });
+  }
+});

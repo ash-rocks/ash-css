@@ -1,0 +1,206 @@
+figure {
+  background-color: @color[white];
+  border-radius: @radius;
+  box-shadow: @box-shadow[shadow];
+  margin: @margin[2] 0 @margin[4] 0;
+  max-width: 100%;
+
+  > header {
+    border-bottom: 1px solid @color[gray-lighter];
+    padding: @padding[3] @padding[6];
+  }
+
+  > img,
+  > .image {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+
+    &:first-child {
+      border-top-left-radius: @radius;
+      border-top-right-radius: @radius;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: @radius;
+      border-bottom-right-radius: @radius;
+    }
+  }
+
+  figcaption {
+    background-color: @color[gray-lightest];
+    color: @color[gray-darkest];
+    padding: @padding[1];
+    text-align: center;
+
+    &:first-child {
+      border-top-left-radius: @radius;
+      border-top-right-radius: @radius;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: @radius;
+      border-bottom-right-radius: @radius;
+    }
+  }
+
+  > .content {
+    padding: @padding[6];
+    border-radius: @radius;
+
+    .title {
+      margin: 0 0 @margin[2] 0;
+    }
+
+    .media:not(:last-child) {
+      margin-bottom: @margin[6];
+    }
+
+    pre {
+      &:last-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: @radius;
+        border-bottom-right-radius: @radius;
+      }
+    }
+  }
+
+  > .actions {
+    align-items: stretch;
+    border-top: 1px solid @color[gray-lighter];
+    display: flex;
+
+    a,
+    button {
+      align-items: center;
+      border: none;
+      border-radius: 0;
+      display: flex;
+      flex: 1 0 0;
+      justify-content: center;
+      margin: 0;
+      padding: @padding[3];
+
+      &:not(:last-child) {
+        border-right: 1px solid @color[gray-lighter];
+      }
+    }
+
+    &:last-child {
+      a,
+      button {
+        &:last-child {
+          border-bottom-right-radius: @radius;
+        }
+      }
+    }
+  }
+
+  > footer {
+    border-top: 1px solid @color[gray-lighter];
+    padding: @padding[3] @padding[6];
+  }
+
+  &.-horizontal {
+    .row {
+      margin: 0;
+
+      .column {
+        padding: 0;
+
+        &:first-child {
+          > img {
+            &:first-child {
+              border-radius: 0;
+              border-top-left-radius: @radius;
+            }
+
+            &:last-child {
+              border-radius: 0;
+              border-bottom-left-radius: @radius;
+            }
+          }
+
+          > figcaption {
+            &:first-child {
+              border-radius: 0;
+              border-top-left-radius: @radius;
+            }
+
+            &:last-child {
+              border-radius: 0;
+              border-bottom-left-radius: @radius;
+            }
+          }
+        }
+
+        &:last-child {
+          > img {
+            &:first-child {
+              border-radius: 0;
+              border-top-right-radius: @radius;
+            }
+
+            &:last-child {
+              border-radius: 0;
+              border-bottom-right-radius: @radius;
+            }
+          }
+
+          > figcaption {
+            &:first-child {
+              border-radius: 0;
+              border-top-right-radius: @radius;
+            }
+
+            &:last-child {
+              border-radius: 0;
+              border-bottom-right-radius: @radius;
+            }
+          }
+        }
+
+        > .content {
+          padding: @padding[6];
+        }
+
+        > img {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  each(@swatches, {
+    &.-@{value},
+    &.-@{value}.-horizontal .row [class*="col-"] {
+      background-color: @@value[background];
+      color: @@value[color];
+
+      > header {
+        border-bottom: 1px solid @@value[active-border];
+      }
+
+      > footer {
+        border-top: 1px solid @@value[active-border];
+      }
+
+      > .actions {
+        border-top: 1px solid @@value[active-border];
+
+        a,
+        button {
+          &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+            color: @@value[color];
+          }
+
+          &:not(:last-child) {
+            border-right: 1px solid @@value[active-border];
+          }
+        }
+      }
+    }
+  });
+}

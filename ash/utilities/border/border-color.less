@@ -1,0 +1,25 @@
+each(@color, {
+  .\--border-@{key} {
+    border-color: @value !important;
+  }
+  .\--focus-border-@{key}:focus {
+    border-color: @value !important;
+  }
+  .\--hover-border-@{key}:hover {
+    border-color: @value !important;
+  }
+});
+
+each(@swatches, {
+  .\--border-@{value} {
+    border-color: @@value[background] !important;
+  }
+
+  .\--focus-border-@{value}:focus {
+    border-color: @@value[background] !important;
+  }
+
+  .\--hover-border-@{value}:hover {
+    border-color: @@value[background] !important;
+  }
+});

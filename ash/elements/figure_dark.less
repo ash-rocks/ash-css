@@ -1,0 +1,30 @@
+body.dark {
+  figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+    background-color: @color[black-lighter];
+    color: @color[gray-lightest];
+
+    > header {
+      border-bottom: 1px solid @color[black-lighten];
+    }
+
+    > .actions {
+      border-top: 1px solid @color[black-lighten];
+
+      a,
+      button {
+        &:not(:last-child) {
+          border-right: 1px solid @color[black-lighten];
+        }
+      }
+    }
+
+    > footer {
+      border-top: 1px solid @color[black];
+    }
+  }
+
+  figcaption {
+    background-color: @color[black-lighten];
+    color: @color[gray-lightest];
+  }
+}

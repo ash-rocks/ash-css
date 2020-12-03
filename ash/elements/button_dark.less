@@ -1,0 +1,60 @@
+body.dark {
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"],
+  button,
+  .button {
+    &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+      background-color: @color[black-lightest];
+      border: 1px solid @color[black-lightest];
+      color: @color[gray-lighten];
+
+      &:hover {
+        background-color: @color[gray-darkest];
+        border: 1px solid @color[gray-darkest];
+        color: @color[gray-lighten];
+        text-decoration: none;
+      }
+
+      &.-outline {
+        background-color: @color[transparent];
+        border: 1px solid @color[gray-darker];
+
+        &:hover {
+          background-color: @color[transparent];
+          border: 1px solid @color[gray-darkest];
+          color: @color[gray];
+        }
+      }
+
+      &[disabled] {
+        background-color: @color[gray];
+        border: 1px solid @color[gray];
+        color: @color[gray-lighten];
+      }
+    }
+
+    &.-warning {
+      &.-outline {
+        color: @color[gray-lighten];
+
+        &:hover {
+          color: @color[gray];
+        }
+      }
+    }
+
+    &.-dark {
+      &.-outline {
+        background-color: transparent;
+        border: 1px solid @color[black-light];
+        color: @color[gray-lighten];
+
+        &:hover {
+          background-color: transparent;
+          border: 1px solid @color[black];
+        }
+      }
+    }
+  }
+}

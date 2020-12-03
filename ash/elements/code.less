@@ -1,0 +1,110 @@
+pre {
+  background-color: @color[black-lighten];
+  border-radius: @radius;
+  color: @color[gray-lightest];
+  display: block;
+  font-family: @font-family[mono];
+  margin: @margin[4] 0;
+  padding: 0 @margin[4];
+  overflow-x: auto;
+  white-space: normal;
+}
+
+code {
+  color: @color[red-lighten];
+  font-family: @font-family[mono];
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+}
+
+pre code {
+  color: @color[gray-lightest];
+
+  .comment,
+  .block-comment,
+  .prolog,
+  .doctype,
+  .cdata,
+  .hljs-comment,
+  .hljs-quote {
+    color: @color[gray-lighten];
+  }
+
+  .tag,
+  .namespace,
+  .deleted,
+  .hljs-deletion,
+  .hljs-name,
+  .hljs-section,
+  .hljs-selector-tag,
+  .hljs-subst {
+    color: @color[red-lighter];
+  }
+
+  .punctuation {
+    color: @color[gray-lightest];
+  }
+
+  .selector,
+  .important,
+  .atrule,
+  .keyword,
+  .builtin,
+  .hljs-doctag,
+  .hljs-formula,
+  .hljs-keyword {
+    color: @color[purple-lightest];
+  }
+
+  .operator,
+  .entity,
+  .url,
+  .hljs-literal,
+  .hljs-bullet,
+  .hljs-link,
+  .hljs-meta,
+  .hljs-selector-id,
+  .hljs-symbol,
+  .hljs-title {
+    color: @color[cyan-lightest];
+  }
+
+  .string,
+  .char,
+  .attr-value,
+  .regex,
+  .variable,
+  .hljs-addition,
+  .hljs-attribute,
+  .hljs-meta-string,
+  .hljs-regexp,
+  .hljs-string {
+    color: @color[green-lightest];
+  }
+
+  .property,
+  .class-name,
+  .constant,
+  .symbol,
+  .hljs-class .hljs-title,
+  .hljs-selector-attr,
+  .hljs-selector-class,
+  .hljs-selector-pseudo,
+  .hljs-template-variable,
+  .hljs-type,
+  .hljs-variable {
+    color: @color[yellow-lightest];
+  }
+
+  .boolean,
+  .number,
+  .function,
+  .attr-name,
+  .hljs-built_in,
+  .hljs-attr,
+  .hljs-number, {
+    color: @color[orange-lightest];
+  }
+}

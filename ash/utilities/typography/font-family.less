@@ -1,0 +1,15 @@
+each(@font-family, {
+  .\--family-@{key} {
+    font-family: @value !important;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@font-family, .(@fvalue, @fkey, @fi) {
+      .\--@{bkey}-family-@{fkey} {
+        text-align: @fvalue !important;
+      }
+    });
+  }
+});

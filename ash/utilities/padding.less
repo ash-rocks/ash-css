@@ -1,0 +1,21 @@
+each(@padding, .(@pvalue, @pkey, @pindex) {
+  .\--padding-@{pkey} {
+    padding: @pvalue !important;
+  }
+
+  .\--padding-y-@{pkey} {
+    padding-bottom: @pvalue !important;
+    padding-top: @pvalue !important;
+  }
+
+  .\--padding-x-@{pkey} {
+    padding-left: @pvalue !important;
+    padding-right: @pvalue !important;
+  }
+
+  each(@sides, .(@svalue, @skey, @sindex) {
+    .\--padding-@{svalue}-@{pkey} {
+      padding-@{svalue}: @pvalue !important;
+    }
+  });
+});

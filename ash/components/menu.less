@@ -1,0 +1,70 @@
+.menu {
+  background-color: @color[white];
+  border-radius: @radius;
+  box-shadow: @box-shadow[shadow];
+  list-style: none;
+  margin: 0;
+  min-width: 160px;
+  padding: @padding[2];
+  transform: translateY(@padding[1]);
+  z-index: @z-index[3];
+
+  &.nav {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .divider {
+    border-bottom: 0.05rem solid @color[gray-lightest];
+    color: @color[gray];
+    font-size: @font-size[sm];
+    padding: 0 @padding[2];
+  }
+
+  li {
+    margin-top: 0;
+    padding: 0 @padding[3];
+    position: relative;
+    text-decoration: none;
+
+    & > a {
+      color: inherit;
+      display: block;
+      margin: 0 -@margin[2];
+      padding: @padding[1] @padding[2];
+      text-decoration: none;
+
+      &:active,
+      &.active,
+      &:focus,
+      &:hover {
+        background-color: @color[gray-lightest];
+        color: @color[blue];
+        cursor: pointer;
+      }
+    }
+
+    label.checkbox,
+    label.radio,
+    label.switch {
+      margin: @margin[2] 0;
+    }
+
+    & + li {
+      margin-top: @margin[1];
+    }
+  }
+
+  .badge {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    .label {
+      margin-right: @margin[2];
+    }
+  }
+}

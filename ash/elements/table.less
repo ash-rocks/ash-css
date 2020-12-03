@@ -1,0 +1,165 @@
+table {
+  border-collapse: collapse;
+  border-top: 1px solid @color[gray-lighten];
+  margin-bottom: @margin[4];
+  table-layout: auto;
+  width: 100%;
+
+  &.-striped {
+    background-color: @color[white];
+
+    tbody {
+      tr:nth-of-type(odd) {
+        background-color: @color[gray-lightest];
+      }
+    }
+  }
+
+  &.-hover {
+    tbody {
+      tr {
+        &:hover {
+          background-color: @color[gray-lighter];
+        }
+
+        each(@swatches, {
+          &.-@{value}:hover {
+            background-color: if(@value = light, @color[gray-lightest], @@value[active-background]);
+
+            td {
+              border-color: @@value[active-border];
+            }
+          }
+        });
+      }
+    }
+  }
+
+  &.-bordered {
+    border: 1px solid @color[gray-lighten];
+    border-radius: @radius;
+
+    th,
+    td {
+      border: 1px solid @color[gray-lighten];
+    }
+
+    thead {
+      th,
+      td {
+        border-bottom-width: 2px;
+      }
+    }
+  }
+
+  &.-dark {
+    background-color: @dark[background];
+    color: @dark[color];
+
+    th,
+    tr,
+    td {
+      border-color: @dark[border];
+    }
+
+    &.bordered {
+      border: 1px solid @dark[border];
+
+      th,
+      td {
+        border: 1px solid @dark[border];
+      }
+
+      thead {
+        th,
+        td {
+          border-bottom-width: 2px;
+        }
+      }
+    }
+
+    &.-striped {
+      tbody {
+        tr:nth-of-type(odd) {
+          background-color: @color[gray-darken];
+        }
+      }
+    }
+
+    &.-hover {
+      tbody {
+        tr {
+          &:hover {
+            background-color: @color[gray-darkest];
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-scrollable {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  > table {
+    white-space: nowrap;
+  }
+
+  > .-bordered {
+    border: 0;
+  }
+}
+
+caption {
+  padding: @padding[2] 0;
+}
+
+thead th {
+  border: 0;
+  border-bottom: 2px solid @color[gray-lighten];
+  text-align: left;
+}
+
+tr {
+  margin-bottom: @margin[2];
+
+  each(@swatches, {
+    &.-@{value} {
+      th,
+      td {
+        border-color: @@value[border];
+      }
+    }
+  });
+}
+
+th,
+td {
+  border-bottom: 1px solid @color[gray-lighten];
+  padding: @padding[4];
+  vertical-align: inherit;
+}
+
+tfoot tr {
+  text-align: left;
+}
+
+tfoot td {
+  color: @color[blue];
+  font-size: @font-size[xs];
+  font-style: italic;
+  padding: @padding[4] @padding[2];
+}
+
+th,
+tr,
+td {
+  each(@swatches, {
+    &.-@{value} {
+      background-color: @@value[background];
+      border-color: @@value[border];
+      color: @@value[color];
+    }
+  });
+}

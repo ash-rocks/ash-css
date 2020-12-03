@@ -1,0 +1,15 @@
+each(@line-height, {
+  .\--line-@{key} {
+    line-height: @value !important;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@line-height, .(@lvalue, @lkey, @li) {
+      .\--@{bkey}-line-@{lkey} {
+        text-align: @lvalue !important;
+      }
+    });
+  }
+});

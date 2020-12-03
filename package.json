@@ -1,0 +1,56 @@
+{
+  "name": "ash-css",
+  "description": "Modern CSS-only semantic framework with a built-in dark mode. No JavaScript required!",
+  "version": "0.1.0",
+  "keywords": [
+    "css",
+    "less",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "https://ashcss.rocks/",
+  "author": "ASH Rocks Authors (https://github.com/ash-rocks/ash-css/graphs/contributors)",
+  "contributors": [
+    "skulls <skulls@ashcss.rocks> (https://github.com/skuIIs)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ash-rocks/ash-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ash-rocks/ash-css/issues"
+  },
+  "funding": {
+    "type" : "individual",
+    "url" : "https://github.com/sponsors/skuIIs"
+  },
+  "license": "MIT",
+  "scripts": {
+    "docs": "vue-cli-service serve",
+    "build-docs": "vue-cli-service build",
+    "build-ash": "lessc ./ash/ash.less ./dist/ash/ash.css --source-map=./dist/ash/ash.css.map && lessc ./ash/ash.less ./dist/ash/ash.min.css --clean-css=\"--s1\"",
+    "build-all": "npm run build-ash && npm run build-docs"
+  },
+  "dependencies": {
+    "colorable": "^1.0.5",
+    "core-js": "^3.6.4",
+    "fuse.js": "^5.2.3",
+    "lodash": "^4.17.15",
+    "prismjs": "^1.20.0",
+    "vue": "^2.6.11",
+    "vue-headful": "^2.1.0",
+    "vue-router": "^3.1.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-router": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "less-plugin-clean-css": "^1.5.1",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

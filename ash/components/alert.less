@@ -1,0 +1,84 @@
+.alert {
+  margin-bottom: @margin[4];
+
+  > .content {
+    background-color: @color[gray-lighter];
+    border-radius: @radius;
+    padding: @padding[3] @padding[5];
+  }
+
+  &.-outline {
+    > .content {
+      background-color: @color[transparent];
+      border: 1px solid @color[gray-lighten];
+      color: @color[gray-darken];
+    }
+  }
+
+  &.-dismissible {
+    > label {
+      color: @color[gray-lighter];
+      cursor: pointer;
+      float: right;
+      line-height: 2rem;
+      margin: 0.55rem @margin[5];
+    }
+
+    > input[type="checkbox"],
+    > input[type="radio"] {
+      display: none;
+    }
+
+    > input:checked + label {
+      display: none;
+    }
+
+    > .content {
+      padding: @padding[3] @padding[5];
+    }
+
+    > input:checked ~ .content {
+      display: none;
+    }
+  }
+
+  &.-fixed {
+    bottom: 0;
+    height: fit-content;
+    left: 0;
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 600;
+
+    &.-top {
+      top: 0;
+    }
+
+    &.-bottom {
+      bottom: 0;
+    }
+  }
+
+  each(@swatches, {
+    &.-@{value} {
+      > .content {
+        background-color: @@value[background];
+        border: 1px solid @@value[border];
+        color: @@value[color];
+      }
+
+      &.-outline {
+        > .content {
+          background-color: @color[transparent];
+          border: 1px solid @@value[border];
+          color: if(@value = warning, @warning[color], @@value[background]);
+        }
+
+        > label {
+          color: @@value[background];
+        }
+      }
+    }
+  });
+}

@@ -1,0 +1,43 @@
+@widths: 2, 4, 6, 8;
+
+.\--border-none {
+  border-width: 0 !important;
+}
+
+each(@sides, {
+  .\--border-@{value}-none {
+    border-@{value}-width: 0 !important;
+  }
+});
+
+.\--border {
+  border-width: 1px !important;
+}
+
+each(@sides, {
+  .\--border-@{value} {
+    border-@{value}-width: 1px !important;
+  }
+});
+
+each(@widths, {
+  .\--border-@{value} {
+    border-width: (@value * 1px) !important;
+  }
+
+  .\--border-top-@{value} {
+    border-top-width: (@value * 1px) !important;
+  }
+
+  .\--border-right-@{value} {
+    border-right-width: (@value * 1px) !important;
+  }
+
+  .\--border-bottom-@{value} {
+    border-bottom-width: (@value * 1px) !important;
+  }
+
+  .\--border-left-@{value} {
+    border-left-width: (@value * 1px) !important;
+  }
+});

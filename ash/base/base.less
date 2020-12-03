@@ -1,0 +1,236 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  content-visibility: visible;
+  contain-intrinsic-size: 100%;
+  min-width: 0;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+html {
+  font-family:
+    system-ui,
+    /* macOS 10.11-10.12 */ -apple-system,
+    /* Windows 6+ */ "Segoe UI",
+    /* Android 4+ */ "Roboto",
+    /* Ubuntu 10.10+ */ "Ubuntu",
+    /* Gnome 3+ */ "Cantarell",
+    /* KDE Plasma 5+ */ "Noto Sans",
+    /* fallback */ sans-serif,
+    /* macOS emoji */ "Apple Color Emoji",
+    /* Windows emoji */ "Segoe UI Emoji",
+    /* Windows emoji */ "Segoe UI Symbol",
+    /* Linux emoji */ "Noto Color Emoji";
+  cursor: default;
+  line-height: 1.5;
+  tab-size: 2;
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+  word-break: break-word;
+  height: 100%;
+}
+
+small {
+  font-size: 80%;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+    /* macOS 10.10+ */ "Menlo",
+    /* Windows 6+ */ "Consolas",
+    /* Android 4+ */ "Roboto Mono",
+    /* Ubuntu 10.10+ */ "Ubuntu Monospace",
+    /* KDE Plasma 5+ */ "Noto Mono",
+    /* KDE Plasma 4+ */ "Oxygen Mono",
+    /* Linux/OpenOffice fallback */ "Liberation Mono",
+    /* fallback */ monospace,
+    /* macOS emoji */ "Apple Color Emoji",
+    /* Windows emoji */ "Segoe UI Emoji",
+    /* Windows emoji */ "Segoe UI Symbol",
+    /* Linux emoji */ "Noto Color Emoji";
+  font-size: 1em;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+body {
+  background: @color[white-dark];
+  color: @color[gray-darkest];
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+  color: @color[blue-lighten];
+  text-decoration: none;
+
+  &:link {
+    color: @color[blue-lighten];
+  }
+
+  &:visited {
+    color: @color[blue-lighten];
+  }
+
+  &:hover {
+    color: @color[blue];
+  }
+
+  &:active {
+    color: @color[blue];
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500;
+}
+
+h1,
+.h1 {
+  font-size: @font-size[3xl];
+}
+
+h2,
+.h2 {
+  font-size: @font-size[2xl];
+}
+
+h3,
+.h3 {
+  font-size: @font-size[xl];
+}
+
+h4,
+.h4 {
+  font-size: @font-size[lg];
+}
+
+h5,
+.h5 {
+  font-size: @font-size[base];
+}
+
+h6,
+.h6 {
+  font-size: @font-size[sm];
+}
+
+hr {
+  height: 0;
+  overflow: visible;
+}
+
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+iframe {
+  border-style: none;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+canvas {
+  display: inline-block;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  touch-action: manipulation;
+}
+
+[hidden] {
+  display: none;
+}
+
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled="true"],
+[disabled] {
+  cursor: not-allowed;
+}
+
+[aria-hidden="false"][hidden] {
+  display: initial;
+}
+
+[aria-hidden="false"][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}

@@ -1,0 +1,197 @@
+@color: {
+  // BLUE
+  blue-darkest: darken(#0074d9, 30%);
+  blue-darker: darken(#0074d9, 20%);
+  blue-darken: darken(#0074d9, 10%);
+  blue: #0074d9;
+  blue-lighten: lighten(#0074d9, 10%);
+  blue-lighter: lighten(#0074d9, 20%);
+  blue-lightest: lighten(#0074d9, 30%);
+
+  // CYAN
+  cyan-darkest: darken(#20b3b3, 30%);
+  cyan-darker: darken(#20b3b3, 20%);
+  cyan-darken: darken(#20b3b3, 10%);
+  cyan: #20b3b3;
+  cyan-lighten: lighten(#20b3b3, 10%);
+  cyan-lighter: lighten(#20b3b3, 20%);
+  cyan-lightest: lighten(#20b3b3, 30%);
+
+  // GREEN
+  green-darkest: darken(#1ba672, 30%);
+  green-darker: darken(#1ba672, 20%);
+  green-darken: darken(#1ba672, 10%);
+  green: #1ba672;
+  green-lighten: lighten(#1ba672, 10%);
+  green-lighter: lighten(#1ba672, 20%);
+  green-lightest: lighten(#1ba672, 30%);
+
+  // YELLOW
+  yellow-darkest: darken(#e6b300, 30%);
+  yellow-darker: darken(#e6b300, 20%);
+  yellow-darken: darken(#e6b300, 10%);
+  yellow: #e6b300;
+  yellow-lighten: lighten(#e6b300, 10%);
+  yellow-lighter: lighten(#e6b300, 20%);
+  yellow-lightest: lighten(#e6b300, 30%);
+
+  // ORANGE
+  orange-darkest: darken(#e87200, 30%);
+  orange-darker: darken(#e87200, 20%);
+  orange-darken: darken(#e87200, 10%);
+  orange: #e87200;
+  orange-lighten: lighten(#e87200, 10%);
+  orange-lighter: lighten(#e87200, 20%);
+  orange-lightest: lighten(#e87200, 30%);
+
+  // RED
+  red-darkest: darken(#e6281d, 30%);
+  red-darker: darken(#e6281d, 20%);
+  red-darken: darken(#e6281d, 10%);
+  red: #e6281d;
+  red-lighten: lighten(#e6281d, 10%);
+  red-lighter: lighten(#e6281d, 20%);
+  red-lightest: lighten(#e6281d, 30%);
+
+  // PINK
+  pink-darkest: darken(#d32761, 30%);
+  pink-darker: darken(#d32761, 20%);
+  pink-darken: darken(#d32761, 10%);
+  pink: #d32761;
+  pink-lighten: lighten(#d32761, 10%);
+  pink-lighter: lighten(#d32761, 20%);
+  pink-lightest: lighten(#d32761, 30%);
+
+  // MAGENTA
+  magenta-darkest: darken(#e305b1, 30%);
+  magenta-darker: darken(#e305b1, 20%);
+  magenta-darken: darken(#e305b1, 10%);
+  magenta: #e305b1;
+  magenta-lighten: lighten(#e305b1, 10%);
+  magenta-lighter: lighten(#e305b1, 20%);
+  magenta-lightest: lighten(#e305b1, 30%);
+
+  // PURPLE
+  purple-darkest: darken(#b10dc9, 30%);
+  purple-darker: darken(#b10dc9, 20%);
+  purple-darken: darken(#b10dc9, 10%);
+  purple: #b10dc9;
+  purple-lighten: lighten(#b10dc9, 10%);
+  purple-lighter: lighten(#b10dc9, 20%);
+  purple-lightest: lighten(#b10dc9, 30%);
+
+  // BROWN
+  brown-darkest: darken(#74554a, 30%);
+  brown-darker: darken(#74554a, 20%);
+  brown-darken: darken(#74554a, 10%);
+  brown: #74554a;
+  brown-lighten: lighten(#74554a, 10%);
+  brown-lighter: lighten(#74554a, 20%);
+  brown-lightest: lighten(#74554a, 30%);
+
+  // GRAY
+  gray-darkest: darken(#949494, 30%);
+  gray-darker: darken(#949494, 20%);
+  gray-darken: darken(#949494, 10%);
+  gray: #949494;
+  gray-lighten: lighten(#949494, 10%);
+  gray-lighter: lighten(#949494, 20%);
+  gray-lightest: lighten(#949494, 30%);
+
+  // STEEL
+  steel-darkest: darken(#8c92ac, 30%);
+  steel-darker: darken(#8c92ac, 20%);
+  steel-darken: darken(#8c92ac, 10%);
+  steel: #8c92ac;
+  steel-lighten: lighten(#8c92ac, 10%);
+  steel-lighter: lighten(#8c92ac, 20%);
+  steel-lightest: lighten(#8c92ac, 30%);
+
+  // WHITE
+  white: #fff;
+  white-dark: darken(#fff, 3%);
+
+  // BLACK
+  black: #111;
+  black-light: lighten(#111, 5%);
+  black-lighten: lighten(#111, 10%);
+  black-lighter: lighten(#111, 20%);
+  black-lightest: lighten(#111, 30%);
+
+  // TRANSPARENT
+  transparent: transparent;
+}
+
+@swatches: primary, success, warning, danger, dark, light;
+
+@primary: {
+  background: @color[blue];
+  border: @color[blue];
+  color: @color[white];
+  active-background: @color[blue-darken];
+  active-border: @color[blue-darken];
+  active-color: @color[blue-darken];
+  disabled-background: @color[blue-lightest];
+  disabled-border: @color[blue-lightest];
+  disabled-color: @color[gray-lightest];
+}
+
+@success: {
+  background: @color[green];
+  border: @color[green];
+  color: @color[white];
+  active-background: @color[green-darken];
+  active-border: @color[green-darken];
+  active-color: @color[green-darken];
+  disabled-background: @color[green-lightest];
+  disabled-border: @color[green-lightest];
+  disabled-color: @color[gray-lightest];
+}
+
+@warning: {
+  background: @color[yellow-lighten];
+  border: @color[yellow-lighten];
+  color: @color[gray-darkest];
+  active-background: @color[yellow];
+  active-border: @color[yellow];
+  active-color: @color[gray-darkest];
+  disabled-background: @color[yellow-lightest];
+  disabled-border: @color[yellow-lightest];
+  disabled-color: @color[gray-lighten];
+}
+
+@danger: {
+  background: @color[red-lighten];
+  border: @color[red-lighten];
+  color: @color[white];
+  active-background: @color[red];
+  active-border: @color[red];
+  active-color: @color[red];
+  disabled-background: @color[red-lightest];
+  disabled-border: @color[red-lightest];
+  disabled-color: @color[gray-lightest];
+}
+
+@dark: {
+  background: @color[black-lightest];
+  border: @color[black-lightest];
+  color: @color[white];
+  active-background: @color[black-light];
+  active-border: @color[black-light];
+  active-color: @color[black-light];
+  disabled-background: @color[gray];
+  disabled-border: @color[gray];
+  disabled-color: @color[gray-lighter];
+}
+
+@light: {
+  background: @color[white];
+  border: @color[white];
+  color: @color[gray-darkest];
+  active-background: @color[gray-lightest];
+  active-border: @color[gray-lightest];
+  active-color: @color[gray-lightest];
+  disabled-background: @color[white];
+  disabled-border: @color[gray-lighten];
+  disabled-color: @color[gray];
+}

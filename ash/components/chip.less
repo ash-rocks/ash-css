@@ -1,0 +1,36 @@
+.chip {
+  align-items: center;
+  background-color: @color[gray-lighter];
+  border-radius: @radius;
+  color: @color[gray-darkest];
+  display: inline-flex;
+  font-size: 90%;
+  height: @margin[5];
+  line-height: @margin[4];
+  margin: 0.1rem;
+  max-width: 320px;
+  overflow: hidden;
+  padding: @padding[1] @padding[2] 0.45rem @padding[2];
+  text-decoration: none;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &.-outline {
+    background-color: @color[transparent];
+    border: 1px solid @color[gray-lighten];
+  }
+
+  each(@swatches, {
+    &.-@{value} {
+      background: @@value[background];
+      color: @@value[color];
+
+      &.-outline {
+        background-color: @color[transparent];
+        border: 1px solid @@value[border];
+        color: if(@value = warning, @warning[color], @@value[background]);
+      }
+    }
+  });
+}

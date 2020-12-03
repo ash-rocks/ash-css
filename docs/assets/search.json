@@ -1,0 +1,1075 @@
+[
+  {
+    "title": "Color",
+    "page": "Color",
+    "route": {
+      "name": "color",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Grid",
+    "tags": ["responsive"],
+    "page": "Grid",
+    "route": {
+      "name": "grid",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Grid Containers",
+    "page": "Grid",
+    "route": {
+      "name": "grid",
+      "hash": "#containers"
+    }
+  },
+  {
+    "title": "Grid Rows",
+    "page": "Grid",
+    "route": {
+      "name": "grid",
+      "hash": "#rows"
+    }
+  },
+  {
+    "title": "Grid Columns",
+    "page": "Grid",
+    "route": {
+      "name": "grid",
+      "hash": "#columns"
+    }
+  },
+  {
+    "title": "Grid Offsets",
+    "page": "Grid",
+    "route": {
+      "name": "grid",
+      "hash": "#offsets"
+    }
+  },
+
+  {
+    "title": "Asides",
+    "page": "Asides",
+    "route": {
+      "name": "elements.aside",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Aside Links",
+    "page": "Asides",
+    "route": {
+      "name": "elements.aside",
+      "hash": "#links"
+    }
+  },
+  {
+    "title": "Aside Details",
+    "page": "Asides",
+    "route": {
+      "name": "elements.aside",
+      "hash": "#details"
+    }
+  },
+
+  {
+    "title": "Buttons",
+    "page": "Buttons",
+    "route": {
+      "name": "elements.button",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Button Color",
+    "page": "Buttons",
+    "route": {
+      "name": "elements.button",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "Disabled Button",
+    "page": "Buttons",
+    "route": {
+      "name": "elements.button",
+      "hash": "#disabled"
+    }
+  },
+  {
+    "title": "Button Sizing",
+    "page": "Buttons",
+    "route": {
+      "name": "elements.button",
+      "hash": "#sizing"
+    }
+  },
+  {
+    "title": "Button Shape",
+    "page": "Buttons",
+    "route": {
+      "name": "elements.button",
+      "hash": "#shape"
+    }
+  },
+  {
+    "title": "Outlined Button",
+    "page": "Buttons",
+    "route": {
+      "name": "elements.button",
+      "hash": "#outline"
+    }
+  },
+  {
+    "title": "Button Icons",
+    "page": "Buttons",
+    "route": {
+      "name": "elements.button",
+      "hash": "#icons"
+    }
+  },
+  {
+    "title": "Button Groups",
+    "page": "Buttons",
+    "route": {
+      "name": "elements.button",
+      "hash": "#groups"
+    }
+  },
+
+  {
+    "title": "Details",
+    "tags": ["accordion"],
+    "page": "Details",
+    "route": {
+      "name": "elements.detail",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Details Group",
+    "page": "Details",
+    "route": {
+      "name": "elements.detail",
+      "hash": "#groups"
+    }
+  },
+  {
+    "title": "Details State",
+    "page": "Details",
+    "route": {
+      "name": "elements.detail",
+      "hash": "#state"
+    }
+  },
+  {
+    "title": "Nested Details",
+    "page": "Details",
+    "route": {
+      "name": "elements.detail",
+      "hash": "#nested"
+    }
+  },
+
+  {
+    "title": "Figures",
+    "tags": ["card"],
+    "page": "Figures",
+    "route": {
+      "name": "elements.figure",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Figure Header",
+    "page": "Figures",
+    "route": {
+      "name": "elements.figure",
+      "hash": "#headers"
+    }
+  },
+  {
+    "title": "Figure Footer",
+    "page": "Figures",
+    "route": {
+      "name": "elements.figure",
+      "hash": "#footer"
+    }
+  },
+  {
+    "title": "Figure Action",
+    "page": "Figures",
+    "route": {
+      "name": "elements.figure",
+      "hash": "#actions"
+    }
+  },
+  {
+    "title": "Figure Horizontal",
+    "tags": ["responsive", "grid"],
+    "page": "Figures",
+    "route": {
+      "name": "elements.horizontal",
+      "hash": "#actions"
+    }
+  },
+  {
+    "title": "Figure Colors",
+    "page": "Figures",
+    "route": {
+      "name": "elements.horizontal",
+      "hash": "#colors"
+    }
+  },
+
+  {
+    "title": "Forms",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Form Layout",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#layout"
+    }
+  },
+  {
+    "title": "Form Colors",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "Form Readonly",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#readonly"
+    }
+  },
+  {
+    "title": "Form Disabled",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#disabled"
+    }
+  },
+  {
+    "title": "Form Sizing",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#sizing"
+    }
+  },
+  {
+    "title": "Form Shapes",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#shape"
+    }
+  },
+  {
+    "title": "Form Fieldset",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#fieldset"
+    }
+  },
+  {
+    "title": "Form Dates",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#dates"
+    }
+  },
+  {
+    "title": "Form Color Picker",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#color-picker"
+    }
+  },
+  {
+    "title": "Form Checkbox",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#checkbox"
+    }
+  },
+  {
+    "title": "Form Radios",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#radio"
+    }
+  },
+  {
+    "title": "Form Switches",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#switch"
+    }
+  },
+  {
+    "title": "Form Groups",
+    "page": "Forms",
+    "route": {
+      "name": "elements.form",
+      "hash": "#group"
+    }
+  },
+
+  {
+    "title": "Lists",
+    "page": "Lists",
+    "route": {
+      "name": "elements.list",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Inline Lists",
+    "page": "Lists",
+    "route": {
+      "name": "elements.list",
+      "hash": "#inline"
+    }
+  },
+  {
+    "title": "Ordered Lists",
+    "page": "Lists",
+    "route": {
+      "name": "elements.list",
+      "hash": "#ordered"
+    }
+  },
+  {
+    "title": "Unordered Lists",
+    "page": "Lists",
+    "route": {
+      "name": "elements.list",
+      "hash": "#unordered"
+    }
+  },
+
+  {
+    "title": "Navs",
+    "tags": ["nav", "navbar"],
+    "page": "Navs",
+    "route": {
+      "name": "elements.nav",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Nav Groups",
+    "page": "Navs",
+    "route": {
+      "name": "elements.nav",
+      "hash": "#groups"
+    }
+  },
+  {
+    "title": "Collapsable Navs",
+    "page": "Navs",
+    "route": {
+      "name": "elements.nav",
+      "hash": "#collapsable"
+    }
+  },
+  {
+    "title": "Transparent Navs",
+    "page": "Navs",
+    "route": {
+      "name": "elements.nav",
+      "hash": "#transparent"
+    }
+  },
+
+  {
+    "title": "Progress",
+    "page": "Progress",
+    "route": {
+      "name": "elements.progress",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Progress Colors",
+    "page": "Progress",
+    "route": {
+      "name": "elements.progress",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "Progress Sizing",
+    "page": "Progress",
+    "route": {
+      "name": "elements.progress",
+      "hash": "#sizing"
+    }
+  },
+  {
+    "title": "Progress Indeterminate",
+    "tags": ["bar", "animated"],
+    "page": "Progress",
+    "route": {
+      "name": "elements.progress",
+      "hash": "#indeterminate"
+    }
+  },
+
+  {
+    "title": "Table",
+    "page": "Table",
+    "route": {
+      "name": "elements.table",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Striped Table",
+    "page": "Table",
+    "route": {
+      "name": "elements.table",
+      "hash": "#striped"
+    }
+  },
+  {
+    "title": "Hoverable Table",
+    "page": "Table",
+    "route": {
+      "name": "elements.table",
+      "hash": "#hover"
+    }
+  },
+  {
+    "title": "Bordered Table",
+    "page": "Table",
+    "route": {
+      "name": "elements.table",
+      "hash": "#bordered"
+    }
+  },
+  {
+    "title": "Table Colors",
+    "page": "Table",
+    "route": {
+      "name": "elements.table",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "Scrollable Table",
+    "tags": ["responsive"],
+    "page": "Table",
+    "route": {
+      "name": "elements.table",
+      "hash": "#scrollable"
+    }
+  },
+
+  {
+    "title": "Alerts",
+    "page": "Alerts",
+    "route": {
+      "name": "components.alert",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Alerts Color",
+    "page": "Alerts",
+    "route": {
+      "name": "components.alert",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "Alerts Shape",
+    "page": "Alerts",
+    "route": {
+      "name": "components.alert",
+      "hash": "#shape"
+    }
+  },
+  {
+    "title": "Outlined Alerts",
+    "page": "Alerts",
+    "route": {
+      "name": "components.alert",
+      "hash": "#outline"
+    }
+  },
+  {
+    "title": "Dismissable Alerts",
+    "page": "Alerts",
+    "route": {
+      "name": "components.alert",
+      "hash": "#dismissable"
+    }
+  },
+  {
+    "title": "Fixed Alerts",
+    "page": "Alerts",
+    "route": {
+      "name": "components.alert",
+      "hash": "#fixed"
+    }
+  },
+
+  {
+    "title": "Avatars",
+    "page": "Avatars",
+    "route": {
+      "name": "components.avatar",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Avatar Colors",
+    "page": "Avatars",
+    "route": {
+      "name": "components.avatar",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "Avatar Sizing",
+    "page": "Avatars",
+    "route": {
+      "name": "components.avatar",
+      "hash": "#sizing"
+    }
+  },
+  {
+    "title": "Avatar Presence",
+    "page": "Avatars",
+    "route": {
+      "name": "components.avatar",
+      "hash": "#presence"
+    }
+  },
+
+  {
+    "title": "Badges",
+    "page": "Badges",
+    "route": {
+      "name": "components.badge",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Badge Colors",
+    "page": "Badges",
+    "route": {
+      "name": "components.badge",
+      "hash": "#color"
+    }
+  },
+  {
+    "title": "Button Badges",
+    "page": "Badges",
+    "route": {
+      "name": "components.badge",
+      "hash": "buttons"
+    }
+  },
+
+  {
+    "title": "Chips",
+    "page": "Chips",
+    "route": {
+      "name": "components.chip",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Chip Colors",
+    "page": "Chips",
+    "route": {
+      "name": "components.chip",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "Chip Shapes",
+    "page": "Chips",
+    "route": {
+      "name": "components.chip",
+      "hash": "#shape"
+    }
+  },
+  {
+    "title": "Outlined Chips",
+    "page": "Chips",
+    "route": {
+      "name": "components.chip",
+      "hash": "#outline"
+    }
+  },
+
+  {
+    "title": "Dropdowns",
+    "page": "Dropdowns",
+    "route": {
+      "name": "components.chip",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Dropdown Positions",
+    "page": "Dropdowns",
+    "route": {
+      "name": "components.chip",
+      "hash": "#position"
+    }
+  },
+
+  {
+    "title": "Menus",
+    "page": "Menus",
+    "route": {
+      "name": "components.menu",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Modals",
+    "page": "Modals",
+    "route": {
+      "name": "components.modal",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Modal Headers",
+    "page": "Modals",
+    "route": {
+      "name": "components.modal",
+      "hash": "#headers"
+    }
+  },
+  {
+    "title": "Modal Footers",
+    "page": "Modals",
+    "route": {
+      "name": "components.modal",
+      "hash": "#footers"
+    }
+  },
+  {
+    "title": "Modal Actions",
+    "page": "Modals",
+    "route": {
+      "name": "components.modal",
+      "hash": "#actions"
+    }
+  },
+  {
+    "title": "Modal Colors",
+    "page": "Modals",
+    "route": {
+      "name": "components.modal",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "Scrollable Modals",
+    "page": "Modals",
+    "route": {
+      "name": "components.modal",
+      "hash": "#scrollable"
+    }
+  },
+  {
+    "title": "Modal Sizing",
+    "page": "Modals",
+    "route": {
+      "name": "components.modal",
+      "hash": "#sizing"
+    }
+  },
+  {
+    "title": "Modal Lightbox",
+    "page": "Modals",
+    "route": {
+      "name": "components.modal",
+      "hash": "#lightbox"
+    }
+  },
+
+  {
+    "title": "Off-Canvas",
+    "page": "Off-Canvas",
+    "route": {
+      "name": "components.off-canvas",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Sidebar",
+    "page": "Off-Canvas",
+    "route": {
+      "name": "components.off-canvas",
+      "hash": "#sidebar"
+    }
+  },
+  {
+    "title": "Content",
+    "page": "Off-Canvas",
+    "route": {
+      "name": "components.off-canvas",
+      "hash": "#content"
+    }
+  },
+  {
+    "title": "Overlay",
+    "page": "Off-Canvas",
+    "route": {
+      "name": "components.off-canvas",
+      "hash": "#overlay"
+    }
+  },
+  {
+    "title": "Caveats",
+    "page": "Off-Canvas",
+    "route": {
+      "name": "components.off-canvas",
+      "hash": "#caveats"
+    }
+  },
+
+  {
+    "title": "Pagination",
+    "page": "Pagination",
+    "route": {
+      "name": "components.pagination",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Blocked Pagination",
+    "page": "Pagination",
+    "route": {
+      "name": "components.pagination",
+      "hash": "#block"
+    }
+  },
+  {
+    "title": "Simple Pagination",
+    "page": "Pagination",
+    "route": {
+      "name": "components.pagination",
+      "hash": "#simple"
+    }
+  },
+
+  {
+    "title": "Tabs",
+    "page": "Tabs",
+    "route": {
+      "name": "components.tab",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Tooltips",
+    "page": "Tooltips",
+    "route": {
+      "name": "components.tooltip",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Tooltip Elements",
+    "page": "Tooltips",
+    "route": {
+      "name": "components.tooltip",
+      "hash": "#elements"
+    }
+  },
+  {
+    "title": "Tooltip Position",
+    "page": "Tooltips",
+    "route": {
+      "name": "components.tooltip",
+      "hash": "#position"
+    }
+  },
+
+  {
+    "title": "Background Utilities",
+    "page": "Background Utilities",
+    "route": {
+      "name": "utilities.background",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Background Attachment",
+    "page": "Background Utilities",
+    "route": {
+      "name": "utilities.background",
+      "hash": "#attachment"
+    }
+  },
+  {
+    "title": "Background Color",
+    "page": "Background Utilities",
+    "route": {
+      "name": "utilities.background",
+      "hash": "#color"
+    }
+  },
+  {
+    "title": "Background Position",
+    "page": "Background Utilities",
+    "route": {
+      "name": "utilities.background",
+      "hash": "#position"
+    }
+  },
+  {
+    "title": "Background Repeat",
+    "page": "Background Utilities",
+    "route": {
+      "name": "utilities.background",
+      "hash": "#repeat"
+    }
+  },
+  {
+    "title": "Background Size",
+    "page": "Background Utilities",
+    "route": {
+      "name": "utilities.background",
+      "hash": "#size"
+    }
+  },
+
+  {
+    "title": "Border Utilities",
+    "page": "Border Utilities",
+    "route": {
+      "name": "utilities.border",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Border Color",
+    "page": "Border Utilities",
+    "route": {
+      "name": "utilities.border",
+      "hash": "#color"
+    }
+  },
+  {
+    "title": "Border Radius",
+    "page": "Border Utilities",
+    "route": {
+      "name": "utilities.border",
+      "hash": "#radius"
+    }
+  },
+  {
+    "title": "Border Style",
+    "page": "Border Utilities",
+    "route": {
+      "name": "utilities.border",
+      "hash": "#style"
+    }
+  },
+  {
+    "title": "Border Width",
+    "page": "Border Utilities",
+    "route": {
+      "name": "utilities.border",
+      "hash": "#width"
+    }
+  },
+
+  {
+    "title": "Box Shadow Utility",
+    "page": "Box Shadow Utility",
+    "route": {
+      "name": "utilities.box-shadow",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Cursor Utility",
+    "page": "Cursor Utility",
+    "route": {
+      "name": "utilities.box-cursor",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Display Utility",
+    "page": "Display Utility",
+    "route": {
+      "name": "utilities.display",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Height Utility",
+    "page": "Height Utility",
+    "route": {
+      "name": "utilities.height",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Margin Utility",
+    "page": "Margin Utility",
+    "route": {
+      "name": "utilities.margin",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Opacity Utility",
+    "page": "Opacity Utility",
+    "route": {
+      "name": "utilities.opacity",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Overflow Utility",
+    "page": "Overflow Utility",
+    "route": {
+      "name": "utilities.overflow",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Padding Utility",
+    "page": "Padding Utility",
+    "route": {
+      "name": "utilities.padding",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Select Utility",
+    "page": "Select Utility",
+    "route": {
+      "name": "utilities.select",
+      "hash": ""
+    }
+  },
+
+  {
+    "title": "Typography Utilities",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Font Family",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": "#font-family"
+    }
+  },
+  {
+    "title": "Font Size",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": "#font-size"
+    }
+  },
+  {
+    "title": "Font Weight",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": "#font-weight"
+    }
+  },
+  {
+    "title": "Letter Spacing",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": "#letter-spacing"
+    }
+  },
+  {
+    "title": "Line Height",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": "#line-height"
+    }
+  },
+  {
+    "title": "Text Align",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": "#text-align"
+    }
+  },
+  {
+    "title": "Text Color",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": "#text-color"
+    }
+  },
+  {
+    "title": "Text Transform",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": "#text-transform"
+    }
+  },
+  {
+    "title": "Vertical Align",
+    "page": "Typography Utilities",
+    "route": {
+      "name": "utilities.typography",
+      "hash": "#vertical-align"
+    }
+  }
+
+]

@@ -1,0 +1,42 @@
+body.dark {
+  .alert {
+    &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+      > .content {
+        background-color: @color[black-lightest];
+      }
+
+      &.-outline {
+        > .content {
+          background-color: @color[transparent];
+          border: 1px solid @color[gray-darker];
+          color: @color[gray-lighten];
+        }
+      }
+    }
+
+    &.-warning {
+      &.-outline {
+        > .content {
+          color: @color[gray-lightest];
+        }
+
+        > label {
+          color: @color[gray-lightest];
+        }
+      }
+    }
+
+    &.-dark {
+      &.-outline {
+        > .content {
+          border: 1px solid @color[black-light];
+          color: @color[gray-lightest];
+        }
+
+        > label {
+          color: @color[gray-lightest];
+        }
+      }
+    }
+  }
+}

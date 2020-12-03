@@ -1,0 +1,97 @@
+.container {
+  width: 100%;
+  padding-right: @padding[4];
+  padding-left: @padding[4];
+  margin-right: auto;
+  margin-left: auto;
+
+  &.-fluid {
+    max-width: 100% !important;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -@margin[4];
+  margin-left: -@margin[4];
+  margin-bottom: @margin[4];
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &.-gapless {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+
+    > .column {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.column {
+  flex: 1 0 0;
+  max-width: 100%;
+  padding-right: @padding[4];
+  padding-left: @padding[4];
+  position: relative;
+
+  &[class^="column -"]:not([class^="column --"]) {
+    flex: 1 0 100%;
+  }
+
+  &.-auto {
+    flex: 0 0 auto !important;
+    width: auto;
+    max-width: 100%;
+  }
+
+  each(@column, {
+    &.\-@{key} {
+      flex: 0 0 @value;
+      max-width: @value;
+    }
+
+    &.-offset-@{key} {
+      margin-left: @value;
+    }
+  });
+}
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    .container {
+      max-width: .container-width[@@bkey];
+    }
+
+    .column {
+
+      &.-@{bkey} {
+        flex: 1 0 0 !important;
+      }
+
+      &.-@{bkey}-auto {
+        flex: 0 0 auto !important;
+        width: auto;
+        max-width: 100%;
+      }
+
+      each(@column, .(@cvalue, @ckey, @ci) {
+
+        &.-@{bkey}-@{ckey} {
+          flex: 0 0 @cvalue;
+          max-width: @cvalue;
+        }
+
+        &.-offset-@{bkey}-@{ckey} {
+          margin-left: @cvalue;
+        }
+      });
+    }
+  }
+});

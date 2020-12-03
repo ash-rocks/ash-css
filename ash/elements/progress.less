@@ -1,0 +1,86 @@
+progress {
+  appearance: none;
+  background-color: @color[gray-lighter];
+  border: 0;
+  border-radius: @radius;
+  color: @color[gray];
+  display: inline-block;
+  height: @margin[2];
+  margin-top: @margin[4];
+  position: relative;
+  vertical-align: baseline;
+  width: 100%;
+
+  &.-small {
+    height: @margin[1];
+  }
+
+  &.-normal {
+    height: @margin[2];
+  }
+
+  &.-medium {
+    height: @margin[3];
+  }
+
+  &.-large {
+    height: @margin[4];
+  }
+
+  &::-webkit-progress-bar {
+    background-color: transparent;
+  }
+
+  &::-webkit-progress-value {
+    background-color: @color[gray];
+  }
+
+  &::-moz-progress-bar {
+    background: @color[gray];
+  }
+
+  &:not([value]),
+  &:indeterminate {
+    animation: progress-indeterminate 1.5s linear infinite;
+    background: @color[gray-lighter] linear-gradient(to right, @color[gray] 30%, @color[gray-lighter] 30%) top left / 150% 150% no-repeat;
+
+    &::-moz-progress-bar {
+      background-color: transparent;
+    }
+  }
+
+  each(@swatches, {
+    &.-@{value} {
+      color: @@value[background];
+      background-color: if(@value = light, @color[gray-darker], @color[gray-lighter]);
+
+      &::-webkit-progress-value {
+        background-color: @@value[background];
+      }
+
+      &::-moz-progress-bar {
+        background-color: @@value[background];
+      }
+
+      &:not([value]),
+      &:indeterminate {
+        animation: progress-indeterminate 1.5s linear infinite;
+        background: if(@value = light, @color[gray-darker], @color[gray-lighter]) linear-gradient(to right, @@value[background] 30%, if(@value = light, @color[gray-darker], @color[gray-lighter]) 30%) top left / 150% 150% no-repeat;
+
+        &::-moz-progress-bar {
+          background-color: transparent;
+        }
+      }
+    }
+  });
+}
+
+@keyframes progress-indeterminate {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}

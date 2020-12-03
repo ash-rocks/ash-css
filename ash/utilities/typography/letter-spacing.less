@@ -1,0 +1,15 @@
+each(@letter-spacing, {
+  .\--spacing-@{key} {
+    letter-spacing: @value;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@letter-spacing, .(@lvalue, @lkey, @li) {
+      .\--@{bkey}-spacing-@{lkey} {
+        text-align: @lvalue !important;
+      }
+    });
+  }
+});

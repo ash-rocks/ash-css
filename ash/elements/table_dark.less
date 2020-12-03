@@ -1,0 +1,47 @@
+body.dark {
+  table {
+    border-top: 1px solid @color[gray-darker];
+
+    th,
+    tr {
+      &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+        td {
+          border-bottom: 1px solid @color[gray-darker];
+        }
+      }
+    }
+
+    thead th {
+      border-bottom: 2px solid @color[gray-darker];
+    }
+
+    &.-hover {
+      tbody {
+        tr:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+          &:hover {
+            background-color: @color[black];
+          }
+        }
+      }
+    }
+
+    &.-striped {
+      background-color: @color[black-lighter];
+
+      tbody {
+        tr:nth-of-type(odd) {
+          background-color: @color[black-lighten];
+        }
+      }
+    }
+
+    &.-bordered {
+      border: 1px solid @color[gray-darker];
+
+      th,
+      td {
+        border: 1px solid @color[gray-darker];
+      }
+    }
+  }
+}

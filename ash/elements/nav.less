@@ -1,0 +1,108 @@
+nav {
+  align-items: center;
+  background-color: @color[white];
+  box-shadow: @box-shadow[shadow];
+  display: flex;
+  flex-wrap: wrap;
+  height: 4rem;
+  justify-content: space-between;
+  padding: @padding[2] 0;
+
+  > .nav-toggle,
+  > label {
+    display: none;
+  }
+
+  &.-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+
+    + .container {
+      margin-top: 5rem;
+    }
+  }
+
+  &.-transparent {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .group {
+    align-items: center;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: flex-end;
+
+    > a {
+      cursor: pointer;
+      margin: 0 @margin[2];
+    }
+  }
+
+  .brand {
+    display: flex;
+    justify-content: flex-start;
+    font-size: @font-size[lg];
+    align-items: center;
+    padding: @padding[3] @padding[2];
+    text-decoration: none;
+  }
+}
+
+@media (max-width: @breakpoint[lg]) {
+  nav {
+    &.-collapsable {
+      .group {
+        &:not(.-collapse) {
+          margin-right: @margin[8];
+        }
+      }
+    }
+
+    > label {
+      display: block;
+      margin-right: @margin[4];
+      order: 50;
+      z-index: 300;
+    }
+
+    .nav-toggle:not(:checked) {
+      ~ .group {
+        &.-collapse {
+          display: none;
+        }
+      }
+    }
+
+    .nav-toggle:checked {
+      ~ .group {
+        &.-collapse {
+          background-color: @color[gray-lightest];
+          display: block;
+          left: 0;
+          order: 99;
+          padding: 0 @padding[2];
+          position: relative;
+          top: 12px;
+          width: 100%;
+
+          > a {
+            display: block;
+            margin: @margin[4] @margin[2];
+          }
+
+          .dropdown {
+            display: block;
+            margin: @margin[4] @margin[2];
+
+            > .content {
+              left: 0;
+              right: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

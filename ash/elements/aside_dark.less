@@ -1,0 +1,46 @@
+body.dark {
+  aside {
+    background-color: @color[black-lighter];
+    color: @color[gray-lightest];
+
+    .link {
+      color: @color[gray-lightest];
+
+      &:hover {
+        color: @color[blue];
+      }
+    }
+
+    details {
+      border: none;
+
+      > summary {
+        background-color: @color[transparent];
+        color: @color[gray-lightest];
+
+        &:hover {
+          background-color: @color[transparent];
+          color: @color[blue];
+        }
+
+        .icon {
+          color: @color[gray];
+        }
+      }
+
+      .link {
+        color: @color[gray-lightest];
+
+        &:hover {
+          color: @color[blue];
+        }
+      }
+    }
+
+    details[open] {
+      > summary {
+        border-bottom: none;
+      }
+    }
+  }
+}

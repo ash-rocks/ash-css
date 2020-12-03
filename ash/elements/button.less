@@ -1,0 +1,136 @@
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button,
+.button {
+  background-color: @color[gray-lightest];
+  border: 1px solid @color[gray-lightest];
+  border-radius: @radius;
+  color: @color[gray-darker];
+  display: inline-block;
+  font: inherit;
+  margin: @margin[2] @margin[1];
+  overflow: visible;
+  padding: @padding[1] @padding[4];
+  text-decoration: none;
+  text-transform: none;
+  width: auto;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  &:not(:disabled) {
+    cursor: @cursor[pointer];
+  }
+
+  &:hover {
+    background-color: @color[gray-lighter];
+    color: @color[gray-darkest];
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.-outline {
+    background-color: @color[transparent];
+    border: 1px solid @color[gray-lighter];
+    color: @color[gray-darker];
+
+    &:hover {
+      background-color: @color[transparent];
+      border: 1px solid @color[gray-lighten];
+    }
+  }
+
+  &[disabled] {
+    background-color: @color[white];
+    border: 1px solid @color[gray-lighten];
+    color: @color[gray];
+  }
+
+  each(@swatches, {
+    &.-@{value} {
+      background-color: @@value[background];
+      border: 1px solid @@value[border];
+      color: @@value[color];
+
+      &:hover {
+        background-color: @@value[active-background];
+        border: 1px solid @@value[active-border];
+      }
+
+      &.-outline {
+        background-color: @color[transparent];
+        border: 1px solid @@value[border];
+        color: if(@value = warning, @warning[color], @@value[border]);
+
+        &:hover {
+          background-color: @color[transparent];
+          border: 1px solid @@value[active-border];
+          color: @@value[active-color];
+        }
+      }
+
+      &[disabled] {
+        background-color: @@value[disabled-background];
+        border: 1px solid @@value[disabled-border];
+        color: @@value[disabled-color];
+      }
+    }
+  });
+
+  &.-small {
+    font-size: @font-size[sm];
+    padding: @padding[0] @padding[4];
+  }
+
+  &.-normal {
+    font-size: @font-size[base];
+    padding: @padding[1] @padding[4];
+  }
+
+  &.-medium {
+    font-size: @font-size[lg];
+    padding: @padding[2] @padding[4];
+  }
+
+  &.-large {
+    font-size: @font-size[xl];
+    padding: @padding[3] @padding[4];
+  }
+
+  &.-block {
+    display: block;
+    margin: @margin[2] 0;
+    width: 100%;
+  }
+}
+
+.buttons {
+  display: inline-block;
+  margin-right: @margin[2];
+
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"],
+  button,
+  .button {
+    border-radius: 0;
+    margin: @margin[1] -1px;
+
+    &:first-child {
+      border-top-left-radius: @radius;
+      border-bottom-left-radius: @radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: @radius;
+      border-bottom-right-radius: @radius;
+    }
+  }
+}
