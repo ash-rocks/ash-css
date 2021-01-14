@@ -1595,29 +1595,29 @@ figure figcaption:last-child {
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-figure > .content {
+figure .content {
   padding: 1.5rem;
   border-radius: 0.25rem;
 }
-figure > .content .title {
+figure .content .title {
   margin: 0 0 0.5rem 0;
 }
-figure > .content .media:not(:last-child) {
+figure .content .media:not(:last-child) {
   margin-bottom: 1.5rem;
 }
-figure > .content pre:last-child {
+figure .content pre:last-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-figure > .actions {
+figure .actions {
   align-items: stretch;
   border-top: 1px solid #c7c7c7;
   display: flex;
 }
-figure > .actions a,
-figure > .actions button {
+figure .actions a,
+figure .actions button {
   align-items: center;
   border: none;
   border-radius: 0;
@@ -1627,12 +1627,12 @@ figure > .actions button {
   margin: 0;
   padding: 0.75rem;
 }
-figure > .actions a:not(:last-child),
-figure > .actions button:not(:last-child) {
+figure .actions a:not(:last-child),
+figure .actions button:not(:last-child) {
   border-right: 1px solid #c7c7c7;
 }
-figure > .actions:last-child a:last-child,
-figure > .actions:last-child button:last-child {
+figure .actions:last-child a:last-child,
+figure .actions:last-child button:last-child {
   border-bottom-right-radius: 0.25rem;
 }
 figure > footer {
@@ -1697,20 +1697,20 @@ figure.-primary > footer,
 figure.-primary.-horizontal .row [class*="col-"] > footer {
   border-top: 1px solid #0059a6;
 }
-figure.-primary > .actions,
-figure.-primary.-horizontal .row [class*="col-"] > .actions {
+figure.-primary .actions,
+figure.-primary.-horizontal .row [class*="col-"] .actions {
   border-top: 1px solid #0059a6;
 }
-figure.-primary > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-primary.-horizontal .row [class*="col-"] > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-primary > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-primary.-horizontal .row [class*="col-"] > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+figure.-primary .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-primary.-horizontal .row [class*="col-"] .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-primary .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-primary.-horizontal .row [class*="col-"] .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
   color: #fff;
 }
-figure.-primary > .actions a:not(:last-child),
-figure.-primary.-horizontal .row [class*="col-"] > .actions a:not(:last-child),
-figure.-primary > .actions button:not(:last-child),
-figure.-primary.-horizontal .row [class*="col-"] > .actions button:not(:last-child) {
+figure.-primary .actions a:not(:last-child),
+figure.-primary.-horizontal .row [class*="col-"] .actions a:not(:last-child),
+figure.-primary .actions button:not(:last-child),
+figure.-primary.-horizontal .row [class*="col-"] .actions button:not(:last-child) {
   border-right: 1px solid #0059a6;
 }
 figure.-success,
@@ -1726,20 +1726,20 @@ figure.-success > footer,
 figure.-success.-horizontal .row [class*="col-"] > footer {
   border-top: 1px solid #147a54;
 }
-figure.-success > .actions,
-figure.-success.-horizontal .row [class*="col-"] > .actions {
+figure.-success .actions,
+figure.-success.-horizontal .row [class*="col-"] .actions {
   border-top: 1px solid #147a54;
 }
-figure.-success > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-success.-horizontal .row [class*="col-"] > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-success > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-success.-horizontal .row [class*="col-"] > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+figure.-success .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-success.-horizontal .row [class*="col-"] .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-success .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-success.-horizontal .row [class*="col-"] .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
   color: #fff;
 }
-figure.-success > .actions a:not(:last-child),
-figure.-success.-horizontal .row [class*="col-"] > .actions a:not(:last-child),
-figure.-success > .actions button:not(:last-child),
-figure.-success.-horizontal .row [class*="col-"] > .actions button:not(:last-child) {
+figure.-success .actions a:not(:last-child),
+figure.-success.-horizontal .row [class*="col-"] .actions a:not(:last-child),
+figure.-success .actions button:not(:last-child),
+figure.-success.-horizontal .row [class*="col-"] .actions button:not(:last-child) {
   border-right: 1px solid #147a54;
 }
 figure.-warning,
@@ -1755,20 +1755,20 @@ figure.-warning > footer,
 figure.-warning.-horizontal .row [class*="col-"] > footer {
   border-top: 1px solid #e6b300;
 }
-figure.-warning > .actions,
-figure.-warning.-horizontal .row [class*="col-"] > .actions {
+figure.-warning .actions,
+figure.-warning.-horizontal .row [class*="col-"] .actions {
   border-top: 1px solid #e6b300;
 }
-figure.-warning > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-warning.-horizontal .row [class*="col-"] > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-warning > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-warning.-horizontal .row [class*="col-"] > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+figure.-warning .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-warning.-horizontal .row [class*="col-"] .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-warning .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-warning.-horizontal .row [class*="col-"] .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
   color: #484848;
 }
-figure.-warning > .actions a:not(:last-child),
-figure.-warning.-horizontal .row [class*="col-"] > .actions a:not(:last-child),
-figure.-warning > .actions button:not(:last-child),
-figure.-warning.-horizontal .row [class*="col-"] > .actions button:not(:last-child) {
+figure.-warning .actions a:not(:last-child),
+figure.-warning.-horizontal .row [class*="col-"] .actions a:not(:last-child),
+figure.-warning .actions button:not(:last-child),
+figure.-warning.-horizontal .row [class*="col-"] .actions button:not(:last-child) {
   border-right: 1px solid #e6b300;
 }
 figure.-danger,
@@ -1784,20 +1784,20 @@ figure.-danger > footer,
 figure.-danger.-horizontal .row [class*="col-"] > footer {
   border-top: 1px solid #e6281d;
 }
-figure.-danger > .actions,
-figure.-danger.-horizontal .row [class*="col-"] > .actions {
+figure.-danger .actions,
+figure.-danger.-horizontal .row [class*="col-"] .actions {
   border-top: 1px solid #e6281d;
 }
-figure.-danger > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-danger.-horizontal .row [class*="col-"] > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-danger > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-danger.-horizontal .row [class*="col-"] > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+figure.-danger .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-danger.-horizontal .row [class*="col-"] .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-danger .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-danger.-horizontal .row [class*="col-"] .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
   color: #fff;
 }
-figure.-danger > .actions a:not(:last-child),
-figure.-danger.-horizontal .row [class*="col-"] > .actions a:not(:last-child),
-figure.-danger > .actions button:not(:last-child),
-figure.-danger.-horizontal .row [class*="col-"] > .actions button:not(:last-child) {
+figure.-danger .actions a:not(:last-child),
+figure.-danger.-horizontal .row [class*="col-"] .actions a:not(:last-child),
+figure.-danger .actions button:not(:last-child),
+figure.-danger.-horizontal .row [class*="col-"] .actions button:not(:last-child) {
   border-right: 1px solid #e6281d;
 }
 figure.-dark,
@@ -1813,20 +1813,20 @@ figure.-dark > footer,
 figure.-dark.-horizontal .row [class*="col-"] > footer {
   border-top: 1px solid #1e1e1e;
 }
-figure.-dark > .actions,
-figure.-dark.-horizontal .row [class*="col-"] > .actions {
+figure.-dark .actions,
+figure.-dark.-horizontal .row [class*="col-"] .actions {
   border-top: 1px solid #1e1e1e;
 }
-figure.-dark > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-dark.-horizontal .row [class*="col-"] > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-dark > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-dark.-horizontal .row [class*="col-"] > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+figure.-dark .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-dark.-horizontal .row [class*="col-"] .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-dark .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-dark.-horizontal .row [class*="col-"] .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
   color: #fff;
 }
-figure.-dark > .actions a:not(:last-child),
-figure.-dark.-horizontal .row [class*="col-"] > .actions a:not(:last-child),
-figure.-dark > .actions button:not(:last-child),
-figure.-dark.-horizontal .row [class*="col-"] > .actions button:not(:last-child) {
+figure.-dark .actions a:not(:last-child),
+figure.-dark.-horizontal .row [class*="col-"] .actions a:not(:last-child),
+figure.-dark .actions button:not(:last-child),
+figure.-dark.-horizontal .row [class*="col-"] .actions button:not(:last-child) {
   border-right: 1px solid #1e1e1e;
 }
 figure.-light,
@@ -1842,20 +1842,20 @@ figure.-light > footer,
 figure.-light.-horizontal .row [class*="col-"] > footer {
   border-top: 1px solid #e1e1e1;
 }
-figure.-light > .actions,
-figure.-light.-horizontal .row [class*="col-"] > .actions {
+figure.-light .actions,
+figure.-light.-horizontal .row [class*="col-"] .actions {
   border-top: 1px solid #e1e1e1;
 }
-figure.-light > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-light.-horizontal .row [class*="col-"] > .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-light > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
-figure.-light.-horizontal .row [class*="col-"] > .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+figure.-light .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-light.-horizontal .row [class*="col-"] .actions a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-light .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light),
+figure.-light.-horizontal .row [class*="col-"] .actions button:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
   color: #484848;
 }
-figure.-light > .actions a:not(:last-child),
-figure.-light.-horizontal .row [class*="col-"] > .actions a:not(:last-child),
-figure.-light > .actions button:not(:last-child),
-figure.-light.-horizontal .row [class*="col-"] > .actions button:not(:last-child) {
+figure.-light .actions a:not(:last-child),
+figure.-light.-horizontal .row [class*="col-"] .actions a:not(:last-child),
+figure.-light .actions button:not(:last-child),
+figure.-light.-horizontal .row [class*="col-"] .actions button:not(:last-child) {
   border-right: 1px solid #e1e1e1;
 }
 body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
@@ -1865,11 +1865,11 @@ body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(
 body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) > header {
   border-bottom: 1px solid #2b2b2b;
 }
-body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) > .actions {
+body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) .actions {
   border-top: 1px solid #2b2b2b;
 }
-body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) > .actions a:not(:last-child),
-body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) > .actions button:not(:last-child) {
+body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) .actions a:not(:last-child),
+body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) .actions button:not(:last-child) {
   border-right: 1px solid #2b2b2b;
 }
 body.dark figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) > footer {
