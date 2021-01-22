@@ -15,319 +15,319 @@
 
     <div class="row --margin-y-8">
       <div class="column -md --background-blue-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">blue-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">blue-darkest</label>
       </div>
       <div class="column -md --background-blue-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">blue-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">blue-darker</label>
       </div>
       <div class="column -md --background-blue-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">blue-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">blue-darken</label>
       </div>
       <div class="column -md --background-blue --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">blue</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">blue</label>
       </div>
       <div class="column -md --background-blue-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">blue-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">blue-lighten</label>
       </div>
       <div class="column -md --background-blue-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">blue-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">blue-lighter</label>
       </div>
       <div class="column -md --background-blue-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">blue-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">blue-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-cyan-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">cyan-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan-darkest</label>
       </div>
       <div class="column -md --background-cyan-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">cyan-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan-darker</label>
       </div>
       <div class="column -md --background-cyan-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">cyan-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan-darken</label>
       </div>
       <div class="column -md --background-cyan --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">cyan</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan</label>
       </div>
       <div class="column -md --background-cyan-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">cyan-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan-lighten</label>
       </div>
       <div class="column -md --background-cyan-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">cyan-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan-lighter</label>
       </div>
       <div class="column -md --background-cyan-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">cyan-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-green-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">green-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">green-darkest</label>
       </div>
       <div class="column -md --background-green-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">green-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">green-darker</label>
       </div>
       <div class="column -md --background-green-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">green-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">green-darken</label>
       </div>
       <div class="column -md --background-green --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">green</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">green</label>
       </div>
       <div class="column -md --background-green-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">green-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">green-lighten</label>
       </div>
       <div class="column -md --background-green-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">green-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">green-lighter</label>
       </div>
       <div class="column -md --background-green-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">green-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">green-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-yellow-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">yellow-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">yellow-darkest</label>
       </div>
       <div class="column -md --background-yellow-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">yellow-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">yellow-darker</label>
       </div>
       <div class="column -md --background-yellow-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">yellow-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">yellow-darken</label>
       </div>
       <div class="column -md --background-yellow --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">yellow</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">yellow</label>
       </div>
       <div class="column -md --background-yellow-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">yellow-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">yellow-lighten</label>
       </div>
       <div class="column -md --background-yellow-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">yellow-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">yellow-lighter</label>
       </div>
       <div class="column -md --background-yellow-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">yellow-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">yellow-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-orange-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">orange-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">orange-darkest</label>
       </div>
       <div class="column -md --background-orange-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">orange-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">orange-darker</label>
       </div>
       <div class="column -md --background-orange-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">orange-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">orange-darken</label>
       </div>
       <div class="column -md --background-orange --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">orange</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">orange</label>
       </div>
       <div class="column -md --background-orange-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">orange-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">orange-lighten</label>
       </div>
       <div class="column -md --background-orange-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">orange-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">orange-lighter</label>
       </div>
       <div class="column -md --background-orange-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">orange-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">orange-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-red-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">red-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red-darkest</label>
       </div>
       <div class="column -md --background-red-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">red-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red-darker</label>
       </div>
       <div class="column -md --background-red-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">red-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red-darken</label>
       </div>
       <div class="column -md --background-red --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">red</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red</label>
       </div>
       <div class="column -md --background-red-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">red-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red-lighten</label>
       </div>
       <div class="column -md --background-red-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">red-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red-lighter</label>
       </div>
       <div class="column -md --background-red-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">red-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-pink-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">pink-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">pink-darkest</label>
       </div>
       <div class="column -md --background-pink-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">pink-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">pink-darker</label>
       </div>
       <div class="column -md --background-pink-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">pink-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">pink-darken</label>
       </div>
       <div class="column -md --background-pink --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">pink</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">pink</label>
       </div>
       <div class="column -md --background-pink-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">pink-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">pink-lighten</label>
       </div>
       <div class="column -md --background-pink-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">pink-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">pink-lighter</label>
       </div>
       <div class="column -md --background-pink-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">pink-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">pink-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-magenta-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">magenta-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta-darkest</label>
       </div>
       <div class="column -md --background-magenta-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">magenta-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta-darker</label>
       </div>
       <div class="column -md --background-magenta-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">magenta-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta-darken</label>
       </div>
       <div class="column -md --background-magenta --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">magenta</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta</label>
       </div>
       <div class="column -md --background-magenta-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">magenta-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta-lighten</label>
       </div>
       <div class="column -md --background-magenta-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">magenta-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta-lighter</label>
       </div>
       <div class="column -md --background-magenta-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">magenta-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-purple-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">purple-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">purple-darkest</label>
       </div>
       <div class="column -md --background-purple-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">purple-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">purple-darker</label>
       </div>
       <div class="column -md --background-purple-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">purple-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">purple-darken</label>
       </div>
       <div class="column -md --background-purple --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">purple</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">purple</label>
       </div>
       <div class="column -md --background-purple-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">purple-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">purple-lighten</label>
       </div>
       <div class="column -md --background-purple-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">purple-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">purple-lighter</label>
       </div>
       <div class="column -md --background-purple-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">purple-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">purple-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-brown-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">brown-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">brown-darkest</label>
       </div>
       <div class="column -md --background-brown-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">brown-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">brown-darker</label>
       </div>
       <div class="column -md --background-brown-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">brown-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">brown-darken</label>
       </div>
       <div class="column -md --background-brown --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">brown</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">brown</label>
       </div>
       <div class="column -md --background-brown-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">brown-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">brown-lighten</label>
       </div>
       <div class="column -md --background-brown-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">brown-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">brown-lighter</label>
       </div>
       <div class="column -md --background-brown-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">brown-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">brown-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-gray-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">gray-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray-darkest</label>
       </div>
       <div class="column -md --background-gray-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">gray-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray-darker</label>
       </div>
       <div class="column -md --background-gray-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">gray-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray-darken</label>
       </div>
       <div class="column -md --background-gray --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">gray</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray</label>
       </div>
       <div class="column -md --background-gray-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">gray-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray-lighten</label>
       </div>
       <div class="column -md --background-gray-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">gray-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray-lighter</label>
       </div>
       <div class="column -md --background-gray-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">gray-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-steel-darkest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">steel-darkest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel-darkest</label>
       </div>
       <div class="column -md --background-steel-darker --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">steel-darker</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel-darker</label>
       </div>
       <div class="column -md --background-steel-darken --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">steel-darken</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel-darken</label>
       </div>
       <div class="column -md --background-steel --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">steel</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel</label>
       </div>
       <div class="column -md --background-steel-lighten --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">steel-lighten</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel-lighten</label>
       </div>
       <div class="column -md --background-steel-lighter --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">steel-lighter</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel-lighter</label>
       </div>
       <div class="column -md --background-steel-lightest --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">steel-lightest</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-black --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">black</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">black</label>
       </div>
       <div class="column -md --background-black-light --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">black-light</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">black-light</label>
       </div>
       <div class="column -md --background-black-lighten --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">black-lighten</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">black-lighten</label>
       </div>
       <div class="column -md --background-black-lighter --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">black-lighter</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">black-lighter</label>
       </div>
       <div class="column -md --background-black-lightest --padding-4">
-        <label class="--color-white" for="modal-accessibility" v-on:click="renderModal">black-lightest</label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">black-lightest</label>
       </div>
     </div>
 
     <div class="row --margin-y-8">
       <div class="column -md --background-white-dark --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">white-dark</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">white-dark</label>
       </div>
       <div class="column -md --background-white --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">white</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">white</label>
       </div>
       <div class="column -md --background-transparent --padding-4">
-        <label class="--color-black" for="modal-accessibility" v-on:click="renderModal">transparent</label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">transparent</label>
       </div>
     </div>
 

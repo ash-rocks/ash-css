@@ -1,5 +1,5 @@
 [ashlink]: https://ashcss.rocks/
-[ashlogo]: https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@main/public/logo.svg
+[ashlogo]: https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@0.1.3/public/logo.svg
 
 [![ASH CSS][ashlogo]][ashlink]
 
@@ -23,7 +23,7 @@ Download compiled CSS to use in your self-hosted project. This includes compiled
 ### CDN
 Use the code below to drop-in ASH CSS to your project from our CDN. The CDN will be cached, minified, and gzipped.
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@main/dist/ash/ash.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@0.1.3/dist/ash/ash.min.css">
 ```
 
 ### NPM
