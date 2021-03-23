@@ -27,7 +27,7 @@
 
         <section>
           <h2 id="compiled" class="jump"><a href="#compiled"># Compiled CSS</a></h2>
-          <p>Download compiled CSS to use in your self-hosted project. This includes the following files.</p>
+          <p>Download compiled CSS to use in your self-hosted project. This includes the following files:</p>
           <ul class="-circle">
             <li><code>ash.css</code> -> compiled and unminified</li>
             <li><code>ash.css.map</code> -> compiled CSS map</li>
@@ -49,7 +49,7 @@
 
         <section>
           <h2 id="node" class="jump"><a href="#node"># NPM/Yarn</a></h2>
-          <p>ASH can be installed in a NodeJS project using NPM.</p>
+          <p>ASH can be installed in a NodeJS project using NPM or Yarn.</p>
           <pre>
             <code class="language-shell">
               npm install ash-css --save
