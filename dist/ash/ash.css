@@ -1,5 +1,5 @@
 /*!
- * Ash CSS v0.2.0 (https://ashcss.rocks/)
+ * Ash CSS v0.2.1 (https://ashcss.rocks/)
  * Copyright 2021 ASH Rocks Authors
  * Licensed under MIT (https://github.com/ash-rocks/ash-css/blob/master/LICENSE)
  */
@@ -4289,12 +4289,10 @@ html.dark .badge::after {
   color: #484848;
   display: inline-flex;
   font-size: 90%;
-  height: 1.25rem;
-  line-height: 1rem;
   margin: 0.1rem;
   max-width: 320px;
   overflow: hidden;
-  padding: 0.25rem 0.5rem 0.45rem 0.5rem;
+  padding: 0.1rem 0.5rem;
   text-decoration: none;
   text-overflow: ellipsis;
   vertical-align: middle;
@@ -4389,6 +4387,7 @@ html.dark .chip.-dark.-outline {
   display: none;
   max-height: 50vh;
   min-width: 160px;
+  padding: 0;
   position: absolute;
   z-index: 400;
 }
@@ -4500,6 +4499,9 @@ html.dark .menu li > a:not(.button):not(.link):hover {
   background-color: #2b2b2b;
   color: #0074d9;
 }
+body.noscroll {
+  overflow: hidden;
+}
 .modal {
   background-color: rgba(43, 43, 43, 0.9);
   bottom: 0;
@@ -4511,7 +4513,7 @@ html.dark .menu li > a:not(.button):not(.link):hover {
   top: 0;
   transition: all 100ms;
   visibility: hidden;
-  z-index: 600;
+  z-index: 800;
 }
 .modal > .overlay {
   bottom: 0;
@@ -4530,7 +4532,7 @@ html.dark .menu li > a:not(.button):not(.link):hover {
   top: -20%;
   transition: all 100ms;
   width: 50%;
-  z-index: 600;
+  z-index: 800;
 }
 .modal > .dialog > header {
   border-bottom: 1px solid #c7c7c7;
@@ -4914,8 +4916,7 @@ html.dark .modal:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(
 .jump::before {
   display: block;
   content: " ";
-  margin-top: -3rem;
-  height: 5rem;
+  height: 4rem;
   visibility: hidden;
 }
 html.dark .off-canvas > aside details > .content {

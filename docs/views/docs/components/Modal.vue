@@ -17,6 +17,7 @@
           <li><a href="#scrollable"># Scrollable</a></li>
           <li><a href="#sizing"># Sizing</a></li>
           <li><a href="#lightbox"># Lightbox</a></li>
+          <li><a href="#caveats"># Caveats</a></li>
         </ul>
       </div>
 
@@ -543,6 +544,30 @@
                       &lt;/div&gt;
                     &lt;/div&gt;
                   &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </figure>
+        </section>
+
+        <section>
+          <h2 id="caveats" class="jump"><a href="#caveats"># Caveats</a></h2>
+          <p>While no JavaScript is required to use modals, there are a few things to consider:</p>
+          <ul class="-disc">
+            <li>Modals cannot prevent the body or page from scrolling behind it, but ASH has a built-in helper. You can add/toggle the <code>noscroll</code> class on the body. This can be done with some JavaScript that will be called once the page is fully loaded:</li>
+          </ul>
+
+          <figure>
+            <div class="content --padding-0">
+              <pre class="--margin-0">
+                <code class="language-js">
+                  var modalToggles = document.querySelectorAll('.modal-toggle')
+
+                  for(var i=0; i&lt;modalToggles.length; i++) {
+                    modalToggles[i].addEventListener('change', function() {
+                      document.body.classList.toggle('noscroll')
+                    })
+                  }
                 </code>
               </pre>
             </div>

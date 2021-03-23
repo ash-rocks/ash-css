@@ -123,7 +123,7 @@
                 <label for="nav-toggle"><i class="icon lni lni-menu"></i></label>
                 <div class="brand">Brand</div>
                 <div class="group">
-                  <form style="width: 200px;">
+                  <form style="width: 190px;">
                     <div class="inputs">
                       <input type="text" class="--rounded-left-full" placeholder="search">
                       <button type="submit" class="addon --border-left-0 --rounded-right-full" aria-label="Search"><i class="lni lni-search-alt"></i></button>
@@ -161,7 +161,7 @@
                     &lt;label for=&quot;nav-toggle&quot;&gt;&lt;i class=&quot;icon lni lni-menu&quot;&gt;&lt;/i&gt;&lt;/label&gt;
                     &lt;div class=&quot;brand&quot;&gt;Brand&lt;/div&gt;
                     &lt;div class=&quot;group&quot;&gt;
-                      &lt;form style=&quot;width: 200px;&quot;&gt;
+                      &lt;form style=&quot;width: 190px;&quot;&gt;
                         &lt;div class=&quot;inputs&quot;&gt;
                           &lt;input type=&quot;text&quot; class=&quot;--rounded-left-full&quot; placeholder=&quot;search&quot;&gt;
                           &lt;button type=&quot;submit&quot; class=&quot;addon --border-left-0 --rounded-right-full&quot; aria-label=&quot;Search&quot;&gt;&lt;i class=&quot;lni lni-search-alt&quot;&gt;&lt;/i&gt;&lt;/button&gt;

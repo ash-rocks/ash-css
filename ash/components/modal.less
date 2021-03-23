@@ -1,3 +1,7 @@
+body.noscroll {
+  overflow: hidden;
+}
+
 .modal {
   background-color: rgba(43, 43, 43, 0.9);
   bottom: 0;
@@ -9,7 +13,7 @@
   top: 0;
   transition: all 100ms;
   visibility: hidden;
-  z-index: 600;
+  z-index: @z-index[8];
 
   > .overlay {
     bottom: 0;
@@ -29,7 +33,7 @@
     top: -20%;
     transition: all 100ms;
     width: 50%;
-    z-index: 600;
+    z-index: @z-index[8];
 
     > header {
       border-bottom: 1px solid @color[gray-lighter];

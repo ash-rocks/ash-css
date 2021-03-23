@@ -64,6 +64,14 @@
           el && el.scrollIntoView()
         }
       })
+
+      var modalToggles = document.querySelectorAll('.modal-toggle')
+
+      for(var i=0; i<modalToggles.length; i++) {
+        modalToggles[i].addEventListener('change', function() {
+          document.body.classList.toggle('noscroll')
+        })
+      }
     }
   }
 </script>
