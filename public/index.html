@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="/favicon.ico">
-    <%= process.env.NODE_ENV === 'production' ? '<link rel="preload" href="https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@0.2.0/dist/ash/ash.min.css" as="style">' : '' %>
+    <%= process.env.NODE_ENV === 'production' ? '<link href="https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@0.2.0/dist/ash/ash.min.css" rel="stylesheet">' : '' %>
     <%= process.env.NODE_ENV === 'production' ? '<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">' : '<link href="/vendor/lineicons/font-css/LineIcons.css" rel="stylesheet">' %>
     <title>ASH</title>
   </head>
