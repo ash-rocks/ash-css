@@ -1,4 +1,4 @@
-body.dark {
+html.dark {
   .chip {
     &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
       background-color: @color[black-lightest];
@@ -11,16 +11,13 @@ body.dark {
       }
     }
 
-    &.-warning {
-      &.-outline {
-        color: @color[gray-lightest];
-      }
+    &.-outline {
+      color: @color[gray-lightest];
     }
 
     &.-dark {
       &.-outline {
         border: 1px solid @color[black-light];
-        color: @color[gray-lightest];
       }
     }
   }

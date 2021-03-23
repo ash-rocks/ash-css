@@ -1,26 +1,28 @@
 pre {
-  background-color: @color[black-lighten];
+  background-color: @color[white-dark];
   border-radius: @radius;
-  color: @color[gray-lightest];
+  color: @color[gray-darker];
   display: block;
   font-family: @font-family[mono];
   margin: @margin[4] 0;
-  padding: 0 @margin[4];
+  padding: @padding[4];
   overflow-x: auto;
   white-space: normal;
 }
 
 code {
-  color: @color[red-lighten];
+  background-color: @color[white-dark];
+  color: @color[red-darken];
   font-family: @font-family[mono];
   line-height: inherit;
   margin: 0;
-  padding: 0;
+  padding: 0 @padding[1];
   white-space: pre;
 }
 
 pre code {
-  color: @color[gray-lightest];
+  color: @color[gray-darker];
+  padding: 0;
 
   .comment,
   .block-comment,
@@ -29,7 +31,7 @@ pre code {
   .cdata,
   .hljs-comment,
   .hljs-quote {
-    color: @color[gray-lighten];
+    color: @color[gray-darker];
   }
 
   .tag,
@@ -40,11 +42,11 @@ pre code {
   .hljs-section,
   .hljs-selector-tag,
   .hljs-subst {
-    color: @color[red-lighter];
+    color: @color[red-darken];
   }
 
   .punctuation {
-    color: @color[gray-lightest];
+    color: @color[gray-darker];
   }
 
   .selector,
@@ -55,7 +57,7 @@ pre code {
   .hljs-doctag,
   .hljs-formula,
   .hljs-keyword {
-    color: @color[purple-lightest];
+    color: @color[purple-darken];
   }
 
   .operator,
@@ -68,7 +70,7 @@ pre code {
   .hljs-selector-id,
   .hljs-symbol,
   .hljs-title {
-    color: @color[cyan-lightest];
+    color: @color[cyan-darken];
   }
 
   .string,
@@ -81,7 +83,7 @@ pre code {
   .hljs-meta-string,
   .hljs-regexp,
   .hljs-string {
-    color: @color[green-lightest];
+    color: @color[green-darken];
   }
 
   .property,
@@ -95,7 +97,7 @@ pre code {
   .hljs-template-variable,
   .hljs-type,
   .hljs-variable {
-    color: @color[yellow-lightest];
+    color: @color[yellow-darken];
   }
 
   .boolean,
@@ -105,6 +107,6 @@ pre code {
   .hljs-built_in,
   .hljs-attr,
   .hljs-number, {
-    color: @color[orange-lightest];
+    color: @color[orange-darker];
   }
 }

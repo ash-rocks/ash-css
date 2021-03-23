@@ -1,6 +1,6 @@
-body.dark {
+html.dark {
   nav {
-    background-color: @color[black-lighter];
+    background-color: @color[black];
 
     &.-transparent {
       background-color: transparent;
@@ -9,9 +9,9 @@ body.dark {
 }
 
 @media (max-width: @breakpoint[lg]) {
-  body.dark {
+  html.dark {
     nav .nav-toggle:checked ~ .group.-collapse {
-      background-color: @color[black-light];
+      background-color: @color[black];
     }
   }
 }

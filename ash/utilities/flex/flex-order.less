@@ -1,0 +1,15 @@
+each(@flex-order, {
+  .\--flex-@{key} {
+    order: @value !important;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@flex-order, .(@fvalue, @fkey, @fi) {
+      .\--@{bkey}-flex-@{fkey} {
+        order: @fvalue !important;
+      }
+    });
+  }
+});

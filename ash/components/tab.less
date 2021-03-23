@@ -14,7 +14,7 @@
 
   > label {
     background-color: @color[gray-lighter];
-    color: @color[gray-darken];
+    color: @color[black-lighter];
     cursor: pointer;
     display: flex;
     font-size: @font-size[sm];
@@ -23,14 +23,14 @@
 
     &:hover {
       background-color: @color[gray-lighter];
-      color: @color[gray-darker];
+      color: @color[black-lighten];
     }
   }
 
   > input:checked + label {
     background-color: @color[white];
-    border-bottom: 2px solid @color[blue-lighten];
-    color: @color[blue-lighten];
+    border-bottom: 2px solid @color[blue];
+    color: @color[blue];
     z-index: 200;
   }
 

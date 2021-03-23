@@ -2,132 +2,79 @@
   <div>
 
     <h1>Introduction</h1>
-    <div class="row">
-      <div class="column">
+
+    <div class="row --flex">
+
+      <div class="toc column -12 -xl-3 --flex-order-first --xl-flex-order-last --xl-self-start">
+        <h2 class="h6 --uppercase">On this page</h2>
+        <hr/>
         <ul>
-          <li><a href="#get"># Get ASH CSS</a></li>
-          <li><a href="#docs"># Running the docs</a></li>
-          <li><a href="#build"># Building from source</a></li>
-          <li><a href="#using"># Using ASH CSS</a></li>
-          <li><a href="#customize"># Customizing</a></li>
+          <li><a href="#meet"># Meet ASH</a></li>
+          <li><a href="#why"># Why ASH?</a></li>
         </ul>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="column -12">
-        <h2 id="get" class="jump"><a href="#get"># Get ASH CSS</a></h2>
-        <p>There are a few ways to get ASH CSS. You can download a compiled version, use our CDN, with NPM, or clone and build from the source.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <h3>Compiled CSS</h3>
-        <p>Download compiled CSS to use in your self-hosted project. This includes compiled and minified CSS files.</p>
-        <a href="https://github.com/ash-rocks/ash-css/releases" target="_blank" rel="noreferrer" class="button -primary">Download</a>
+      <div class="column -12 -xl-9 --flex-order-last --xl-flex-order-first">
 
-        <h3>CDN</h3>
-        <p>Use the code below to drop-in ASH CSS to your project from our CDN. The CDN will be cached, minified, and gzipped.</p>
-        <pre>
-          <code class="language-html">
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@0.1.4/dist/ash/ash.min.css&quot;&gt;
-          </code>
-        </pre>
+        <section>
+          <h2 id="meet" class="jump"><a href="#meet"># Meet ASH</a></h2>
+          <p>ASH (<strong>Accessibly Styled HTML</strong>) is an accessible CSS-only semantic framework with a built-in dark mode and a plethera of utilities. No JavaScript required! ASH makes it easy and quick to build elegant front ends.</p>
+          <p>ASH will always be modern and will evolve with the web. ASH works in all of the following modern browsers on desktop and mobile: </p>
+          <ul class="-circle">
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Microsoft Edge</li>
+            <li>Opera</li>
+            <li>Safari</li>
+            <li>Browsers build on the WebKit, Blink, or Gecko engines</li>
+          </ul>
+          <p><strong>Internet Explorer does not meet modern standards and will not be supported</strong>. It's 2021, time to switch...</p>
+        </section>
 
-        <h3>NPM</h3>
-        <p>ASH can be installed in a NodeJS project using NPM.</p>
-        <pre>
-          <code class="language-shell">
-npm install ash-css --save
-          </code>
-        </pre>
-        <pre>
-          <code class="language-js">
-import 'ash-css/dist/ash/ash.min.css';
-          </code>
-        </pre>
+        <section>
+          <h2 id="why" class="jump"><a href="#why"># Why ASH?</a></h2>
+          <p>ASH was created to be a classless, semantic, and accessible framework with built-in dark mode and utilities. Other popular frameworks are not classless or accessible and require you to add classes to a good part of your markup. You needn't worry using classless markup since you shouldn't mix multiple frameworks and since ASH works with any JavaScript library.</p>
 
-        <h3>Source</h3>
-        <p>Clone ASH CSS from source for when you want to contribute or customize to fit your needs. The source includes the docs you see here and can be used as a playground for customization.</p>
-        <pre class="--rounded">
-          <code class="language-shell">
-git clone https://github.com/ash-rocks/ash-css.git
-cd ash-css
-npm install
-          </code>
-        </pre>
-      </div>
-    </div>
+          <h3>Features</h3>
+          <ul class="-circle">
+            <li>Accessible color pallete with 91 colors</li>
+            <li>Classless and symantic markup</li>
+            <li>Dark mode that's easy on the eyes</li>
+            <li>Mix of flat, fluent, and material design</li>
+            <li>Mobile-first responsive flexed based layout</li>
+            <li>Unique OMU (<strong>Object Modifier Utility</strong>) class naming</li>
+            <li>Utilities with many responsive variants</li>
+            <li>No JavaScript and only 20-25kB when compressed</li>
+          </ul>
 
-    <div class="row">
-      <div class="column -12">
-        <h2 id="docs" class="jump"><a href="#docs"># Running the docs</a></h2>
-        <p>After you clone ASH CSS from source code you can run the docs locally. Local docs are totally offline and will be available at <a href="http://localhost:8080/">http://localhost:8080/</a></p>
-        <pre>
-          <code class="language-shell">
-cd ash-css
-npm run docs
-          </code>
-        </pre>
-      </div>
-    </div>
+          <h3>Object Modifier Utility</h3>
+          <p>Other generic frameworks are a great starting point but lack utilities and usually requires creating additional custom styling on top of them. Utility frameworks are also great but are very large with many unnecessary utilities for every single breakpoint and have no built-in default styling. ASH is a blend of these types of frameworks and is easy to customize and optimize.</p>
+          <p>ASH uses unique object class naming and overrides with modifiers and utilities. Objects, modifiers, and utilities are easily distinguishable in your markup and are easy to understand what they do. This OMU structure work in the following way:</p>
 
-    <div class="row">
-      <div class="column -12">
-        <h2 id="build" class="jump"><a href="#build"># Building from source</a></h2>
-        <p>After you clone ASH CSS from source code you can build your own customized version. All built files will be available in <code>dist/ash</code></p>
-        <pre>
-          <code class="language-shell">
-cd ash-css
-npm run build-ash
-          </code>
-        </pre>
-      </div>
-    </div>
+          <h4 class="--align-center">Specificity: object <small>-></small> -{modifier} <small>-></small> --{utility}</h4>
 
-    <div class="row">
-      <div class="column -12">
-        <h2 id="using" class="jump"><a href="#using"># Using ASH CSS</a></h2>
-        <p>After building from source, downloading the compiled release, or using the CDN just include the minified version in th head of your HTML. Use the below starting template:</p>
-        <pre>
-          <code class="language-html">
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
-    &lt;title&gt;YOUR APP&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/ash/css/or/cdn&quot;&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    ...
-  &lt;/body&gt;
-&lt;/html&gt;
-          </code>
-        </pre>
-        <p>You can use the included dark mode my adding the <code>dark</code> class to the <code>body</code> tag. This can be toggled by using JavaScript to add or remove the class from the body or by watching the <code>prefers-color-scheme</code> media query.</p>
-        <pre>
-          <code class="language-html">
-&lt;body class=&quot;dark&quot;&gt;
-...
-&lt;/body&gt;
-          </code>
-        </pre>
-      </div>
-    </div>
+          <dl>
+            <dt>Object</dt>
+            <dd>Either a classless element or classed component. Objects will have default styling and will be symantic where possible.</dd>
 
-    <div class="row">
-      <div class="column -12">
-        <h2 id="customize" class="jump"><a href="#customize"># Customizing</a></h2>
-        <p>ASH uses LESS makes it easy to change variables and to exclude unneeded elements, components, and utilities. Almost have of the total size of ASH will be from utilities. All files needed for customization will be found in the <code>ash</code> folder. The main LESS file is <code>ash/ash.less</code>. Take a look!</p>
-        <ul>
-          <li><code>ash/ash.less</code> is the main LESS file and has all the includes used to make up ASH CSS. Just comment out lines if they are not needed!</li>
-          <li><code>ash/base</code> includes base classes, resets, the grid system, and the base dark mode</li>
-          <li><code>ash/components</code> includes classed components</li>
-          <li><code>ash/elements</code> includes classless elements</li>
-          <li><code>ash/utilities</code> includes all the extra utilities to extend ASH CSS</li>
-          <li><code>ash/variables</code> includes all the variables used to build ASH CSS</li>
-        </ul>
+            <dt>Modifier</dt>
+            <dd>Class that can override the default styling or layout of an object, but is also unique to that object.</dd>
+
+            <dt>Utility</dt>
+            <dd>Class that can override any part of your markup, are global, and are not unique to any object.</dd>
+          </dl>
+
+          <pre>
+            <code class="language-html">
+              &lt;button class=&quot;-primary -large --uppercase&quot;&gt;ASH CSS&lt;/button&gt;
+              &lt;button class=&quot;btn btn-primary btn-lg text-uppercase&quot;&gt;Bootstrap&lt;/button&gt;
+              &lt;button class=&quot;button is-primary is-uppercase&quot;&gt;Bulma&lt;/button&gt;
+              &lt;button class=&quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded uppercase&quot;&gt;Tailwind&lt;/button&gt;
+            </code>
+          </pre>
+
+        </section>
+
       </div>
     </div>
 

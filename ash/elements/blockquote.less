@@ -1,0 +1,67 @@
+blockquote {
+  background-color: @color[white-dark];
+  border-left: 8px solid @color[gray-lighter];
+  display: block;
+  font-size: @font-size[xl];
+  margin: @margin[4] 0;
+  padding: @padding[4] @padding[4] @padding[4] @padding[16];
+  position: relative;
+  width: 100%;
+
+  &::before {
+    color: @color[gray-lighten];
+    content: "\201C";
+    font-family: @font-family[serif];
+    font-size: @font-size[6xl];
+    left: 1.25rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+
+  &[cite] {
+    &::after {
+      content: "- " attr(cite);
+      display: block;
+      font-size: @font-size[lg];
+      font-weight: @font-weight[semibold];
+      margin-top: @margin[4];
+    }
+  }
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  each(@swatches, {
+    &.-@{value} {
+      border-left: 8px solid @@value[border] ;
+
+      &::before {
+        color: @@value[border];
+      }
+    }
+  });
+}
+
+q {
+  &[cite] {
+    &::before {
+      content: "“";
+    }
+
+    &::after {
+      content: "” (" attr(cite) ") ";
+    }
+  }
+}
+
+cite {
+  font-style: italic;
+}

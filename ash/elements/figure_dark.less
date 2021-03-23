@@ -1,5 +1,5 @@
-body.dark {
-  figure:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+html.dark {
+  figure {
     background-color: @color[black-lighter];
     color: @color[gray-lightest];
 
@@ -9,6 +9,10 @@ body.dark {
 
     .actions {
       border-top: 1px solid @color[black-lighten];
+
+      a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+        color: @color[blue-lightest];
+      }
 
       a,
       button {
@@ -20,6 +24,65 @@ body.dark {
 
     > footer {
       border-top: 1px solid @color[black];
+    }
+
+    &.-outline {
+      background-color: transparent;
+      border: 1px solid @color[black-light];
+      box-shadow: none;
+    }
+
+    each(@swatches, {
+      &.-@{value},
+      &.-@{value}.-horizontal .row [class*="col-"] {
+        background-color: @@value[background];
+        color: @@value[color];
+
+        > header {
+          border-bottom: 1px solid @@value[active-border];
+        }
+
+        > footer {
+          border-top: 1px solid @@value[active-border];
+        }
+
+        &.-outline {
+          background-color: transparent;
+          border: 1px solid @@value[border];
+          box-shadow: none;
+          color: inherit;
+
+          .actions {
+            a,
+            button {
+              &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+                color: inherit;
+              }
+            }
+          }
+        }
+
+        .actions {
+          border-top: 1px solid @@value[active-border];
+
+          a,
+          button {
+            &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
+              color: @@value[color];
+            }
+
+            &:not(:last-child) {
+              border-right: 1px solid @@value[active-border];
+            }
+          }
+        }
+      }
+    });
+
+    &.-dark {
+      &.-outline {
+        border: 1px solid @color[black];
+      }
     }
   }
 

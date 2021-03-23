@@ -1,0 +1,29 @@
+html.dark {
+  .pagination {
+    > li {
+      .title {
+        color: @color[blue-lightest];
+      }
+
+      .subtitle {
+        color: @color[cyan-lighten];
+      }
+
+      a:not(.button):not(.link) {
+        color: @color[blue-lightest];
+
+        &:focus,
+        &:hover {
+          color: @color[blue-lighter];
+        }
+      }
+
+      &.-active {
+        a:not(.button) {
+          background-color: @primary[background];
+          color: @primary[color];
+        }
+      }
+    }
+  }
+}

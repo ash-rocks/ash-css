@@ -1,13 +1,13 @@
-body.dark {
+html.dark {
   details {
-    border: 1px solid @color[gray-darken];
+    border: 1px solid @color[black];
 
     > summary {
-      background-color: @color[black-lightest];
+      background-color: @color[black-light];
       color: @color[gray-lightest];
 
       &:hover {
-        background-color: @color[gray-darken];
+        background-color: @color[black];
       }
 
       .icon {
@@ -16,13 +16,13 @@ body.dark {
     }
 
     > .content {
-      background-color: @color[black-lighter];
+      background-color: @color[black-lighten];
     }
   }
 
   details[open] {
     > summary {
-      border-bottom: 1px solid @color[gray-darken];
+      border-bottom: 1px solid @color[black];
     }
   }
 }

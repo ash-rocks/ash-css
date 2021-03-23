@@ -29,7 +29,7 @@
       &.-outline {
         background-color: @color[transparent];
         border: 1px solid @@value[border];
-        color: if(@value = warning, @warning[color], @@value[background]);
+        color: if(@value = light, @color[white], @color[gray-darker]);
       }
     }
   });

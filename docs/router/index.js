@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -8,13 +7,23 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    meta: {layout: 'site'},
+    meta: { layout: 'site' },
     component: require('../views/Home.vue').default
   },
   {
     path: '/docs',
     name: 'introduction',
     component: () => import(/* webpackChunkName: "introduction" */ '../views/docs/Intro.vue')
+  },
+  {
+    path: '/docs/download',
+    name: 'download',
+    component: () => import(/* webpackChunkName: "download" */ '../views/docs/Download.vue')
+  },
+  {
+    path: '/docs/customize',
+    name: 'customize',
+    component: () => import(/* webpackChunkName: "customize" */ '../views/docs/Customize.vue')
   },
   {
     path: '/docs/color',
@@ -26,12 +35,22 @@ const routes = [
     name: 'grid',
     component: () => import(/* webpackChunkName: "grid" */ '../views/docs/Grid.vue')
   },
+  {
+    path: '/docs/typography',
+    name: 'typography',
+    component: () => import(/* webpackChunkName: "typography" */ '../views/docs/Typography.vue')
+  },
 
   // ELEMENTS
   {
     path: '/docs/elements/aside',
     name: 'elements.aside',
     component: () => import(/* webpackChunkName: "aside" */ '../views/docs/elements/Aside.vue')
+  },
+  {
+    path: '/docs/elements/blockquote',
+    name: 'elements.blockquote',
+    component: () => import(/* webpackChunkName: "blockquote" */ '../views/docs/elements/Blockquote.vue')
   },
   {
     path: '/docs/elements/button',
@@ -54,9 +73,19 @@ const routes = [
     component: () => import(/* webpackChunkName: "form" */ '../views/docs/elements/Form.vue')
   },
   {
+    path: '/docs/elements/hr',
+    name: 'elements.hr',
+    component: () => import(/* webpackChunkName: "hr" */ '../views/docs/elements/HR.vue')
+  },
+  {
     path: '/docs/elements/list',
     name: 'elements.list',
     component: () => import(/* webpackChunkName: "list" */ '../views/docs/elements/List.vue')
+  },
+  {
+    path: '/docs/elements/meter',
+    name: 'elements.meter',
+    component: () => import(/* webpackChunkName: "meter" */ '../views/docs/elements/Meter.vue')
   },
   {
     path: '/docs/elements/nav',
@@ -158,9 +187,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "display" */ '../views/docs/utilities/Display.vue')
   },
   {
-    path: '/docs/utilities/height',
-    name: 'utilities.height',
-    component: () => import(/* webpackChunkName: "height" */ '../views/docs/utilities/Height.vue')
+    path: '/docs/utilities/flex',
+    name: 'utilities.flex',
+    component: () => import(/* webpackChunkName: "flex" */ '../views/docs/utilities/Flex.vue')
   },
   {
     path: '/docs/utilities/margin',

@@ -7,6 +7,7 @@ progress {
   display: inline-block;
   height: @margin[2];
   margin-top: @margin[4];
+  overflow: hidden;
   position: relative;
   vertical-align: baseline;
   width: 100%;
@@ -43,6 +44,7 @@ progress {
   &:indeterminate {
     animation: progress-indeterminate 1.5s linear infinite;
     background: @color[gray-lighter] linear-gradient(to right, @color[gray] 30%, @color[gray-lighter] 30%) top left / 150% 150% no-repeat;
+    border-radius: @radius;
 
     &::-moz-progress-bar {
       background-color: transparent;

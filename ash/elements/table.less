@@ -53,7 +53,7 @@ table {
   }
 
   &.-dark {
-    background-color: @dark[background];
+    background-color: @color[gray-darkest];
     color: @dark[color];
 
     th,
@@ -81,7 +81,7 @@ table {
     &.-striped {
       tbody {
         tr:nth-of-type(odd) {
-          background-color: @color[gray-darken];
+          background-color: @color[gray-darker];
         }
       }
     }
@@ -90,7 +90,7 @@ table {
       tbody {
         tr {
           &:hover {
-            background-color: @color[gray-darkest];
+            background-color: @color[black-lighten];
           }
         }
       }

@@ -1,13 +1,13 @@
-body.dark {
+html.dark {
   aside {
-    background-color: @color[black-lighter];
+    background-color: @color[black-light];
     color: @color[gray-lightest];
 
     .link {
-      color: @color[gray-lightest];
+      color: @color[gray-lighter];
 
       &:hover {
-        color: @color[blue];
+        color: @color[blue-lighten];
       }
     }
 
@@ -20,7 +20,7 @@ body.dark {
 
         &:hover {
           background-color: @color[transparent];
-          color: @color[blue];
+          color: @color[blue-lighten];
         }
 
         .icon {
@@ -28,11 +28,13 @@ body.dark {
         }
       }
 
-      .link {
-        color: @color[gray-lightest];
+      > .content {
+        background-color: @color[black-light];
+      }
 
+      .link {
         &:hover {
-          color: @color[blue];
+          color: @color[blue-lighten];
         }
       }
     }

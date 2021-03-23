@@ -1,0 +1,11 @@
+html.dark {
+  hr {
+    background-color: @color[gray-darker];
+
+    each(@swatches, {
+      &.-@{value} {
+        background-color: @@value[background];
+      }
+    });
+  }
+}

@@ -1,0 +1,15 @@
+each(@flex-shrink, {
+  .\--flex-@{value} {
+    flex-shrink: @value !important;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@flex-shrink, .(@fvalue, @fkey, @fi) {
+      .\--@{bkey}-flex-@{fvalue} {
+        flex-shrink: @fvalue !important;
+      }
+    });
+  }
+});

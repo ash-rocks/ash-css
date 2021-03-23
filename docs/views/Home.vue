@@ -2,28 +2,24 @@
   <div>
 
     <vue-headful
-      title="ASH CSS - Semantic CSS-only framework"
-      description="Modern CSS only semantic framework with a built-in dark mode. No JavaScript required!"
+      title="ASH CSS - Accessible CSS-only framework"
+      description="Accessible CSS only semantic framework with a built-in dark mode. No JavaScript required!"
     />
 
-    <section class="--padding-y-16" id="hero">
+    <section id="hero" class="">
       <div class="container">
         <div class="row">
-          <div class="column -md-6 --margin-bottom-8">
-            <h1 class="--size-4xl">ASH CSS</h1>
-            <h2>Modern CSS-only semantic framework with a built-in dark mode. No JavaScript required!</h2>
-            <p>ASH is a responsive flex-based framework using only CSS. ASH combines classless semantic elements with classed components to build awesome front-ends. ASH requires no JavaScript and weighs in at ~20kb gzipped!</p>
-            <router-link :to="{ name: 'introduction'}" class="button -primary">Get Started</router-link>
-            <a href="https://github.com/ash-rocks/ash-css/releases" target="_blank" rel="noreferrer" class="button -dark">Download</a>
-
-            <label class="switch -dark">
-              <input type="checkbox" id="dark" @click="toggleDark">
-              <span class="toggle"></span> Dark Mode
-            </label>
-          </div>
-          <div class="column -md-6">
-            <img alt="Camp" src="/images/camp-light.svg" id="camp-light">
-            <img alt="Camp" src="/images/camp-dark.svg" id="camp-dark">
+          <div class="column -md-6 -offset-md-3 --align-center">
+            <h1 class="--size-6xl --margin-0"><span class="--color-orange">A</span><span class="">SH</span> <span class="--weight-thin">CSS</span></h1>
+            <h2>Accessible CSS-only semantic framework with a built-in dark mode and a plethera of utilities. No JavaScript required!</h2>
+            <router-link :to="{ name: 'introduction'}" class="button -primary -medium --rounded-full --padding-x-10">Get Started</router-link>
+            <div class="--weight-medium">
+              <span class="--padding-right-3">Light</span>
+              <label class="switch -light --margin-right-0">
+                <input type="checkbox" id="dark" @click="toggleDark">
+                <span class="toggle"></span> Dark
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -38,15 +34,15 @@
         </div>
         <div class="row">
           <div class="column -md-4 --align-center">
-            <h3 class="--size-2xl --uppercase --spacing-widest --color-pink">Modern</h3>
-            <p>The latest widely supported HTML and CSS are used for modern browsers and elements are classless. As the web evolves so will ASH!</p>
+            <h3 class="--size-2xl --uppercase --spacing-widest --color-orange">Modern</h3>
+            <p>The latest widely supported HTML and CSS are used for modern browsers along with classless elements. As the web evolves so will ASH!</p>
           </div>
           <div class="column -md-4 --align-center">
-            <h3 class="--size-2xl --uppercase --spacing-widest --color-pink">Hackable</h3>
-            <p>Easily change variables, exclude components, or use our extensive list of utilities to make ASH yours. Hack away you awesome beast.</p>
+            <h3 class="--size-2xl --uppercase --spacing-widest --color-orange">Accessible</h3>
+            <p>ASH is fully WCAG AA compliant for colors and contrast. We believe the web should be accessible to everyone. Easy on the eyes!</p>
           </div>
           <div class="column -md-4 --align-center">
-            <h3 class="--size-2xl --uppercase --spacing-widest --color-pink">Open</h3>
+            <h3 class="--size-2xl --uppercase --spacing-widest --color-orange">Open</h3>
             <p>ASH is open-source and will always be! Come join our community on GitHub and help us improve and evolve. Open-source is life.</p>
           </div>
         </div>
@@ -63,8 +59,8 @@
         </div>
         <div class="row">
           <div class="column -12 --align-center">
-            <a href="https://github.com/ash-rocks/ash-css" target="_blank" rel="noreferrer" class="button -light"><i class="fab fa-github"></i> Contribute</a>
-            <a href="https://github.com/sponsors/skuIIs" target="_blank" rel="noreferrer" class="button -light"><span class="--color-pink"><i class="far fa-heart"></i></span> Sponsor</a>
+            <a href="https://github.com/ash-rocks/ash-css" target="_blank" rel="noreferrer" class="button -light"><i class="lni lni-github-original"></i> Contribute</a>
+            <a href="https://github.com/sponsors/skuIIs" target="_blank" rel="noreferrer" class="button -light"><span class="--color-pink"><i class="lni lni-heart"></i></span> Sponsor</a>
           </div>
         </div>
       </div>
@@ -74,12 +70,12 @@
       <div class="container">
         <div class="row --margin-0">
           <div class="column -6">
-            <div class="--padding-y-4">@{{ copyright }} ASH Rocks Authors</div>
+            <div class="--padding-y-4">@{{ copyright }} ASH Rocks Authors. Artwork by pikisuperstar/Freepik</div>
           </div>
           <div class="column -6 --padding-y-2 --align-right">
-            <a href="https://github.com/ash-rocks/ash-css" target="_blank" rel="noreferrer" class="--color-white --size-2xl" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/ash_css" target="_blank" rel="noreferrer" class="--color-white --size-2xl --margin-left-6" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://discord.gg/zJpX85f" target="_blank" rel="noreferrer" class="--color-white --size-2xl --margin-left-6" title="Discord" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://github.com/ash-rocks/ash-css" target="_blank" rel="noreferrer" class="--color-white --size-2xl" title="GitHub" aria-label="GitHub"><i class="lni lni-github-original"></i></a>
+            <a href="https://twitter.com/ash_css" target="_blank" rel="noreferrer" class="--color-white --size-2xl --margin-left-6" title="Twitter" aria-label="Twitter"><i class="lni lni-twitter-original"></i></a>
+            <a href="https://discord.gg/zJpX85f" target="_blank" rel="noreferrer" class="--color-white --size-2xl --margin-left-6" title="Discord" aria-label="Discord"><i class="lni lni-discord"></i></a>
           </div>
         </div>
       </div>
@@ -90,14 +86,16 @@
 
 <style lang="less">
   #hero {
-    background-color: #e1e1e1;
+    background: #e1e1e1 url('/images/camp.svg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
   }
 
   #camp-dark {
     display: none;
   }
-
-  body.dark {
+  html.dark {
     #hero {
       background-color: #1e1e1e;
     }
@@ -128,7 +126,7 @@
     methods: {
       toggleDark: function () {
         var dark = document.getElementById('dark')
-        document.body.classList.toggle('dark')
+        document.documentElement.classList.toggle('dark')
 
         if (dark.checked) {
           localStorage.setItem('dark', true)

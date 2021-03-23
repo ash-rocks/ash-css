@@ -1,0 +1,20 @@
+html.dark {
+  blockquote {
+    background-color: @color[black-light];
+    border-left: 8px solid @color[black-lightest];
+
+    &::before {
+      color: @color[black-lightest];
+    }
+
+    each(@swatches, {
+      &.-@{value} {
+        border-left: 8px solid @@value[border] ;
+
+        &::before {
+          color: @@value[border];
+        }
+      }
+    });
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "ash-css",
-  "description": "Modern CSS-only semantic framework with a built-in dark mode. No JavaScript required!",
-  "version": "0.1.4",
+  "description": "Accessible CSS-only semantic framework with a built-in dark mode. No JavaScript required!",
+  "version": "0.2.0",
   "keywords": [
     "css",
     "less",
@@ -31,10 +31,11 @@
   "scripts": {
     "docs": "vue-cli-service serve",
     "build-docs": "vue-cli-service build",
-    "build-ash": "lessc ./ash/ash.less ./dist/ash/ash.css --source-map=./dist/ash/ash.css.map && lessc ./ash/ash.less ./dist/ash/ash.min.css --clean-css=\"--s1\"",
+    "build-ash": "lessc ./ash/ash.less ./dist/ash/ash.css --source-map=./dist/ash/ash.css.map && lessc ./ash/ash.less ./dist/ash/ash.min.css --clean-css=\"--s1 advanced\"",
     "build-all": "npm run build-ash && npm run build-docs"
   },
   "dependencies": {
+    "clipboard": "^2.0.6",
     "colorable": "^1.0.5",
     "core-js": "^3.8.3",
     "fuse.js": "^5.2.3",

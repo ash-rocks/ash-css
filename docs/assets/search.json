@@ -18,6 +18,14 @@
     }
   },
   {
+    "title": "Grid Breakpoints",
+    "page": "Grid",
+    "route": {
+      "name": "grid",
+      "hash": "#breakpoints"
+    }
+  },
+  {
     "title": "Grid Containers",
     "page": "Grid",
     "route": {
@@ -72,6 +80,23 @@
     "route": {
       "name": "elements.aside",
       "hash": "#details"
+    }
+  },
+
+  {
+    "title": "Blockquotes",
+    "page": "Blockquotes",
+    "route": {
+      "name": "elements.blockquote",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Blockquote Color",
+    "page": "Buttons",
+    "route": {
+      "name": "elements.blockquote",
+      "hash": "#colors"
     }
   },
 
@@ -212,16 +237,24 @@
     "tags": ["responsive", "grid"],
     "page": "Figures",
     "route": {
-      "name": "elements.horizontal",
-      "hash": "#actions"
+      "name": "elements.figure",
+      "hash": "#horizontal"
     }
   },
   {
     "title": "Figure Colors",
     "page": "Figures",
     "route": {
-      "name": "elements.horizontal",
+      "name": "elements.figure",
       "hash": "#colors"
+    }
+  },
+  {
+    "title": "Outlined Figure",
+    "page": "Figures",
+    "route": {
+      "name": "elements.figure",
+      "hash": "#outline"
     }
   },
 
@@ -339,6 +372,34 @@
   },
 
   {
+    "title": "HR",
+    "tags": ["horizontal", "rule"],
+    "page": "Horizontal Rules",
+    "route": {
+      "name": "elements.hr",
+      "hash": ""
+    }
+  },
+  {
+    "title": "HR Colors",
+    "tags": ["horizontal", "rule"],
+    "page": "Horizontal Rules",
+    "route": {
+      "name": "elements.hr",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "HR Sizing",
+    "tags": ["horizontal", "rule"],
+    "page": "Horizontal Rules",
+    "route": {
+      "name": "elements.hr",
+      "hash": "#sizing"
+    }
+  },
+
+  {
     "title": "Lists",
     "page": "Lists",
     "route": {
@@ -368,6 +429,39 @@
     "route": {
       "name": "elements.list",
       "hash": "#unordered"
+    }
+  },
+
+  {
+    "title": "Meters",
+    "page": "Meters",
+    "route": {
+      "name": "elements.meter",
+      "hash": ""
+    }
+  },
+  {
+    "title": "Meter Colors",
+    "page": "Meters",
+    "route": {
+      "name": "elements.meter",
+      "hash": "#colors"
+    }
+  },
+  {
+    "title": "Meter Sizing",
+    "page": "Meters",
+    "route": {
+      "name": "elements.meter",
+      "hash": "#sizing"
+    }
+  },
+  {
+    "title": "Inverse Meter",
+    "page": "Meters",
+    "route": {
+      "name": "elements.meter",
+      "hash": "#inverse"
     }
   },
 
@@ -729,11 +823,11 @@
     }
   },
   {
-    "title": "Sidebar",
+    "title": "Aside",
     "page": "Off-Canvas",
     "route": {
       "name": "components.off-canvas",
-      "hash": "#sidebar"
+      "hash": "#aside"
     }
   },
   {
@@ -938,11 +1032,107 @@
   },
 
   {
-    "title": "Height Utility",
-    "page": "Height Utility",
+    "title": "Flex Utility",
+    "page": "Flex Utility",
     "route": {
-      "name": "utilities.height",
+      "name": "utilities.flex",
       "hash": ""
+    }
+  },
+  {
+    "title": "Flex Direction",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#direction"
+    }
+  },
+  {
+    "title": "Flex Grow",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#grow"
+    }
+  },
+  {
+    "title": "Flex Order",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#order"
+    }
+  },
+  {
+    "title": "Flex Shrink",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#shrink"
+    }
+  },
+  {
+    "title": "Flex Wrap",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#wrap"
+    }
+  },
+  {
+    "title": "Alignment Utility",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#alignment"
+    }
+  },
+  {
+    "title": "Align Content",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#align-content"
+    }
+  },
+  {
+    "title": "Align Items",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#align-items"
+    }
+  },
+  {
+    "title": "Align Self",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#align-self"
+    }
+  },
+  {
+    "title": "Justify Content",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#justify-content"
+    }
+  },
+  {
+    "title": "Justify Items",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#justify-items"
+    }
+  },
+  {
+    "title": "Justify Self",
+    "page": "Flex Utility",
+    "route": {
+      "name": "utilities.flex",
+      "hash": "#justify-self"
     }
   },
 

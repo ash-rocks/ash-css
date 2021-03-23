@@ -1,23 +1,23 @@
-body.dark {
+html.dark {
   .modal:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
     > .dialog {
-      background-color: @color[black-lighter];
+      background-color: @color[black-light];
 
       > header {
-        border-bottom: 1px solid @color[black-lighten];
+        border-bottom: 1px solid @color[black];
       }
 
       > footer {
-        border-top: 1px solid @color[black-lighten];
+        border-top: 1px solid @color[black];
       }
 
       > .actions {
-        border-top: 1px solid @color[black-lighten];
+        border-top: 1px solid @color[black];
 
         a,
         button {
           &:not(:last-child) {
-            border-right: 1px solid @color[black-lighten];
+            border-right: 1px solid @color[black];
           }
         }
       }

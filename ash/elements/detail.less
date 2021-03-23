@@ -1,5 +1,5 @@
 details {
-  border: 1px solid @color[gray-lighter];
+  border: 1px solid @color[gray-lightest];
   border-radius: @radius;
   margin-bottom: @margin[4];
   width: 100%;
@@ -7,7 +7,7 @@ details {
   overflow: hidden;
 
   > summary {
-    background-color: @color[gray-lightest];
+    background-color: @color[white-dark];
     color: @color[gray-darkest];
     cursor: pointer;
     display: block;
@@ -19,7 +19,7 @@ details {
     text-transform: uppercase;
     width: 100%;
 
-    &::-webkit-details-marker {
+    &::marker {
       display: none;
     }
 
@@ -31,17 +31,18 @@ details {
     }
 
     &:hover {
-      background-color: @color[gray-lighter];
+      background-color: @color[gray-lightest];
     }
   }
 
   > .content {
+    border-radius: 0 !important;
     padding: @padding[4];
   }
 
   &[open] {
     > summary {
-      border-bottom: 1px solid @color[gray-lighter];
+      border-bottom: 1px solid @color[gray-lightest];
 
       > .icon {
         transform: rotate(90deg);

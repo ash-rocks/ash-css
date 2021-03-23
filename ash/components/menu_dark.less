@@ -1,4 +1,4 @@
-body.dark {
+html.dark {
   .menu {
     background-color: @color[black-lighter];
 
@@ -7,8 +7,8 @@ body.dark {
     }
 
     li {
-      & > a {
-        color: inherit;
+      & > a:not(.button):not(.link) {
+        color: @color[gray-lightest];
 
         &:active,
         &.active,

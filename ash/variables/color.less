@@ -137,15 +137,15 @@
 }
 
 @success: {
-  background: @color[green];
-  border: @color[green];
-  color: @color[white];
-  active-background: @color[green-darken];
-  active-border: @color[green-darken];
-  active-color: @color[green-darken];
+  background: @color[green-lighten];
+  border: @color[green-lighten];
+  color: @color[black-lighter];
+  active-background: @color[green];
+  active-border: @color[green];
+  active-color: @color[black-lighter];
   disabled-background: @color[green-lightest];
   disabled-border: @color[green-lightest];
-  disabled-color: @color[gray-lightest];
+  disabled-color: @color[gray-lighten];
 }
 
 @warning: {
@@ -163,13 +163,13 @@
 @danger: {
   background: @color[red-lighten];
   border: @color[red-lighten];
-  color: @color[white];
+  color: @color[black];
   active-background: @color[red];
   active-border: @color[red];
-  active-color: @color[red];
+  active-color: @color[black];
   disabled-background: @color[red-lightest];
   disabled-border: @color[red-lightest];
-  disabled-color: @color[gray-lightest];
+  disabled-color: @color[gray-lighten];
 }
 
 @dark: {

@@ -11,3 +11,21 @@ each(@overflows, {
     overflow: @value !important;
   }
 });
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@overflows, .(@ovalue, @okey, @oi) {
+      .\--@{bkey}-overflow-@{ovalue} {
+        overflow: @ovalue !important;
+      }
+
+      .\--@{bkey}-overflow-x-@{ovalue} {
+        overflow: @ovalue !important;
+      }
+
+      .\--@{bkey}-overflow-y-@{ovalue} {
+        overflow: @ovalue !important;
+      }
+    });
+  }
+});

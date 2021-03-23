@@ -1,0 +1,134 @@
+meter {
+  appearence: none;
+  background: none;
+  background-color: @color[gray-lighter];
+  border: none;
+  border-radius: @radius;
+  display: inline-block;
+  height: @margin[2];
+  margin-top: @margin[4];
+  overflow: hidden;
+  position: relative;
+  vertical-align: baseline;
+  width: 100%;
+
+  &.-small {
+    height: @margin[1];
+
+    &::-webkit-meter-bar {
+      height: @margin[1];
+    }
+
+    &::-moz-meter-bar {
+      height: @margin[1];
+    }
+  }
+
+  &.-normal {
+    height: @margin[2];
+
+    &::-webkit-meter-bar {
+      height: @margin[2];
+    }
+
+    &::-moz-meter-bar {
+      height: @margin[2];
+    }
+  }
+
+  &.-medium {
+    height: @margin[3];
+
+    &::-webkit-meter-bar {
+      height: @margin[3];
+    }
+
+    &::-moz-meter-bar {
+      height: @margin[3];
+    }
+  }
+
+  &.-large {
+    height: @margin[4];
+
+    &::-webkit-meter-bar {
+      height: @margin[4];
+    }
+
+    &::-moz-meter-bar {
+      height: @margin[4];
+    }
+  }
+
+  &::-webkit-meter-bar {
+    background: none;
+    background-color: @color[gray-lighter];
+    border: none;
+    height: @margin[2];
+  }
+
+  &::-moz-meter-bar {
+    background: none;
+    background-color: @color[gray-lighter];
+    border: none;
+    height: @margin[2];
+  }
+
+  &::-webkit-meter-optimum-value {
+    background-color: @success[background];
+  }
+
+  &::-webkit-meter-suboptimum-value {
+    background-color: @warning[background];
+  }
+
+  &::-webkit-meter-even-less-good-value {
+    background-color: @danger[background];
+  }
+
+  &:-moz-meter-optimum::-moz-meter-bar {
+    background-color: @success[background];
+  }
+
+  &:-moz-meter-sub-optimum::-moz-meter-bar {
+    background-color: @warning[background];
+  }
+
+  &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background-color: @danger[background];
+  }
+
+  &.-inverse {
+    &::-webkit-meter-bar {
+      background-color: @color[gray-lighter];
+    }
+
+    &::-webkit-meter-optimum-value {
+      background-color: @danger[background];
+    }
+
+    &::-webkit-meter-suboptimum-value {
+      background-color: @warning[background];
+    }
+
+    &::-webkit-meter-even-less-good-value {
+      background-color: @success[background];
+    }
+
+    &::-moz-meter-bar {
+      background-color: @color[gray-lighter];
+    }
+
+    &:-moz-meter-optimum::-moz-meter-bar {
+      background-color: @danger[background];
+    }
+
+    &:-moz-meter-sub-optimum::-moz-meter-bar {
+      background-color: @warning[background];
+    }
+
+    &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+      background-color: @success[background];
+    }
+  }
+}

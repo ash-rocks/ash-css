@@ -10,26 +10,26 @@
     left: @margin[4];
     position: fixed;
     top: @margin[5];
-    z-index: 600;
+    z-index: @z-index[7];
   }
 
   > nav {
     padding-left: @padding[8];
     position: fixed;
     width: 100%;
-    z-index: 500;
+    z-index: @z-index[6];
   }
 
   > aside {
     bottom: 0;
     left: 0;
     margin-top: 4rem;
-    min-width: 12rem;
+    min-width: 16rem;
     position: fixed;
     top: 0;
     transform: translateX(-100%);
     transition: transform 100ms;
-    z-index: 400;
+    z-index: @z-index[5];
 
     .links ul li label {
       display: block;
@@ -40,10 +40,10 @@
     }
 
     .dropdown {
-      max-width: 160px;
+      width: 100%;
 
       > .content {
-        min-width: 160px;
+        width: 100%;
       }
     }
   }
@@ -89,7 +89,7 @@
 
     ~ .overlay {
       display: block;
-      z-index: 100;
+      z-index: @z-index[1];
     }
 
     ~ .content {
@@ -106,6 +106,16 @@
   visibility: hidden;
 }
 
+html.dark .off-canvas {
+  > aside {
+    details {
+      > .content {
+        background-color: @color[black-light];
+      }
+    }
+  }
+}
+
 @media (min-width: @breakpoint[xl]) {
   .off-canvas {
     &.show {
@@ -113,18 +123,18 @@
         padding-left: @padding[8];
         position: fixed;
         width: 100%;
-        z-index: 500;
+        z-index: @z-index[6];
       }
 
       > .content {
-        padding-left: 12rem;
+        padding-left: 16rem;
 
         > .container {
           margin-top: 5rem;
 
           .alert.-fixed {
-            left: 12rem;
-            width: calc(100% - 12rem);
+            left: 16rem;
+            width: calc(100% - 16rem);
 
             &.-top {
               top: 64px;

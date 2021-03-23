@@ -1,4 +1,4 @@
-body.dark {
+html.dark {
   input[type="button"],
   input[type="reset"],
   input[type="submit"],
@@ -7,23 +7,24 @@ body.dark {
     &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
       background-color: @color[black-lightest];
       border: 1px solid @color[black-lightest];
-      color: @color[gray-lighten];
+      color: @color[white];
 
       &:hover {
         background-color: @color[gray-darkest];
         border: 1px solid @color[gray-darkest];
-        color: @color[gray-lighten];
+        color: @color[white-dark];
         text-decoration: none;
       }
 
       &.-outline {
-        background-color: @color[transparent];
-        border: 1px solid @color[gray-darker];
+        background-color: transparent;
+        border: 1px solid @color[gray-darken];
+        color: @color[gray-lighter];
 
         &:hover {
-          background-color: @color[transparent];
-          border: 1px solid @color[gray-darkest];
-          color: @color[gray];
+          background-color: transparent;
+          border: 1px solid @color[gray-darker];
+          color: @color[gray-lighten];
         }
       }
 
@@ -34,24 +35,19 @@ body.dark {
       }
     }
 
-    &.-warning {
-      &.-outline {
-        color: @color[gray-lighten];
+    &.-outline {
+      color: @color[gray-lighter];
 
-        &:hover {
-          color: @color[gray];
-        }
+      &:hover {
+        color: @color[gray-lighten];
       }
     }
 
     &.-dark {
       &.-outline {
-        background-color: transparent;
         border: 1px solid @color[black-light];
-        color: @color[gray-lighten];
 
         &:hover {
-          background-color: transparent;
           border: 1px solid @color[black];
         }
       }

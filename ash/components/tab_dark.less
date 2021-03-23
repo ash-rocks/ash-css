@@ -1,21 +1,21 @@
-body.dark {
+html.dark {
   .tabs {
     background-color: @color[black-lighten];
 
     > label {
       background-color: @color[black-lighten];
-      color: @color[gray-darken];
+      color: @color[gray-lighten];
 
       &:hover {
         background-color: @color[black-lighten];
-        color: @color[gray-darker];
+        color: @color[gray];
       }
     }
 
     > input:checked + label {
       background-color: @color[black-lighter];
-      border-bottom: 2px solid @color[blue-lighten];
-      color: @color[blue-lighten];
+      border-bottom: 2px solid @color[blue-lightest];
+      color: @color[blue-lightest];
     }
 
     > .content {

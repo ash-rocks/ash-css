@@ -1,0 +1,15 @@
+each(@flex-direction, {
+  .\--flex-@{value} {
+    flex-direction: @value !important;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@flex-direction, .(@fvalue, @fkey, @fi) {
+      .\--@{bkey}-flex-@{fvalue} {
+        flex-direction: @fvalue !important;
+      }
+    });
+  }
+});

@@ -67,7 +67,7 @@ button,
       &.-outline {
         background-color: @color[transparent];
         border: 1px solid @@value[border];
-        color: if(@value = warning, @warning[color], @@value[border]);
+        color: if(@value = success or @value = warning or @value = danger, @warning[color], @@value[border]);
 
         &:hover {
           background-color: @color[transparent];

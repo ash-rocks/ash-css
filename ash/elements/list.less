@@ -13,6 +13,10 @@ ul ul {
   margin: 0;
 }
 
+dl dt {
+  font-weight: @font-weight[bold];
+}
+
 ol,
 ul {
   list-style: none;
@@ -26,6 +30,10 @@ ul {
 
     li {
       display: inline-block;
+
+      &::before {
+        content: "\200B";
+      }
     }
   }
 }

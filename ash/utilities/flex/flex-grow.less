@@ -1,0 +1,15 @@
+each(@flex-grow, {
+  .\--flex-@{key} {
+    flex-grow: @value !important;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@flex-grow, .(@fvalue, @fkey, @fi) {
+      .\--@{bkey}-flex-@{fkey} {
+        flex-grow: @fvalue !important;
+      }
+    });
+  }
+});

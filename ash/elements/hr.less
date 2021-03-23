@@ -1,0 +1,21 @@
+hr {
+  background-color: @color[gray-lighter];
+
+  &.-normal {
+    height: 1px;
+  }
+
+  &.-medium {
+    height: 0.5rem;
+  }
+
+  &.-large {
+    height: 1rem;
+  }
+
+  each(@swatches, {
+    &.-@{value} {
+      background-color: @@value[background];
+    }
+  });
+}

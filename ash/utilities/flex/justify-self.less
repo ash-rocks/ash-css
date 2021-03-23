@@ -1,0 +1,15 @@
+each(@justify-self, {
+  .\--justify-self-@{value} {
+    justify-self: @value !important;
+  }
+});
+
+each(@breakpoint, .(@bvalue, @bkey, @bi) {
+  @media (min-width: @bvalue) {
+    each(@justify-self, .(@fvalue, @fkey, @fi) {
+      .\--@{bkey}-justify-self-@{fvalue} {
+        justify-self: @fvalue !important;
+      }
+    });
+  }
+});
