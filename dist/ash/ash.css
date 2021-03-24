@@ -1,5 +1,5 @@
 /*!
- * Ash CSS v0.2.1 (https://ashcss.rocks/)
+ * Ash CSS v0.2.2 (https://ashcss.rocks/)
  * Copyright 2021 ASH Rocks Authors
  * Licensed under MIT (https://github.com/ash-rocks/ash-css/blob/master/LICENSE)
  */
@@ -1104,6 +1104,7 @@ button,
   padding: 0.25rem 1rem;
   text-decoration: none;
   text-transform: none;
+  user-select: none;
   width: auto;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -1781,6 +1782,7 @@ details > summary {
   outline: none;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
+  user-select: none;
   width: 100%;
 }
 details > summary::marker {
@@ -2676,6 +2678,7 @@ label.switch {
   min-height: 1.5rem;
   padding-left: 1.5rem;
   position: relative;
+  user-select: none;
 }
 label.checkbox.-block,
 label.radio.-block,

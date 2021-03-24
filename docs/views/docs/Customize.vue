@@ -44,7 +44,7 @@
 
         <section>
           <h2 id="utilities" class="jump"><a href="#utilities"># Utilities</a></h2>
-          <p>You can customize your layout and elements by using the plethera of utilities. All utilities are used by adding the <code>--{utility}</code> class to your elements and some even have responsive versions available by using <code>---{breakpoint}-{utility}</code>. Utilities are broken up by feature and are located in <code>/ash/utilities</code> with the following file structure:</p>
+          <p>You can customize your layout and elements by using the plethora of utilities. All utilities are used by adding the <code>--{utility}</code> class to your elements and some even have responsive versions available by using <code>---{breakpoint}-{utility}</code>. Utilities are broken up by feature and are located in <code>/ash/utilities</code> with the following file structure:</p>
 
           <ul class="-circle">
             <li><code>background/</code>

@@ -11,7 +11,7 @@
         <div class="row">
           <div class="column -md-6 -offset-md-3 --align-center">
             <h1 class="--size-6xl --margin-0"><span class="--color-orange">A</span><span class="">SH</span> <span class="--weight-thin">CSS</span></h1>
-            <h2>Accessible CSS-only semantic framework with a built-in dark mode and a plethera of utilities. No JavaScript required!</h2>
+            <h2>Accessible CSS-only semantic framework with a built-in dark mode and a plethora of utilities. No JavaScript required!</h2>
             <router-link :to="{ name: 'introduction'}" class="button -primary -medium --rounded-full --padding-x-10">Get Started</router-link>
             <div class="--weight-medium">
               <span class="--select-none --padding-right-3">Light</span>

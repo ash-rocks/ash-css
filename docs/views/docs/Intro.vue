@@ -18,7 +18,7 @@
 
         <section>
           <h2 id="meet" class="jump"><a href="#meet"># Meet ASH</a></h2>
-          <p>ASH (<strong>Accessibly Styled HTML</strong>) is an accessible CSS-only semantic framework with a built-in dark mode and a plethera of utilities. No JavaScript required! ASH makes it easy and quick to build elegant front ends.</p>
+          <p>ASH (<strong>Accessibly Styled HTML</strong>) is an accessible CSS-only semantic framework with a built-in dark mode and a plethora of utilities. No JavaScript required! ASH makes it easy and quick to build elegant front ends.</p>
           <p>ASH will always be modern and will evolve with the web. ASH works in all of the following modern browsers on desktop and mobile: </p>
           <ul class="-circle">
             <li>Chrome</li>
