@@ -14,7 +14,7 @@
             <h2>Accessible CSS-only semantic framework with a built-in dark mode and a plethora of utilities. No JavaScript required!</h2>
             <router-link :to="{ name: 'introduction'}" class="button -primary -medium --rounded-full --padding-x-10">Get Started</router-link>
             <div class="--weight-medium">
-              <span class="--select-none --padding-right-3">Light</span>
+              <label for="dark" class="--select-none --padding-right-3">Light</label>
               <label class="switch -light --margin-right-0">
                 <input type="checkbox" id="dark" @click="toggleDark">
                 <span class="toggle"></span> Dark
