@@ -9,7 +9,28 @@
 
   > input[type="checkbox"],
   > input[type="radio"] {
-    display: none;
+    height: 0;
+    opacity: 0;
+    width: 0;
+
+    &:checked {
+      + label {
+        background-color: @color[white];
+        border-bottom: 2px solid @color[blue];
+        color: @color[blue];
+        z-index: 200;
+
+        + .content {
+          display: block;
+        }
+      }
+    }
+
+    &:focus {
+      + label {
+        border-bottom-style: dashed;
+      }
+    }
   }
 
   > label {
@@ -25,17 +46,6 @@
       background-color: @color[gray-lighter];
       color: @color[black-lighten];
     }
-  }
-
-  > input:checked + label {
-    background-color: @color[white];
-    border-bottom: 2px solid @color[blue];
-    color: @color[blue];
-    z-index: 200;
-  }
-
-  > input:checked + label + .content {
-    display: block;
   }
 
   > .content {

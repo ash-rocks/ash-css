@@ -42,7 +42,7 @@
           <p>Use the code below to drop-in ASH CSS to your project from our CDN. The CDN will be cached, minified, and gzipped.</p>
           <pre>
             <code class="language-html">
-              &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@0.2.2/dist/ash/ash.min.css&quot;&gt;
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@0.2.3/dist/ash/ash.min.css&quot;&gt;
             </code>
           </pre>
         </section>

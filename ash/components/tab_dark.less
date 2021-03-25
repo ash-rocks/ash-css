@@ -2,6 +2,23 @@ html.dark {
   .tabs {
     background-color: @color[black-lighten];
 
+    > input[type="checkbox"],
+    > input[type="radio"] {
+      &:checked {
+        + label {
+          background-color: @color[black-lighter];
+          border-bottom: 2px solid @color[blue-lightest];
+          color: @color[blue-lightest];
+        }
+      }
+
+      &:focus {
+        + label {
+          border-bottom-style: dashed;
+        }
+      }
+    }
+
     > label {
       background-color: @color[black-lighten];
       color: @color[gray-lighten];
@@ -10,12 +27,6 @@ html.dark {
         background-color: @color[black-lighten];
         color: @color[gray];
       }
-    }
-
-    > input:checked + label {
-      background-color: @color[black-lighter];
-      border-bottom: 2px solid @color[blue-lightest];
-      color: @color[blue-lightest];
     }
 
     > .content {

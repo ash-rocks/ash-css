@@ -1,5 +1,5 @@
 /*!
- * Ash CSS v0.2.2 (https://ashcss.rocks/)
+ * Ash CSS v0.2.3 (https://ashcss.rocks/)
  * Copyright 2021 ASH Rocks Authors
  * Licensed under MIT (https://github.com/ash-rocks/ash-css/blob/master/LICENSE)
  */
@@ -5041,7 +5041,24 @@ html.dark .pagination > li.-active a:not(.button) {
 }
 .tabs > input[type="checkbox"],
 .tabs > input[type="radio"] {
-  display: none;
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+.tabs > input[type="checkbox"]:checked + label,
+.tabs > input[type="radio"]:checked + label {
+  background-color: #fff;
+  border-bottom: 2px solid #0074d9;
+  color: #0074d9;
+  z-index: 200;
+}
+.tabs > input[type="checkbox"]:checked + label + .content,
+.tabs > input[type="radio"]:checked + label + .content {
+  display: block;
+}
+.tabs > input[type="checkbox"]:focus + label,
+.tabs > input[type="radio"]:focus + label {
+  border-bottom-style: dashed;
 }
 .tabs > label {
   background-color: #c7c7c7;
@@ -5055,15 +5072,6 @@ html.dark .pagination > li.-active a:not(.button) {
 .tabs > label:hover {
   background-color: #c7c7c7;
   color: #2b2b2b;
-}
-.tabs > input:checked + label {
-  background-color: #fff;
-  border-bottom: 2px solid #0074d9;
-  color: #0074d9;
-  z-index: 200;
-}
-.tabs > input:checked + label + .content {
-  display: block;
 }
 .tabs > .content {
   border-top: 1px solid #c7c7c7;
@@ -5084,6 +5092,16 @@ html.dark .pagination > li.-active a:not(.button) {
 html.dark .tabs {
   background-color: #2b2b2b;
 }
+html.dark .tabs > input[type="checkbox"]:checked + label,
+html.dark .tabs > input[type="radio"]:checked + label {
+  background-color: #444444;
+  border-bottom: 2px solid #73beff;
+  color: #73beff;
+}
+html.dark .tabs > input[type="checkbox"]:focus + label,
+html.dark .tabs > input[type="radio"]:focus + label {
+  border-bottom-style: dashed;
+}
 html.dark .tabs > label {
   background-color: #2b2b2b;
   color: #aeaeae;
@@ -5091,11 +5109,6 @@ html.dark .tabs > label {
 html.dark .tabs > label:hover {
   background-color: #2b2b2b;
   color: #949494;
-}
-html.dark .tabs > input:checked + label {
-  background-color: #444444;
-  border-bottom: 2px solid #73beff;
-  color: #73beff;
 }
 html.dark .tabs > .content {
   background-color: #444444;
