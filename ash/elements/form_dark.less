@@ -7,12 +7,12 @@ html.dark {
   select,
   textarea {
     background-color: @color[black-lighter];
-    border: 1px solid @color[gray-darken];
+    border: 2px solid @color[gray-darken];
     color: @color[gray-lightest];
 
     &[readonly] {
       background-color: @color[black-lighten];
-      border: 1px solid @color[black-lighter];
+      border: 2px solid @color[black-lighter];
       color: @color[gray-lighter];
 
       &::placeholder {
@@ -26,7 +26,7 @@ html.dark {
 
     &[disabled] {
       background-color: @color[black-lighten];
-      border: 1px solid @color[black-lighter];
+      border: 2px solid @color[black-lighter];
       color: @color[gray-lighter];
 
       &::placeholder {
@@ -39,7 +39,7 @@ html.dark {
         border-color: @color[red-darken];
       }
 
-      &:not([disabled]):not([readonly]) {
+      &:not([disabled]):not([readonly]):not([type="button"]):not([type="reset"]):not([type="submit"]) {
         border-color: @color[blue-lighten];
         outline: 0;
       }
@@ -71,7 +71,7 @@ html.dark {
   }
 
   fieldset {
-    border: 1px solid @color[gray-darker];
+    border: 2px solid @color[gray-darker];
   }
 
   legend {
@@ -92,9 +92,25 @@ html.dark {
       }
     }
 
+    &.checkbox,
+    &.radio,
+    &.switch {
+      input {
+        &:focus-visible {
+          + .toggle {
+            outline: 2px dashed @color[gray-lightest];
+          }
+        }
+      }
+    }
+
     &.switch {
       .toggle {
         background-color: @color[gray-darker];
+
+        &::before {
+          border: 2px solid @color[gray-darker];
+        }
       }
     }
   }
@@ -118,7 +134,7 @@ html.dark {
 
   .inputs {
     .addon:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
-      border: 1px solid @color[gray-darken];
+      border: 2px solid @color[gray-darken];
     }
   }
 }

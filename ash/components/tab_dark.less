@@ -12,9 +12,10 @@ html.dark {
         }
       }
 
-      &:focus {
+      &:focus-visible {
         + label {
-          border-bottom-style: dashed;
+          outline: 2px dashed @color[gray-lightest];
+          outline-offset: -2px;
         }
       }
     }

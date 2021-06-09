@@ -24,7 +24,7 @@
           <figure>
             <header>
               <aside class="--padding-4">
-                <a class="link">Home</a>
+                <a href="" class="link">Home</a>
                 <details>
                   <summary>Development <i class="icon lni lni-chevron-right"></i></summary>
                   <div class="content">
@@ -39,7 +39,7 @@
               <pre class="--margin-0">
                 <code class="language-html">
                   &lt;aside class=&quot;--padding-4&quot;&gt;
-                    &lt;a class=&quot;link&quot;&gt;Home&lt;/a&gt;
+                    &lt;a href=&quot;&quot; class=&quot;link&quot;&gt;Home&lt;/a&gt;
                     &lt;details&gt;
                       &lt;summary&gt;Development &lt;i class=&quot;icon lni lni-chevron-right&quot;&gt;&lt;/i&gt;&lt;/summary&gt;
                       &lt;div class=&quot;content&quot;&gt;
@@ -70,11 +70,11 @@
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
-                  &lt;div class=&quot;sidebar --padding-4&quot;&gt;
+                  &lt;aside class=&quot;--padding-4&quot;&gt;
                     &lt;a href=&quot;https://atom.io&quot; target=&quot;_blank&quot; class=&quot;link&quot;&gt;Atom&lt;/a&gt;
                     &lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; class=&quot;link&quot;&gt;Github&lt;/a&gt;
                     &lt;a href=&quot;https://slack.com&quot; target=&quot;_blank&quot; class=&quot;link&quot;&gt;Slack&lt;/a&gt;
-                  &lt;/div&gt;
+                  &lt;/aside&gt;
                 </code>
               </pre>
             </div>

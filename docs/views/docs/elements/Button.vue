@@ -57,9 +57,9 @@
 
           <figure>
             <header>
-              <a class="button">Anchor</a>
+              <a href="" class="button">Anchor</a>
               <button class="button">Button</button>
-              <label class="button">Label</label>
+              <label class="button" tabindex="0">Label</label>
               <input type="button" class="button" value="Input">
               <input type="reset" class="button">
               <input type="submit" class="button">
@@ -67,9 +67,9 @@
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
-                  &lt;a class=&quot;button&quot;&gt;Anchor&lt;/a&gt;
+                  &lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Anchor&lt;/a&gt;
                   &lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;
-                  &lt;label class=&quot;button&quot;&gt;Label&lt;/label&gt;
+                  &lt;label class=&quot;button&quot; tabindex=&quot;0&quot;&gt;Label&lt;/label&gt;
                   &lt;input type=&quot;button&quot; class=&quot;button&quot; value=&quot;Input&quot;&gt;
                   &lt;input type=&quot;reset&quot; class=&quot;button&quot;&gt;
                   &lt;input type=&quot;submit&quot; class=&quot;button&quot;&gt;

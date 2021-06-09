@@ -108,7 +108,7 @@
           <h2 id="optimizing" class="jump"><a href="#optimizing"># Optimizing</a></h2>
           <p>If you are building from source, which should be done over using the CDN or just including the minified file, then you should optimize the built CSS by either commenting out unneeded features and utilities in the <code>/ash/ash.less</code> file or by using a utility like <a href="https://purgecss.com/" target="_blank" rel="noreferrer">PurgeCSS</a>.</p>
 
-          <p>Using the default configuration, ASH CSS is 256kB uncompressed, 193kB minified, 25kB minified and compressed with Gzip, and 20kB when minified and compressed with Brotli. Half of the file size comes from the utilities.</p>
+          <p>Using the default configuration, ASH CSS is 254kB uncompressed, 200kB minified, 25kB minified and compressed with Gzip, and 20kB when minified and compressed with Brotli. Half of the file size comes from the utilities.</p>
 
           <table>
             <thead>
@@ -121,8 +121,8 @@
             </thead>
             <tbody>
               <tr>
-                <td>256kB</td>
-                <td>193kB</td>
+                <td>254kB</td>
+                <td>200kB</td>
                 <td>25kB</td>
                 <td>20kB</td>
               </tr>

@@ -30,7 +30,7 @@ These files do not include documentation or source files.
 ### CDN via jsDelivr
 Use the code below to drop-in ASH CSS to your project from our CDN. The CDN will be cached, minified, and gzipped.
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@0.2.3/dist/ash/ash.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ash-rocks/ash-css@0.3.0/dist/ash/ash.min.css">
 ```
 
 ### NPM/Yarn

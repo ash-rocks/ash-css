@@ -77,6 +77,24 @@ progress {
   });
 }
 
+@media (prefers-reduced-motion) {
+  progress {
+    &:not([value]),
+    &:indeterminate {
+      background: repeating-linear-gradient(45deg, @color[gray-lighter], @color[gray-lighter] 8px, @color[gray] 8px, @color[gray] 16px);
+    }
+
+    each(@swatches, {
+      &.-@{value} {
+        &:not([value]),
+        &:indeterminate {
+          background: repeating-linear-gradient(45deg, @@value[disabled-background], @@value[disabled-background] 8px, @@value[active-background] 8px, @@value[active-background] 16px);
+        }
+      }
+    });
+  }
+}
+
 @keyframes progress-indeterminate {
   0% {
     background-position: 200% 0;

@@ -2,7 +2,7 @@
   background-color: @color[gray-lighter];
   border-radius: @radius;
   box-shadow: @box-shadow[shadow];
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
@@ -12,6 +12,7 @@
     height: 0;
     opacity: 0;
     width: 0;
+    margin: 0;
 
     &:checked {
       + label {
@@ -26,15 +27,17 @@
       }
     }
 
-    &:focus {
+    &:focus-visible {
       + label {
-        border-bottom-style: dashed;
+        outline: 2px dashed @color[gray-darkest];
+        outline-offset: -2px;
       }
     }
   }
 
   > label {
     background-color: @color[gray-lighter];
+    border: 2px solid transparent;
     color: @color[black-lighter];
     cursor: pointer;
     display: flex;
@@ -60,6 +63,8 @@
 
 @media (min-width: @breakpoint[md]) {
   .tabs {
+    display: flex;
+
     > label {
       width: auto;
     }

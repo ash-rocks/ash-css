@@ -20,7 +20,7 @@
           <p>Tabs can be created by using a <code>tabs</code> classed container with radios, labels, and a <code>content</code> classed element for each tab.</p>
           <div class="alert -primary" role="alert">
             <div class="content">
-              Currently tabs are not responsive and require at least one radio to be checked as the default tab. This will change in the near future.
+              Tabs require at least one radio to be checked as the default tab.
             </div>
           </div>
 
@@ -28,23 +28,30 @@
             <header>
               <div class="tabs">
                 <input name="tabs" type="radio" id="tab-one" checked="checked"/>
-                <label for="tab-one" class="label --uppercase">One</label>
+                <label for="tab-one" class="--uppercase">Tab One</label>
                 <div class="content">
                   <h1 class="--uppercase">Tab One</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec gravida purus. Fusce bibendum sit amet mauris sed gravida. Ut in felis quam. Nunc cursus purus facilisis ante tempus, sit amet accumsan dui gravida. Pellentesque hendrerit a enim nec tempor. Morbi tortor justo, ultricies volutpat condimentum sed, bibendum sed urna. Mauris viverra condimentum nunc, sit amet sagittis leo sagittis at. Donec at vehicula libero. Donec pretium vitae enim sodales tristique. Sed vulputate erat ac vulputate consequat. Vestibulum fermentum diam quis pretium ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 </div>
 
                 <input name="tabs" type="radio" id="tab-two"/>
-                <label for="tab-two" class="label --uppercase">Two</label>
+                <label for="tab-two" class="--uppercase">Tab Two</label>
                 <div class="content">
                   <h1 class="--uppercase">Tab Two</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec gravida purus. Fusce bibendum sit amet mauris sed gravida. Ut in felis quam. Nunc cursus purus facilisis ante tempus, sit amet accumsan dui gravida. Pellentesque hendrerit a enim nec tempor. Morbi tortor justo, ultricies volutpat condimentum sed, bibendum sed urna. Mauris viverra condimentum nunc, sit amet sagittis leo sagittis at. Donec at vehicula libero. Donec pretium vitae enim sodales tristique. Sed vulputate erat ac vulputate consequat. Vestibulum fermentum diam quis pretium ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 </div>
 
                 <input name="tabs" type="radio" id="tab-three"/>
-                <label for="tab-three" class="label --uppercase">Three</label>
+                <label for="tab-three" class="--uppercase">Tab Three</label>
                 <div class="content">
                   <h1 class="--uppercase">Tab Three</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec gravida purus. Fusce bibendum sit amet mauris sed gravida. Ut in felis quam. Nunc cursus purus facilisis ante tempus, sit amet accumsan dui gravida. Pellentesque hendrerit a enim nec tempor. Morbi tortor justo, ultricies volutpat condimentum sed, bibendum sed urna. Mauris viverra condimentum nunc, sit amet sagittis leo sagittis at. Donec at vehicula libero. Donec pretium vitae enim sodales tristique. Sed vulputate erat ac vulputate consequat. Vestibulum fermentum diam quis pretium ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+
+                <input name="tabs" type="radio" id="tab-four"/>
+                <label for="tab-four" class="--uppercase">Tab Four</label>
+                <div class="content">
+                  <h1 class="--uppercase">Tab Four</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec gravida purus. Fusce bibendum sit amet mauris sed gravida. Ut in felis quam. Nunc cursus purus facilisis ante tempus, sit amet accumsan dui gravida. Pellentesque hendrerit a enim nec tempor. Morbi tortor justo, ultricies volutpat condimentum sed, bibendum sed urna. Mauris viverra condimentum nunc, sit amet sagittis leo sagittis at. Donec at vehicula libero. Donec pretium vitae enim sodales tristique. Sed vulputate erat ac vulputate consequat. Vestibulum fermentum diam quis pretium ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 </div>
               </div>

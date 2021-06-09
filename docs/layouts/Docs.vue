@@ -41,6 +41,10 @@
     font-size: 0.875rem;
     padding: 0 0.5rem;
   }
+  .lni {
+    line-height: inherit;
+    vertical-align: initial;
+  }
   html.dark .router-link-exact-active{
     color: #40a6ff !important;
   }
@@ -68,7 +72,7 @@
       var modalToggles = document.querySelectorAll('.modal-toggle')
 
       for(var i=0; i<modalToggles.length; i++) {
-        modalToggles[i].addEventListener('change', function() {
+        modalToggles[i].addEventListener('change', function(event) {
           document.body.classList.toggle('noscroll')
         })
       }

@@ -2,12 +2,12 @@ html.dark {
   .chip {
     &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
       background-color: @color[black-lightest];
-      border: 1px solid @color[black-lightest];
+      border: 2px solid @color[black-lightest];
       color: @color[gray-lightest];
 
       &.-outline {
         background-color: @color[transparent];
-        border: 1px solid @color[gray-lighten];
+        border: 2px solid @color[gray-lighten];
       }
     }
 
@@ -17,7 +17,7 @@ html.dark {
 
     &.-dark {
       &.-outline {
-        border: 1px solid @color[black-light];
+        border: 2px solid @color[black-light];
       }
     }
   }

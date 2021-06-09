@@ -12,7 +12,7 @@ input,
 select,
 textarea {
   background-color: @color[white];
-  border: 1px solid @color[gray-lighten];
+  border: 2px solid @color[gray-lighten];
   border-radius: @radius;
   color: @color[gray-darkest];
   display: block;
@@ -23,7 +23,7 @@ textarea {
   padding: @padding[1] @padding[4];
   width: 100%;
 
-  &:focus {
+  &:focus:not([type="button"]):not([type="reset"]):not([type="submit"]) {
     border-color: @color[blue];
     outline: 0;
 
@@ -34,7 +34,7 @@ textarea {
 
   &[disabled] {
     background-color: @color[gray-lighter];
-    border: 1px solid @color[gray-lighter];
+    border: 2px solid @color[gray-lighter];
     color: @color[gray-darkest];
     cursor: @cursor[not-allowed];
     opacity: 1;
@@ -46,7 +46,7 @@ textarea {
 
   &[readonly] {
     background-color: @color[gray-lighter];
-    border: 1px solid @color[gray-lighter];
+    border: 2px solid @color[gray-lighter];
     color: @color[gray-darkest];
 
     &::placeholder {
@@ -70,7 +70,7 @@ textarea {
   padding: 0;
 
   &:focus {
-    outline: 1px thin @color[blue];
+    outline: 2px thin @color[blue];
 
     &:invalid {
       &:focus {
@@ -135,7 +135,7 @@ select[multiple] {
 }
 
 fieldset {
-  border: 1px solid @color[gray-lighter];
+  border: 2px solid @color[gray-lighter];
   margin: 0;
   padding: @padding[4];
 }
@@ -159,9 +159,7 @@ label {
   &.checkbox,
   &.radio,
   &.switch {
-    margin: @margin[2] @margin[4] @margin[4] 0;
     min-height: @margin[6];
-    padding-left: @padding[6];
     position: relative;
     user-select: none;
 
@@ -170,7 +168,7 @@ label {
     }
 
     .toggle {
-      border: 0.05rem solid @color[gray-lighten];
+      border: 2px solid @color[gray-lighten];
       cursor: pointer;
       display: inline-block;
       position: absolute;
@@ -178,7 +176,11 @@ label {
     }
 
     input {
-      display: none;
+      display: inline-block;
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      width: 0;
 
       &:checked + .toggle {
         background: @color[gray-lighten];
@@ -187,6 +189,12 @@ label {
 
       &:focus + .toggle {
         border-color: @color[gray-lighten];
+      }
+
+      &:focus-visible {
+        + .toggle {
+          outline: 2px dashed @color[gray-darkest];
+        }
       }
     }
 
@@ -202,14 +210,16 @@ label {
 
   &.checkbox,
   &.radio {
+    margin: 0.6rem @margin[4] @margin[2] 0;
     line-height: 2rem;
+    padding-left: @padding[6];
 
     .toggle {
       background: @color[white];
-      height: @margin[4];
+      height: 1.25rem;
       left: 0;
-      top: @margin[2];
-      width: @margin[4];
+      top: 0.4rem;
+      width: 1.25rem;
     }
 
     input {
@@ -227,14 +237,14 @@ label {
           border-left-width: 0;
           border-top-width: 0;
           content: "";
-          height: 9px;
+          height: 12px;
           left: 50%;
-          margin-top: -6px;
-          margin-left: -3px;
+          margin-top: -8px;
+          margin-left: -4px;
           position: absolute;
           top: 50%;
           transform: rotate(45deg);
-          width: 6px;
+          width: 8px;
         }
       }
 
@@ -296,12 +306,12 @@ label {
           background-color: @color[white];
           border-radius: 50%;
           content: "";
-          height: 6px;
+          height: 8px;
           left: 50%;
           position: absolute;
           top: 50%;
           transform: translate(-50%, -50%);
-          width: 6px;
+          width: 8px;
         }
       }
     }
@@ -328,29 +338,30 @@ label {
   }
 
   &.switch {
-    padding-left: @padding[10];
+    margin: 0.6rem @margin[4] @margin[2] 0;
+    padding-left: @padding[12];
 
     .toggle {
       background-color: @color[gray-lighten];
       border: 0;
-      border-radius: @radii[lg];
-      height: 1rem;
+      border-radius: 0.75rem;
+      height: 1.25rem;
       left: 0;
-      top: @margin[1];
-      width: 2rem;
+      top: 0.15rem;
+      width: 2.5rem;
 
       &::before {
         background-color: @color[white];
-        border: 1px solid @color[gray-lighten];
+        border: 2px solid @color[gray-lighten];
         border-radius: 50%;
         content: "";
         display: block;
-        height: 1rem;
+        height: 1.25rem;
         left: 0;
         position: absolute;
         top: 0;
         transition: all 100ms;
-        width: 1rem;
+        width: 1.25rem;
       }
     }
 
@@ -363,7 +374,7 @@ label {
 
       &:checked + .toggle {
         &::before {
-          left: 16px;
+          left: 20px;
         }
       }
     }
@@ -372,7 +383,7 @@ label {
       &.-@{value} {
         input:checked + .toggle::before {
           background: if(@value = warning or @value = light, @color[gray-darker], @color[white]);
-          border: 1px solid @@value[border];
+          border: 2px solid @@value[border];
         }
       }
     });
@@ -409,6 +420,11 @@ body textarea {
       &:focus {
         border-color: @@value[active-border];
       }
+
+      &:focus:not([type="button"]):not([type="reset"]):not([type="submit"]) {
+        border-color: @@value[active-border];
+        outline: 0;
+      }
     }
   });
 
@@ -432,7 +448,7 @@ body textarea {
 
   .addon {
     background-color: @color[white];
-    border: 1px solid @color[gray-lighten];
+    border: 2px solid @color[gray-lighten];
     padding: @padding[1] @padding[4];
     white-space: nowrap;
 

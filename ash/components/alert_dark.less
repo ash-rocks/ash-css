@@ -8,7 +8,7 @@ html.dark {
       &.-outline {
         > .content {
           background-color: @color[transparent];
-          border: 1px solid @color[gray-darker];
+          border: 2px solid @color[gray-darker];
           color: @color[gray-lightest];
         }
       }
@@ -21,6 +21,14 @@ html.dark {
 
       > label {
         color: @color[gray-lightest];
+      }
+    }
+
+    &.-dismissible {
+      &:not(.-fixed) {
+        > input:focus + label {
+          outline: 2px dashed @color[gray-lightest];
+        }
       }
     }
 
@@ -38,7 +46,7 @@ html.dark {
     &.-dark {
       &.-outline {
         > .content {
-          border: 1px solid @color[black-light];
+          border: 2px solid @color[black-light];
         }
       }
     }

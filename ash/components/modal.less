@@ -1,5 +1,5 @@
 body.noscroll {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .modal {
@@ -36,7 +36,7 @@ body.noscroll {
     z-index: @z-index[8];
 
     > header {
-      border-bottom: 1px solid @color[gray-lighter];
+      border-bottom: 2px solid @color[gray-lighter];
       padding: @padding[3] @padding[8] @padding[3] @padding[3];
     }
 
@@ -47,13 +47,13 @@ body.noscroll {
     }
 
     > footer {
-      border-top: 1px solid @color[gray-lighter];
+      border-top: 2px solid @color[gray-lighter];
       padding: @padding[3];
     }
 
     > .actions {
       align-items: stretch;
-      border-top: 1px solid @color[gray-lighter];
+      border-top: 2px solid @color[gray-lighter];
       display: flex;
 
       a,
@@ -70,7 +70,7 @@ body.noscroll {
         padding: @padding[3];
 
         &:not(:last-child) {
-          border-right: 1px solid @color[gray-lighter];
+          border-right: 2px solid @color[gray-lighter];
         }
       }
     }
@@ -95,15 +95,15 @@ body.noscroll {
         }
 
         > header {
-          border-bottom: 1px solid @@value[active-border];
+          border-bottom: 2px solid @@value[active-border];
         }
 
         > footer {
-          border-top: 1px solid @@value[active-border];
+          border-top: 2px solid @@value[active-border];
         }
 
         > .actions {
-          border-top: 1px solid @@value[active-border];
+          border-top: 2px solid @@value[active-border];
 
           a,
           button {
@@ -112,7 +112,7 @@ body.noscroll {
             }
 
             &:not(:last-child) {
-              border-right: 1px solid @@value[active-border];
+              border-right: 2px solid @@value[active-border];
             }
           }
         }
@@ -154,16 +154,28 @@ body.noscroll {
 }
 
 .modal-toggle {
-  display: none;
-}
+  display: inline-block;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  width: 0;
 
-.modal-toggle:checked + .modal {
-  opacity: 1;
-  visibility: visible;
-}
+  &:focus-visible {
+    + label {
+      outline: 2px dashed @color[gray-darkest];
+    }
+  }
 
-.modal-toggle:checked + .modal > .dialog {
-  top: 0;
+  &:checked {
+    ~ .modal {
+      opacity: 1;
+      visibility: visible;
+
+      > .dialog {
+        top: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: @breakpoint[md]) {

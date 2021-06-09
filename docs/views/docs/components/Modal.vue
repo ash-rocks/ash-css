@@ -29,8 +29,8 @@
 
           <figure>
             <header>
+              <input class="modal-toggle" id="modal-simple" type="checkbox"/>
               <label class="button" for="modal-simple">Simple Modal</label>
-              <input class="modal-toggle" id="modal-simple" type="checkbox" />
               <div class="modal">
                 <label class="overlay" for="modal-simple"></label>
                 <div class="dialog">
@@ -44,8 +44,8 @@
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
+                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-simple&quot; type=&quot;checkbox&quot;/&gt;
                   &lt;label class=&quot;button&quot; for=&quot;modal-simple&quot;&gt;Simple Modal&lt;/label&gt;
-                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-simple&quot; type=&quot;checkbox&quot; /&gt;
                   &lt;div class=&quot;modal&quot;&gt;
                     &lt;label class=&quot;overlay&quot; for=&quot;modal-simple&quot;&gt;&lt;/label&gt;
                     &lt;div class=&quot;dialog&quot;&gt;
@@ -67,8 +67,8 @@
 
           <figure>
             <header>
+              <input class="modal-toggle" id="modal-header" type="checkbox"/>
               <label class="button" for="modal-header">Modal With Header</label>
-              <input class="modal-toggle" id="modal-header" type="checkbox" />
               <div class="modal">
                 <label class="overlay" for="modal-header"></label>
                 <div class="dialog">
@@ -85,8 +85,8 @@
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
+                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-header&quot; type=&quot;checkbox&quot;/&gt;
                   &lt;label class=&quot;button&quot; for=&quot;modal-header&quot;&gt;Modal With Header&lt;/label&gt;
-                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-header&quot; type=&quot;checkbox&quot; /&gt;
                   &lt;div class=&quot;modal&quot;&gt;
                     &lt;label class=&quot;overlay&quot; for=&quot;modal-header&quot;&gt;&lt;/label&gt;
                     &lt;div class=&quot;dialog&quot;&gt;
@@ -111,8 +111,8 @@
 
           <figure>
             <header>
+              <input class="modal-toggle" id="modal-footer" type="checkbox"/>
               <label class="button" for="modal-footer">Modal With Footer</label>
-              <input class="modal-toggle" id="modal-footer" type="checkbox" />
               <div class="modal">
                 <label class="overlay" for="modal-footer"></label>
                 <div class="dialog">
@@ -129,8 +129,8 @@
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
+                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-footer&quot; type=&quot;checkbox&quot;/&gt;
                   &lt;label class=&quot;button&quot; for=&quot;modal-footer&quot;&gt;Modal With Footer&lt;/label&gt;
-                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-footer&quot; type=&quot;checkbox&quot; /&gt;
                   &lt;div class=&quot;modal&quot;&gt;
                     &lt;label class=&quot;overlay&quot; for=&quot;modal-footer&quot;&gt;&lt;/label&gt;
                     &lt;div class=&quot;dialog&quot;&gt;
@@ -155,8 +155,8 @@
 
           <figure>
             <header>
+              <input class="modal-toggle" id="modal-4" type="checkbox"/>
               <label class="button" for="modal-4">Modal With Action</label>
-              <input class="modal-toggle" id="modal-4" type="checkbox" />
               <div class="modal">
                 <label class="overlay" for="modal-4"></label>
                 <div class="dialog">
@@ -175,8 +175,8 @@
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
+                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-4&quot; type=&quot;checkbox&quot;/&gt;
                   &lt;label class=&quot;button&quot; for=&quot;modal-4&quot;&gt;Modal With Action&lt;/label&gt;
-                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-4&quot; type=&quot;checkbox&quot; /&gt;
                   &lt;div class=&quot;modal&quot;&gt;
                     &lt;label class=&quot;overlay&quot; for=&quot;modal-4&quot;&gt;&lt;/label&gt;
                     &lt;div class=&quot;dialog&quot;&gt;
@@ -203,122 +203,134 @@
 
           <figure>
             <header>
-              <label class="button" for="modal-primary">Primary</label>
-              <input class="modal-toggle" id="modal-primary" type="checkbox" />
-              <div class="modal -primary">
-                <label class="overlay" for="modal-primary"></label>
-                <div class="dialog">
-                  <label class="close" for="modal-primary"><i class="lni lni-close"></i></label>
-                  <header>
-                    PRIMARY
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                  </div>
-                  <div class="actions">
-                    <a href="">Action</a>
-                    <a href="">Action</a>
-                    <button class="-success">Action</button>
-                  </div>
-                </div>
-              </div>
-
-              <label class="button" for="modal-success">Success</label>
-              <input class="modal-toggle" id="modal-success" type="checkbox" />
-              <div class="modal -success">
-                <label class="overlay" for="modal-success"></label>
-                <div class="dialog">
-                  <label class="close" for="modal-success"><i class="lni lni-close"></i></label>
-                  <header>
-                    SUCCESS
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                  </div>
-                  <div class="actions">
-                    <a href="">Action</a>
-                    <a href="">Action</a>
-                    <button class="-warning">Action</button>
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-primary" type="checkbox"/>
+                <label class="button" for="modal-primary">Primary</label>
+                <div class="modal -primary">
+                  <label class="overlay" for="modal-primary"></label>
+                  <div class="dialog">
+                    <label class="close" for="modal-primary"><i class="lni lni-close"></i></label>
+                    <header>
+                      PRIMARY
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                    <div class="actions">
+                      <a href="">Action</a>
+                      <a href="">Action</a>
+                      <button class="-success">Action</button>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <label class="button" for="modal-warning">Warning</label>
-              <input class="modal-toggle" id="modal-warning" type="checkbox" />
-              <div class="modal -warning">
-                <label class="overlay" for="modal-warning"></label>
-                <div class="dialog">
-                  <label class="close" for="modal-warning"><i class="lni lni-close"></i></label>
-                  <header>
-                    WARNING
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                  </div>
-                  <div class="actions">
-                    <a href="">Action</a>
-                    <a href="">Action</a>
-                    <button class="-danger">Action</button>
-                  </div>
-                </div>
-              </div>
-
-              <label class="button" for="modal-danger">Danger</label>
-              <input class="modal-toggle" id="modal-danger" type="checkbox" />
-              <div class="modal -danger">
-                <label class="overlay" for="modal-danger"></label>
-                <div class="dialog">
-                  <label class="close" for="modal-danger"><i class="lni lni-close"></i></label>
-                  <header>
-                    DANGER
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                  </div>
-                  <div class="actions">
-                    <a href="">Action</a>
-                    <a href="">Action</a>
-                    <button class="-dark">Action</button>
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-success" type="checkbox"/>
+                <label class="button" for="modal-success">Success</label>
+                <div class="modal -success">
+                  <label class="overlay" for="modal-success"></label>
+                  <div class="dialog">
+                    <label class="close" for="modal-success"><i class="lni lni-close"></i></label>
+                    <header>
+                      SUCCESS
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                    <div class="actions">
+                      <a href="">Action</a>
+                      <a href="">Action</a>
+                      <button class="-warning">Action</button>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <label class="button" for="modal-dark">Dark</label>
-              <input class="modal-toggle" id="modal-dark" type="checkbox" />
-              <div class="modal -dark">
-                <label class="overlay" for="modal-dark"></label>
-                <div class="dialog">
-                  <label class="close" for="modal-dark"><i class="lni lni-close"></i></label>
-                  <header>
-                    DARK
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                  </div>
-                  <div class="actions">
-                    <a href="">Action</a>
-                    <a href="">Action</a>
-                    <button class="-light">Action</button>
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-warning" type="checkbox"/>
+                <label class="button" for="modal-warning">Warning</label>
+                <div class="modal -warning">
+                  <label class="overlay" for="modal-warning"></label>
+                  <div class="dialog">
+                    <label class="close" for="modal-warning"><i class="lni lni-close"></i></label>
+                    <header>
+                      WARNING
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                    <div class="actions">
+                      <a href="">Action</a>
+                      <a href="">Action</a>
+                      <button class="-danger">Action</button>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <label class="button" for="modal-light">Light</label>
-              <input class="modal-toggle" id="modal-light" type="checkbox" />
-              <div class="modal -light">
-                <label class="overlay" for="modal-light"></label>
-                <div class="dialog">
-                  <label class="close" for="modal-light"><i class="lni lni-close"></i></label>
-                  <header>
-                    LIGHT
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-danger" type="checkbox"/>
+                <label class="button" for="modal-danger">Danger</label>
+                <div class="modal -danger">
+                  <label class="overlay" for="modal-danger"></label>
+                  <div class="dialog">
+                    <label class="close" for="modal-danger"><i class="lni lni-close"></i></label>
+                    <header>
+                      DANGER
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                    <div class="actions">
+                      <a href="">Action</a>
+                      <a href="">Action</a>
+                      <button class="-dark">Action</button>
+                    </div>
                   </div>
-                  <div class="actions">
-                    <a href="">Action</a>
-                    <a href="">Action</a>
-                    <button class="-primary">Action</button>
+                </div>
+              </div>
+
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-dark" type="checkbox"/>
+                <label class="button" for="modal-dark">Dark</label>
+                <div class="modal -dark">
+                  <label class="overlay" for="modal-dark"></label>
+                  <div class="dialog">
+                    <label class="close" for="modal-dark"><i class="lni lni-close"></i></label>
+                    <header>
+                      DARK
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                    <div class="actions">
+                      <a href="">Action</a>
+                      <a href="">Action</a>
+                      <button class="-light">Action</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-light" type="checkbox"/>
+                <label class="button" for="modal-light">Light</label>
+                <div class="modal -light">
+                  <label class="overlay" for="modal-light"></label>
+                  <div class="dialog">
+                    <label class="close" for="modal-light"><i class="lni lni-close"></i></label>
+                    <header>
+                      LIGHT
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium ipsum non mauris sollicitudin viverra. Quisque non nisl at nisi tincidunt gravida. Suspendisse placerat massa quis mi ultrices fermentum. In purus magna, consequat non imperdiet a, tempus non magna. Quisque ante metus, dapibus in odio at, volutpat vehicula lorem. Proin viverra feugiat magna. Duis nec tellus vel ante pellentesque hendrerit vel et lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    </div>
+                    <div class="actions">
+                      <a href="">Action</a>
+                      <a href="">Action</a>
+                      <button class="-primary">Action</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -327,8 +339,8 @@
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
+                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-primary&quot; type=&quot;checkbox&quot;/&gt;
                   &lt;label class=&quot;button&quot; for=&quot;modal-primary&quot;&gt;Primary&lt;/label&gt;
-                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-primary&quot; type=&quot;checkbox&quot; /&gt;
                   &lt;div class=&quot;modal -primary&quot;&gt;
                     &lt;label class=&quot;overlay&quot; for=&quot;modal-primary&quot;&gt;&lt;/label&gt;
                     &lt;div class=&quot;dialog&quot;&gt;
@@ -358,8 +370,8 @@
 
           <figure>
             <header>
+              <input class="modal-toggle" id="modal-5" type="checkbox"/>
               <label class="button" for="modal-5">Scrollable Modal</label>
-              <input class="modal-toggle" id="modal-5" type="checkbox" />
               <div class="modal">
                 <label class="overlay" for="modal-5"></label>
                 <div class="dialog">
@@ -382,8 +394,8 @@
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
+                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-5&quot; type=&quot;checkbox&quot;/&gt;
                   &lt;label class=&quot;button&quot; for=&quot;modal-5&quot;&gt;Scrollable Modal&lt;/label&gt;
-                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-5&quot; type=&quot;checkbox&quot; /&gt;
                   &lt;div class=&quot;modal&quot;&gt;
                     &lt;label class=&quot;overlay&quot; for=&quot;modal-5&quot;&gt;&lt;/label&gt;
                     &lt;div class=&quot;dialog&quot;&gt;
@@ -411,95 +423,104 @@
 
           <figure>
             <header>
-              <label class="button" for="modal-6">Small Modal</label>
-              <input class="modal-toggle" id="modal-6" type="checkbox" />
-              <div class="modal">
-                <label class="overlay" for="modal-6"></label>
-                <div class="dialog -small">
-                  <label class="close" for="modal-6"><i class="lni lni-close"></i></label>
-                  <header>
-                    HEADER
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis massa sit amet dolor imperdiet laoreet non eget purus. Etiam in tortor auctor, sodales metus sed, commodo mauris. Quisque elementum facilisis ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean dolor dolor, aliquet sit amet vehicula sed, varius in enim. Duis lacinia nulla tristique, porttitor nulla a, condimentum erat. In hac habitasse platea dictumst. Fusce in purus vulputate mauris iaculis tristique. Donec sed justo consequat tortor sodales posuere non ut velit.</p>
-                    <p>Vivamus ullamcorper sapien eget lectus ultricies consectetur. Cras molestie lobortis magna, eu finibus mauris maximus efficitur. Quisque vel porta dui. Suspendisse ut interdum mi. Integer pharetra nulla erat, ac malesuada erat bibendum nec. Sed vehicula non elit non placerat. Ut porttitor dolor feugiat augue laoreet, nec pellentesque tortor ornare. Pellentesque quis bibendum justo, et malesuada nulla. Nullam at vestibulum quam. Nam congue pulvinar finibus. Fusce efficitur nunc sit amet quam rutrum efficitur vel ut tellus. Donec finibus nec ipsum id consectetur. Ut mollis mattis justo eget efficitur.</p>
-                    <p>Praesent tempor orci tellus, ut facilisis lectus semper pretium. Nulla facilisi. Nam ut libero mi. Nulla volutpat accumsan orci, vel cursus nulla aliquam at. Ut tempus ante lectus, nec lobortis justo blandit luctus. Pellentesque vitae massa bibendum, finibus urna ac, ultricies elit. Aliquam sit amet metus odio. Mauris luctus mi auctor nisi porta imperdiet. Etiam blandit luctus justo.</p>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed vehicula urna, sit amet ornare mauris. Proin varius non velit in luctus. Cras cursus porta nisi, ac dignissim ligula tempor vitae. Quisque accumsan in arcu molestie molestie. Morbi vel ullamcorper metus, vitae facilisis quam. Proin eget erat mauris. Phasellus eget condimentum leo, ac condimentum felis. Sed eu scelerisque mauris. Sed fermentum ultricies tellus eget porttitor. Etiam sed nisl eu elit gravida posuere ac ut nulla.</p>
+
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-6" type="checkbox"/>
+                <label class="button" for="modal-6">Small Modal</label>
+                <div class="modal">
+                  <label class="overlay" for="modal-6"></label>
+                  <div class="dialog -small">
+                    <label class="close" for="modal-6"><i class="lni lni-close"></i></label>
+                    <header>
+                      HEADER
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis massa sit amet dolor imperdiet laoreet non eget purus. Etiam in tortor auctor, sodales metus sed, commodo mauris. Quisque elementum facilisis ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean dolor dolor, aliquet sit amet vehicula sed, varius in enim. Duis lacinia nulla tristique, porttitor nulla a, condimentum erat. In hac habitasse platea dictumst. Fusce in purus vulputate mauris iaculis tristique. Donec sed justo consequat tortor sodales posuere non ut velit.</p>
+                      <p>Vivamus ullamcorper sapien eget lectus ultricies consectetur. Cras molestie lobortis magna, eu finibus mauris maximus efficitur. Quisque vel porta dui. Suspendisse ut interdum mi. Integer pharetra nulla erat, ac malesuada erat bibendum nec. Sed vehicula non elit non placerat. Ut porttitor dolor feugiat augue laoreet, nec pellentesque tortor ornare. Pellentesque quis bibendum justo, et malesuada nulla. Nullam at vestibulum quam. Nam congue pulvinar finibus. Fusce efficitur nunc sit amet quam rutrum efficitur vel ut tellus. Donec finibus nec ipsum id consectetur. Ut mollis mattis justo eget efficitur.</p>
+                      <p>Praesent tempor orci tellus, ut facilisis lectus semper pretium. Nulla facilisi. Nam ut libero mi. Nulla volutpat accumsan orci, vel cursus nulla aliquam at. Ut tempus ante lectus, nec lobortis justo blandit luctus. Pellentesque vitae massa bibendum, finibus urna ac, ultricies elit. Aliquam sit amet metus odio. Mauris luctus mi auctor nisi porta imperdiet. Etiam blandit luctus justo.</p>
+                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed vehicula urna, sit amet ornare mauris. Proin varius non velit in luctus. Cras cursus porta nisi, ac dignissim ligula tempor vitae. Quisque accumsan in arcu molestie molestie. Morbi vel ullamcorper metus, vitae facilisis quam. Proin eget erat mauris. Phasellus eget condimentum leo, ac condimentum felis. Sed eu scelerisque mauris. Sed fermentum ultricies tellus eget porttitor. Etiam sed nisl eu elit gravida posuere ac ut nulla.</p>
+                    </div>
+                    <footer>
+                      FOOTER
+                    </footer>
                   </div>
-                  <footer>
-                    FOOTER
-                  </footer>
                 </div>
               </div>
 
-              <label class="button" for="modal-7">Normal Modal</label>
-              <input class="modal-toggle" id="modal-7" type="checkbox" />
-              <div class="modal">
-                <label class="overlay" for="modal-7"></label>
-                <div class="dialog -normal">
-                  <label class="close" for="modal-7"><i class="lni lni-close"></i></label>
-                  <header>
-                    HEADER
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis massa sit amet dolor imperdiet laoreet non eget purus. Etiam in tortor auctor, sodales metus sed, commodo mauris. Quisque elementum facilisis ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean dolor dolor, aliquet sit amet vehicula sed, varius in enim. Duis lacinia nulla tristique, porttitor nulla a, condimentum erat. In hac habitasse platea dictumst. Fusce in purus vulputate mauris iaculis tristique. Donec sed justo consequat tortor sodales posuere non ut velit.</p>
-                    <p>Vivamus ullamcorper sapien eget lectus ultricies consectetur. Cras molestie lobortis magna, eu finibus mauris maximus efficitur. Quisque vel porta dui. Suspendisse ut interdum mi. Integer pharetra nulla erat, ac malesuada erat bibendum nec. Sed vehicula non elit non placerat. Ut porttitor dolor feugiat augue laoreet, nec pellentesque tortor ornare. Pellentesque quis bibendum justo, et malesuada nulla. Nullam at vestibulum quam. Nam congue pulvinar finibus. Fusce efficitur nunc sit amet quam rutrum efficitur vel ut tellus. Donec finibus nec ipsum id consectetur. Ut mollis mattis justo eget efficitur.</p>
-                    <p>Praesent tempor orci tellus, ut facilisis lectus semper pretium. Nulla facilisi. Nam ut libero mi. Nulla volutpat accumsan orci, vel cursus nulla aliquam at. Ut tempus ante lectus, nec lobortis justo blandit luctus. Pellentesque vitae massa bibendum, finibus urna ac, ultricies elit. Aliquam sit amet metus odio. Mauris luctus mi auctor nisi porta imperdiet. Etiam blandit luctus justo.</p>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed vehicula urna, sit amet ornare mauris. Proin varius non velit in luctus. Cras cursus porta nisi, ac dignissim ligula tempor vitae. Quisque accumsan in arcu molestie molestie. Morbi vel ullamcorper metus, vitae facilisis quam. Proin eget erat mauris. Phasellus eget condimentum leo, ac condimentum felis. Sed eu scelerisque mauris. Sed fermentum ultricies tellus eget porttitor. Etiam sed nisl eu elit gravida posuere ac ut nulla.</p>
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-7" type="checkbox"/>
+                <label class="button" for="modal-7">Normal Modal</label>
+                <div class="modal">
+                  <label class="overlay" for="modal-7"></label>
+                  <div class="dialog -normal">
+                    <label class="close" for="modal-7"><i class="lni lni-close"></i></label>
+                    <header>
+                      HEADER
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis massa sit amet dolor imperdiet laoreet non eget purus. Etiam in tortor auctor, sodales metus sed, commodo mauris. Quisque elementum facilisis ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean dolor dolor, aliquet sit amet vehicula sed, varius in enim. Duis lacinia nulla tristique, porttitor nulla a, condimentum erat. In hac habitasse platea dictumst. Fusce in purus vulputate mauris iaculis tristique. Donec sed justo consequat tortor sodales posuere non ut velit.</p>
+                      <p>Vivamus ullamcorper sapien eget lectus ultricies consectetur. Cras molestie lobortis magna, eu finibus mauris maximus efficitur. Quisque vel porta dui. Suspendisse ut interdum mi. Integer pharetra nulla erat, ac malesuada erat bibendum nec. Sed vehicula non elit non placerat. Ut porttitor dolor feugiat augue laoreet, nec pellentesque tortor ornare. Pellentesque quis bibendum justo, et malesuada nulla. Nullam at vestibulum quam. Nam congue pulvinar finibus. Fusce efficitur nunc sit amet quam rutrum efficitur vel ut tellus. Donec finibus nec ipsum id consectetur. Ut mollis mattis justo eget efficitur.</p>
+                      <p>Praesent tempor orci tellus, ut facilisis lectus semper pretium. Nulla facilisi. Nam ut libero mi. Nulla volutpat accumsan orci, vel cursus nulla aliquam at. Ut tempus ante lectus, nec lobortis justo blandit luctus. Pellentesque vitae massa bibendum, finibus urna ac, ultricies elit. Aliquam sit amet metus odio. Mauris luctus mi auctor nisi porta imperdiet. Etiam blandit luctus justo.</p>
+                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed vehicula urna, sit amet ornare mauris. Proin varius non velit in luctus. Cras cursus porta nisi, ac dignissim ligula tempor vitae. Quisque accumsan in arcu molestie molestie. Morbi vel ullamcorper metus, vitae facilisis quam. Proin eget erat mauris. Phasellus eget condimentum leo, ac condimentum felis. Sed eu scelerisque mauris. Sed fermentum ultricies tellus eget porttitor. Etiam sed nisl eu elit gravida posuere ac ut nulla.</p>
+                    </div>
+                    <footer>
+                      FOOTER
+                    </footer>
                   </div>
-                  <footer>
-                    FOOTER
-                  </footer>
                 </div>
               </div>
 
-              <label class="button" for="modal-8">Medium Modal</label>
-              <input class="modal-toggle" id="modal-8" type="checkbox" />
-              <div class="modal">
-                <label class="overlay" for="modal-8"></label>
-                <div class="dialog -medium">
-                  <label class="close" for="modal-8"><i class="lni lni-close"></i></label>
-                  <header>
-                    HEADER
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis massa sit amet dolor imperdiet laoreet non eget purus. Etiam in tortor auctor, sodales metus sed, commodo mauris. Quisque elementum facilisis ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean dolor dolor, aliquet sit amet vehicula sed, varius in enim. Duis lacinia nulla tristique, porttitor nulla a, condimentum erat. In hac habitasse platea dictumst. Fusce in purus vulputate mauris iaculis tristique. Donec sed justo consequat tortor sodales posuere non ut velit.</p>
-                    <p>Vivamus ullamcorper sapien eget lectus ultricies consectetur. Cras molestie lobortis magna, eu finibus mauris maximus efficitur. Quisque vel porta dui. Suspendisse ut interdum mi. Integer pharetra nulla erat, ac malesuada erat bibendum nec. Sed vehicula non elit non placerat. Ut porttitor dolor feugiat augue laoreet, nec pellentesque tortor ornare. Pellentesque quis bibendum justo, et malesuada nulla. Nullam at vestibulum quam. Nam congue pulvinar finibus. Fusce efficitur nunc sit amet quam rutrum efficitur vel ut tellus. Donec finibus nec ipsum id consectetur. Ut mollis mattis justo eget efficitur.</p>
-                    <p>Praesent tempor orci tellus, ut facilisis lectus semper pretium. Nulla facilisi. Nam ut libero mi. Nulla volutpat accumsan orci, vel cursus nulla aliquam at. Ut tempus ante lectus, nec lobortis justo blandit luctus. Pellentesque vitae massa bibendum, finibus urna ac, ultricies elit. Aliquam sit amet metus odio. Mauris luctus mi auctor nisi porta imperdiet. Etiam blandit luctus justo.</p>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed vehicula urna, sit amet ornare mauris. Proin varius non velit in luctus. Cras cursus porta nisi, ac dignissim ligula tempor vitae. Quisque accumsan in arcu molestie molestie. Morbi vel ullamcorper metus, vitae facilisis quam. Proin eget erat mauris. Phasellus eget condimentum leo, ac condimentum felis. Sed eu scelerisque mauris. Sed fermentum ultricies tellus eget porttitor. Etiam sed nisl eu elit gravida posuere ac ut nulla.</p>
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-8" type="checkbox"/>
+                <label class="button" for="modal-8">Medium Modal</label>
+                <div class="modal">
+                  <label class="overlay" for="modal-8"></label>
+                  <div class="dialog -medium">
+                    <label class="close" for="modal-8"><i class="lni lni-close"></i></label>
+                    <header>
+                      HEADER
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis massa sit amet dolor imperdiet laoreet non eget purus. Etiam in tortor auctor, sodales metus sed, commodo mauris. Quisque elementum facilisis ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean dolor dolor, aliquet sit amet vehicula sed, varius in enim. Duis lacinia nulla tristique, porttitor nulla a, condimentum erat. In hac habitasse platea dictumst. Fusce in purus vulputate mauris iaculis tristique. Donec sed justo consequat tortor sodales posuere non ut velit.</p>
+                      <p>Vivamus ullamcorper sapien eget lectus ultricies consectetur. Cras molestie lobortis magna, eu finibus mauris maximus efficitur. Quisque vel porta dui. Suspendisse ut interdum mi. Integer pharetra nulla erat, ac malesuada erat bibendum nec. Sed vehicula non elit non placerat. Ut porttitor dolor feugiat augue laoreet, nec pellentesque tortor ornare. Pellentesque quis bibendum justo, et malesuada nulla. Nullam at vestibulum quam. Nam congue pulvinar finibus. Fusce efficitur nunc sit amet quam rutrum efficitur vel ut tellus. Donec finibus nec ipsum id consectetur. Ut mollis mattis justo eget efficitur.</p>
+                      <p>Praesent tempor orci tellus, ut facilisis lectus semper pretium. Nulla facilisi. Nam ut libero mi. Nulla volutpat accumsan orci, vel cursus nulla aliquam at. Ut tempus ante lectus, nec lobortis justo blandit luctus. Pellentesque vitae massa bibendum, finibus urna ac, ultricies elit. Aliquam sit amet metus odio. Mauris luctus mi auctor nisi porta imperdiet. Etiam blandit luctus justo.</p>
+                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed vehicula urna, sit amet ornare mauris. Proin varius non velit in luctus. Cras cursus porta nisi, ac dignissim ligula tempor vitae. Quisque accumsan in arcu molestie molestie. Morbi vel ullamcorper metus, vitae facilisis quam. Proin eget erat mauris. Phasellus eget condimentum leo, ac condimentum felis. Sed eu scelerisque mauris. Sed fermentum ultricies tellus eget porttitor. Etiam sed nisl eu elit gravida posuere ac ut nulla.</p>
+                    </div>
+                    <footer>
+                      FOOTER
+                    </footer>
                   </div>
-                  <footer>
-                    FOOTER
-                  </footer>
                 </div>
               </div>
 
-              <label class="button" for="modal-9">Large Modal</label>
-              <input class="modal-toggle" id="modal-9" type="checkbox" />
-              <div class="modal">
-                <label class="overlay" for="modal-9"></label>
-                <div class="dialog -large">
-                  <label class="close" for="modal-9"><i class="lni lni-close"></i></label>
-                  <header>
-                    HEADER
-                  </header>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis massa sit amet dolor imperdiet laoreet non eget purus. Etiam in tortor auctor, sodales metus sed, commodo mauris. Quisque elementum facilisis ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean dolor dolor, aliquet sit amet vehicula sed, varius in enim. Duis lacinia nulla tristique, porttitor nulla a, condimentum erat. In hac habitasse platea dictumst. Fusce in purus vulputate mauris iaculis tristique. Donec sed justo consequat tortor sodales posuere non ut velit.</p>
-                    <p>Vivamus ullamcorper sapien eget lectus ultricies consectetur. Cras molestie lobortis magna, eu finibus mauris maximus efficitur. Quisque vel porta dui. Suspendisse ut interdum mi. Integer pharetra nulla erat, ac malesuada erat bibendum nec. Sed vehicula non elit non placerat. Ut porttitor dolor feugiat augue laoreet, nec pellentesque tortor ornare. Pellentesque quis bibendum justo, et malesuada nulla. Nullam at vestibulum quam. Nam congue pulvinar finibus. Fusce efficitur nunc sit amet quam rutrum efficitur vel ut tellus. Donec finibus nec ipsum id consectetur. Ut mollis mattis justo eget efficitur.</p>
-                    <p>Praesent tempor orci tellus, ut facilisis lectus semper pretium. Nulla facilisi. Nam ut libero mi. Nulla volutpat accumsan orci, vel cursus nulla aliquam at. Ut tempus ante lectus, nec lobortis justo blandit luctus. Pellentesque vitae massa bibendum, finibus urna ac, ultricies elit. Aliquam sit amet metus odio. Mauris luctus mi auctor nisi porta imperdiet. Etiam blandit luctus justo.</p>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed vehicula urna, sit amet ornare mauris. Proin varius non velit in luctus. Cras cursus porta nisi, ac dignissim ligula tempor vitae. Quisque accumsan in arcu molestie molestie. Morbi vel ullamcorper metus, vitae facilisis quam. Proin eget erat mauris. Phasellus eget condimentum leo, ac condimentum felis. Sed eu scelerisque mauris. Sed fermentum ultricies tellus eget porttitor. Etiam sed nisl eu elit gravida posuere ac ut nulla.</p>
+              <div class="--inline">
+                <input class="modal-toggle" id="modal-9" type="checkbox"/>
+                <label class="button" for="modal-9">Large Modal</label>
+                <div class="modal">
+                  <label class="overlay" for="modal-9"></label>
+                  <div class="dialog -large">
+                    <label class="close" for="modal-9"><i class="lni lni-close"></i></label>
+                    <header>
+                      HEADER
+                    </header>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis massa sit amet dolor imperdiet laoreet non eget purus. Etiam in tortor auctor, sodales metus sed, commodo mauris. Quisque elementum facilisis ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean dolor dolor, aliquet sit amet vehicula sed, varius in enim. Duis lacinia nulla tristique, porttitor nulla a, condimentum erat. In hac habitasse platea dictumst. Fusce in purus vulputate mauris iaculis tristique. Donec sed justo consequat tortor sodales posuere non ut velit.</p>
+                      <p>Vivamus ullamcorper sapien eget lectus ultricies consectetur. Cras molestie lobortis magna, eu finibus mauris maximus efficitur. Quisque vel porta dui. Suspendisse ut interdum mi. Integer pharetra nulla erat, ac malesuada erat bibendum nec. Sed vehicula non elit non placerat. Ut porttitor dolor feugiat augue laoreet, nec pellentesque tortor ornare. Pellentesque quis bibendum justo, et malesuada nulla. Nullam at vestibulum quam. Nam congue pulvinar finibus. Fusce efficitur nunc sit amet quam rutrum efficitur vel ut tellus. Donec finibus nec ipsum id consectetur. Ut mollis mattis justo eget efficitur.</p>
+                      <p>Praesent tempor orci tellus, ut facilisis lectus semper pretium. Nulla facilisi. Nam ut libero mi. Nulla volutpat accumsan orci, vel cursus nulla aliquam at. Ut tempus ante lectus, nec lobortis justo blandit luctus. Pellentesque vitae massa bibendum, finibus urna ac, ultricies elit. Aliquam sit amet metus odio. Mauris luctus mi auctor nisi porta imperdiet. Etiam blandit luctus justo.</p>
+                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sed vehicula urna, sit amet ornare mauris. Proin varius non velit in luctus. Cras cursus porta nisi, ac dignissim ligula tempor vitae. Quisque accumsan in arcu molestie molestie. Morbi vel ullamcorper metus, vitae facilisis quam. Proin eget erat mauris. Phasellus eget condimentum leo, ac condimentum felis. Sed eu scelerisque mauris. Sed fermentum ultricies tellus eget porttitor. Etiam sed nisl eu elit gravida posuere ac ut nulla.</p>
+                    </div>
+                    <footer>
+                      FOOTER
+                    </footer>
                   </div>
-                  <footer>
-                    FOOTER
-                  </footer>
                 </div>
               </div>
             </header>
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
+                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-6&quot; type=&quot;checkbox&quot;/&gt;
                   &lt;label class=&quot;button&quot; for=&quot;modal-6&quot;&gt;Small Modal&lt;/label&gt;
-                  &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-6&quot; type=&quot;checkbox&quot; /&gt;
                   &lt;div class=&quot;modal&quot;&gt;
                     &lt;label class=&quot;overlay&quot; for=&quot;modal-6&quot;&gt;&lt;/label&gt;
                     &lt;div class=&quot;dialog -small&quot;&gt;
@@ -518,8 +539,8 @@
 
           <figure>
             <header>
+              <input class="modal-toggle" id="modal-lightbox" type="checkbox"/>
               <label class="button" for="modal-lightbox">Lightbox</label>
-              <input class="modal-toggle" id="modal-lightbox" type="checkbox" />
               <div class="modal -lightbox -landscape">
                 <label class="overlay" for="modal-lightbox"></label>
                 <div class="dialog">
@@ -533,8 +554,8 @@
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
-                  &lt;label class=&quot;button&quot; for=&quot;modal-lightbox&quot;&gt;Lightbox&lt;/label&gt;
                   &lt;input class=&quot;modal-toggle&quot; id=&quot;modal-lightbox&quot; type=&quot;checkbox&quot; /&gt;
+                  &lt;label class=&quot;button&quot; for=&quot;modal-lightbox&quot;&gt;Lightbox&lt;/label&gt;
                   &lt;div class=&quot;modal -lightbox -landscape&quot;&gt;
                     &lt;label class=&quot;overlay&quot; for=&quot;modal-lightbox&quot;&gt;&lt;/label&gt;
                     &lt;div class=&quot;dialog&quot;&gt;
@@ -554,6 +575,7 @@
           <h2 id="caveats" class="jump"><a href="#caveats"># Caveats</a></h2>
           <p>While no JavaScript is required to use modals, there are a few things to consider:</p>
           <ul class="-disc">
+            <li>If multiple labels are used to open the same modal then they must all share the same parent. If there are multiple labels that open their own modals then they each need their own parent.</li>
             <li>Modals cannot prevent the body or page from scrolling behind it, but ASH has a built-in helper. You can add/toggle the <code>noscroll</code> class on the body. This can be done with some JavaScript that will be called once the page is fully loaded:</li>
           </ul>
 

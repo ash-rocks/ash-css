@@ -4,22 +4,30 @@ html.dark {
       background-color: @color[black-light];
 
       > header {
-        border-bottom: 1px solid @color[black];
+        border-bottom: 2px solid @color[black];
       }
 
       > footer {
-        border-top: 1px solid @color[black];
+        border-top: 2px solid @color[black];
       }
 
       > .actions {
-        border-top: 1px solid @color[black];
+        border-top: 2px solid @color[black];
 
         a,
         button {
           &:not(:last-child) {
-            border-right: 1px solid @color[black];
+            border-right: 2px solid @color[black];
           }
         }
+      }
+    }
+  }
+
+  .modal-toggle {
+    &:focus-visible {
+      + label {
+        outline: 2px dashed @color[gray-lightest];
       }
     }
   }

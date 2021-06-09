@@ -19,6 +19,11 @@
         <section>
           <h2 id="intro" class="jump"><a href="#intro"># Intro</a></h2>
           <p>Dropdowns are toggleable overlays that can display most type of content. Dropdowns should not contain forms or any elements that require multiple interactions since the content container will close as soon as it loses focus.</p>
+          <div class="alert -primary">
+            <div class="content">
+              The contents of the dropdown will not be navigatable using the keyboards or other accessibility tools.
+            </div>
+          </div>
 
           <figure>
             <header>

@@ -41,18 +41,18 @@
 
           <figure>
             <header>
-              <a class="tooltip -top --margin-right-1" data-tooltip="this is an anchor tooltip">Anchor</a>
+              <a href="" class="tooltip -top --margin-right-1" data-tooltip="this is an anchor tooltip">Anchor</a>
               <button class="button tooltip -top" data-tooltip="this is a button tooltip">Button</button>
-              <label class="tooltip -top --margin-left-1" data-tooltip="this is a label tooltip">Label</label>
-              <p>This is a <u><span class="tooltip -bottom" data-tooltip="this is a span tooltip">tooltip</span></u> inside a paragraph</p>
+              <label class="tooltip -top --margin-left-1" data-tooltip="this is a label tooltip" tabindex="0">Label</label>
+              <p>This is a <u><span class="tooltip -bottom" data-tooltip="this is a span tooltip" tabindex="0">tooltip</span></u> inside a paragraph</p>
             </header>
             <div class="content --padding-0">
               <pre class="--margin-0">
                 <code class="language-html">
-                  &lt;a class=&quot;tooltip -top&quot; data-tooltip=&quot;this is an anchor tooltip&quot;&gt;Anchor&lt;/a&gt;
+                  &lt;a href=&quot;&quot; class=&quot;tooltip -top&quot; data-tooltip=&quot;this is an anchor tooltip&quot;&gt;Anchor&lt;/a&gt;
                   &lt;button class=&quot;button tooltip -top&quot; data-tooltip=&quot;this is a button tooltip&quot;&gt;Button&lt;/button&gt;
-                  &lt;label class=&quot;tooltip -top&quot; data-tooltip=&quot;this is a label tooltip&quot;&gt;Label&lt;/label&gt;
-                  &lt;p&gt;This is a &lt;u&gt;&lt;span class=&quot;tooltip -bottom&quot; data-tooltip=&quot;this is a span tooltip&quot;&gt;tooltip&lt;/span&gt;&lt;/u&gt; inside a paragraph&lt;/p&gt;
+                  &lt;label class=&quot;tooltip -top&quot; data-tooltip=&quot;this is a label tooltip&quot; tabindex=&quot;0&quot;&gt;Label&lt;/label&gt;
+                  &lt;p&gt;This is a &lt;u&gt;&lt;span class=&quot;tooltip -bottom&quot; data-tooltip=&quot;this is a span tooltip&quot; tabindex=&quot;0&quot;&gt;tooltip&lt;/span&gt;&lt;/u&gt; inside a paragraph&lt;/p&gt;
                 </code>
               </pre>
             </div>

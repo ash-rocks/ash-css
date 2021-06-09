@@ -82,7 +82,7 @@
 
         <section>
           <h2 id="indeterminate" class="jump"><a href="#indeterminate"># Indeterminate</a></h2>
-          <p>Progress bars can be indeterminate by removing the <code>value</code> and/or <code>max</code> attribute. Indeterminate bars will be animated.</p>
+          <p>Progress bars can be indeterminate by removing the <code>value</code> and/or <code>max</code> attribute. Indeterminate bars will be animated if <code>prefers-reduced-motion</code> is not set, otherwise they will be striped without animation.</p>
 
           <figure>
             <header>

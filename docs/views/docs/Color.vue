@@ -334,10 +334,10 @@
     <input class="modal-toggle" id="modal-accessibility" type="checkbox" />
     <div class="modal">
       <label class="overlay" for="modal-accessibility"></label>
-      <div class="dialog -medium">
+      <div class="dialog -medium" id="modal-dialog">
         <label class="close" for="modal-accessibility"><i class="lni lni-close"></i></label>
         <header v-if="palette">{{ palette.name }} - {{ palette.hex }}</header>
-        <div class="content --padding-0" id="modal-content" v-if="palette">
+        <div class="content --padding-0" v-if="palette">
           <div :class="['--padding-4 --background-' + palette.name]" v-if="palette.combinations.length > 0">
             <div class="--margin-bottom-16" v-for="combination in palette.combinations" :key="combination.name">
               <h3 :class="['--color-' + combination.name]">{{ combination.name }} - {{ combination.hex }}</h3>
@@ -504,10 +504,6 @@
         if (this.palettes) {
           let palette = this.palettes.find(o => o.name === name)
           this.palette = (typeof palette !== 'undefined') ? palette : false
-          let content = document.getElementById('modal-content')
-          if (content) {
-            content.scrollTop = 0
-          }
         }
       }
     }

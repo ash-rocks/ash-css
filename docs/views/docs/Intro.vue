@@ -51,7 +51,7 @@
           <p>Other generic frameworks are a great starting point but lack utilities and usually requires creating additional custom styling on top of them. Utility frameworks are also great but are very large with many unnecessary utilities for every single breakpoint and have no built-in default styling. ASH is a blend of these types of frameworks and is easy to customize and optimize.</p>
           <p>ASH uses unique object class naming and overrides with modifiers and utilities. Objects, modifiers, and utilities are easily distinguishable in your markup and are easy to understand what they do. This OMU structure work in the following way:</p>
 
-          <h4 class="--align-center">Specificity: object <small>-></small> -{modifier} <small>-></small> --{utility}</h4>
+          <h4 class="--align-center --margin-top-8">Specificity: object <small>-></small> -{modifier} <small>-></small> --{utility}</h4>
 
           <dl>
             <dt>Object</dt>
@@ -68,7 +68,7 @@
             <code class="language-html">
               &lt;button class=&quot;-primary -large --uppercase&quot;&gt;ASH CSS&lt;/button&gt;
               &lt;button class=&quot;btn btn-primary btn-lg text-uppercase&quot;&gt;Bootstrap&lt;/button&gt;
-              &lt;button class=&quot;button is-primary is-uppercase&quot;&gt;Bulma&lt;/button&gt;
+              &lt;button class=&quot;button is-primary is-large is-uppercase&quot;&gt;Bulma&lt;/button&gt;
               &lt;button class=&quot;bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded uppercase&quot;&gt;Tailwind&lt;/button&gt;
             </code>
           </pre>

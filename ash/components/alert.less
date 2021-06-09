@@ -10,7 +10,7 @@
   &.-outline {
     > .content {
       background-color: @color[transparent];
-      border: 1px solid @color[gray-lighten];
+      border: 2px solid @color[gray-lighten];
       color: @color[gray-darker];
     }
   }
@@ -26,19 +26,30 @@
 
     > input[type="checkbox"],
     > input[type="radio"] {
-      display: none;
-    }
-
-    > input:checked + label {
-      display: none;
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      width: 0;
     }
 
     > .content {
       padding: @padding[3] @padding[5];
     }
 
-    > input:checked ~ .content {
-      display: none;
+    > input:checked {
+      + label {
+        display: none;
+      }
+
+      ~ .content {
+        display: none;
+      }
+    }
+
+    &:not(.-fixed) {
+      > input:focus + label {
+        outline: 2px dashed @color[gray-darkest];
+      }
     }
   }
 
@@ -64,7 +75,7 @@
     &.-@{value} {
       > .content {
         background-color: @@value[background];
-        border: 1px solid @@value[border];
+        border: 2px solid @@value[border];
         color: @@value[color];
 
         a {
@@ -76,7 +87,7 @@
       &.-outline {
         > .content {
           background-color: @color[transparent];
-          border: 1px solid @@value[border];
+          border: 2px solid @@value[border];
           color: if(@value = light, @color[white], @color[gray-darker]);
         }
 

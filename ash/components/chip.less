@@ -1,6 +1,7 @@
 .chip {
   align-items: center;
   background-color: @color[gray-lighter];
+  border: 2px solid @color[gray-lighter];
   border-radius: @radius;
   color: @color[gray-darkest];
   display: inline-flex;
@@ -16,17 +17,18 @@
 
   &.-outline {
     background-color: @color[transparent];
-    border: 1px solid @color[gray-lighten];
+    border: 2px solid @color[gray-lighten];
   }
 
   each(@swatches, {
     &.-@{value} {
       background: @@value[background];
+      border: 2px solid @@value[border];
       color: @@value[color];
 
       &.-outline {
         background-color: @color[transparent];
-        border: 1px solid @@value[border];
+        border: 2px solid @@value[border];
         color: if(@value = light, @color[white], @color[gray-darker]);
       }
     }

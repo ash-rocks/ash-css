@@ -11,6 +11,7 @@
     content: attr(data-badge);
     display: inline-block;
     transform: translate(-0.05rem, -0.5rem);
+    z-index: @z-index[1];
   }
 
   each(@swatches, .(@svalue, @skey, @sindex) {
@@ -28,7 +29,7 @@
       height: 1rem;
       line-height: 0.5rem;
       min-width: 1rem;
-      padding: @padding[1];
+      padding: @padding[1] @padding[2];
       text-align: center;
       white-space: nowrap;
     }

@@ -4,11 +4,11 @@ html.dark {
     color: @color[gray-lightest];
 
     > header {
-      border-bottom: 1px solid @color[black-lighten];
+      border-bottom: 2px solid @color[black-lighten];
     }
 
     .actions {
-      border-top: 1px solid @color[black-lighten];
+      border-top: 2px solid @color[black-lighten];
 
       a:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
         color: @color[blue-lightest];
@@ -17,18 +17,18 @@ html.dark {
       a,
       button {
         &:not(:last-child) {
-          border-right: 1px solid @color[black-lighten];
+          border-right: 2px solid @color[black-lighten];
         }
       }
     }
 
     > footer {
-      border-top: 1px solid @color[black];
+      border-top: 2px solid @color[black-lighten];
     }
 
     &.-outline {
       background-color: transparent;
-      border: 1px solid @color[black-light];
+      border: 2px solid @color[black-light];
       box-shadow: none;
     }
 
@@ -39,16 +39,16 @@ html.dark {
         color: @@value[color];
 
         > header {
-          border-bottom: 1px solid @@value[active-border];
+          border-bottom: 2px solid @@value[active-border];
         }
 
         > footer {
-          border-top: 1px solid @@value[active-border];
+          border-top: 2px solid @@value[active-border];
         }
 
         &.-outline {
           background-color: transparent;
-          border: 1px solid @@value[border];
+          border: 2px solid @@value[border];
           box-shadow: none;
           color: inherit;
 
@@ -63,7 +63,7 @@ html.dark {
         }
 
         .actions {
-          border-top: 1px solid @@value[active-border];
+          border-top: 2px solid @@value[active-border];
 
           a,
           button {
@@ -81,7 +81,7 @@ html.dark {
 
     &.-dark {
       &.-outline {
-        border: 1px solid @color[black];
+        border: 2px solid @color[black];
       }
     }
   }

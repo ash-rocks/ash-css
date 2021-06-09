@@ -6,7 +6,7 @@ figure {
   max-width: 100%;
 
   > header {
-    border-bottom: 1px solid @color[gray-lighter];
+    border-bottom: 2px solid @color[gray-lighter];
     padding: @padding[3] @padding[6];
   }
 
@@ -68,7 +68,7 @@ figure {
 
   .actions {
     align-items: stretch;
-    border-top: 1px solid @color[gray-lighter];
+    border-top: 2px solid @color[gray-lighter];
     display: flex;
 
     a,
@@ -86,8 +86,12 @@ figure {
         border: none;
       }
 
+      &:focus-visible {
+        outline-offset: -2px;
+      }
+
       &:not(:last-child) {
-        border-right: 1px solid @color[gray-lighter];
+        border-right: 2px solid @color[gray-lighter];
       }
     }
 
@@ -102,7 +106,7 @@ figure {
   }
 
   > footer {
-    border-top: 1px solid @color[gray-lighter];
+    border-top: 2px solid @color[gray-lighter];
     padding: @padding[3] @padding[6];
   }
 
@@ -182,7 +186,7 @@ figure {
 
   &.-outline {
     background-color: transparent;
-    border: 1px solid @color[gray-lighten];
+    border: 2px solid @color[gray-lighter];
     box-shadow: none;
   }
 
@@ -193,16 +197,16 @@ figure {
       color: @@value[color];
 
       > header {
-        border-bottom: 1px solid @@value[active-border];
+        border-bottom: 2px solid @@value[active-border];
       }
 
       > footer {
-        border-top: 1px solid @@value[active-border];
+        border-top: 2px solid @@value[active-border];
       }
 
       &.-outline {
         background-color: transparent;
-        border: 1px solid @@value[border];
+        border: 2px solid @@value[active-border];
         box-shadow: none;
         color: inherit;
 
@@ -217,7 +221,7 @@ figure {
       }
 
       .actions {
-        border-top: 1px solid @@value[active-border];
+        border-top-color: @@value[active-border];
 
         a,
         button {
@@ -226,7 +230,7 @@ figure {
           }
 
           &:not(:last-child) {
-            border-right: 1px solid @@value[active-border];
+            border-right-color: @@value[active-border];
           }
         }
       }

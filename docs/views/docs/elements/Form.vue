@@ -85,6 +85,26 @@
                     <input type="password" id="password-layout1">
                   </div>
                 </div>
+                <div class="row">
+                  <div class="column -md-4">
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="toggle"></span> Checkbox
+                    </label>
+                  </div>
+                  <div class="column -md-4">
+                    <label class="radio">
+                      <input type="radio" name="radio" checked>
+                      <span class="toggle"></span> Radio
+                    </label>
+                  </div>
+                  <div class="column -md-4">
+                    <label class="switch">
+                      <input type="checkbox" name="switch" checked>
+                      <span class="toggle"></span> Switch
+                    </label>
+                  </div>
+                </div>
               </form>
             </header>
             <div class="content --padding-0">
@@ -103,6 +123,26 @@
                       &lt;div class=&quot;column -md-4&quot;&gt;
                         &lt;label for=&quot;password-layout1&quot;&gt;Password&lt;/label&gt;
                         &lt;input type=&quot;password&quot; id=&quot;password-layout1&quot;&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;row&quot;&gt;
+                      &lt;div class=&quot;column -md-4&quot;&gt;
+                        &lt;label class=&quot;checkbox&quot;&gt;
+                          &lt;input type=&quot;checkbox&quot; checked&gt;
+                          &lt;span class=&quot;toggle&quot;&gt;&lt;/span&gt; Checkbox
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;column -md-4&quot;&gt;
+                        &lt;label class=&quot;radio&quot;&gt;
+                          &lt;input type=&quot;radio&quot; name=&quot;radio&quot; checked&gt;
+                          &lt;span class=&quot;toggle&quot;&gt;&lt;/span&gt; Radio
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;column -md-4&quot;&gt;
+                        &lt;label class=&quot;switch&quot;&gt;
+                          &lt;input type=&quot;checkbox&quot; name=&quot;switch&quot; checked&gt;
+                          &lt;span class=&quot;toggle&quot;&gt;&lt;/span&gt; Switch
+                        &lt;/label&gt;
                       &lt;/div&gt;
                     &lt;/div&gt;
                   &lt;/form&gt;

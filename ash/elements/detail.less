@@ -1,5 +1,5 @@
 details {
-  border: 1px solid @color[gray-lightest];
+  border: 2px solid @color[gray-lightest];
   border-radius: @radius;
   margin-bottom: @margin[4];
   width: 100%;
@@ -27,12 +27,15 @@ details {
     > .icon {
       color: @color[gray];
       float: right;
-      margin-top: @margin[1];
       transition: transform 100ms;
     }
 
     &:hover {
       background-color: @color[gray-lightest];
+    }
+
+    &:focus-visible {
+      outline-offset: -2px;
     }
   }
 
@@ -43,7 +46,7 @@ details {
 
   &[open] {
     > summary {
-      border-bottom: 1px solid @color[gray-lightest];
+      border-bottom: 2px solid @color[gray-lightest];
 
       > .icon {
         transform: rotate(90deg);

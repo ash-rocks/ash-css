@@ -4,7 +4,7 @@ input[type="submit"],
 button,
 .button {
   background-color: @color[gray-lightest];
-  border: 1px solid @color[gray-lightest];
+  border: 2px solid @color[gray-lightest];
   border-radius: @radius;
   color: @color[gray-darker];
   display: inline-block;
@@ -25,6 +25,7 @@ button,
 
   &:hover {
     background-color: @color[gray-lighter];
+    border-color: @color[gray-lighter];
     color: @color[gray-darkest];
     text-decoration: none;
   }
@@ -34,52 +35,56 @@ button,
   }
 
   &:focus {
-    outline: none;
+    outline: 0;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed @color[gray-darkest];
   }
 
   &.-outline {
     background-color: @color[transparent];
-    border: 1px solid @color[gray-lighter];
+    border: 2px solid @color[gray-lighter];
     color: @color[gray-darker];
 
     &:hover {
       background-color: @color[transparent];
-      border: 1px solid @color[gray-lighten];
+      border-color: @color[gray-lighten];
     }
   }
 
   &[disabled] {
-    background-color: @color[white];
-    border: 1px solid @color[gray-lighten];
+    background-color: @color[white-dark];
+    border-color: @color[white-dark];
     color: @color[gray];
   }
 
   each(@swatches, {
     &.-@{value} {
       background-color: @@value[background];
-      border: 1px solid @@value[border];
+      border-color: @@value[border];
       color: @@value[color];
 
       &:hover {
         background-color: @@value[active-background];
-        border: 1px solid @@value[active-border];
+        border-color: @@value[active-border];
       }
 
       &.-outline {
         background-color: @color[transparent];
-        border: 1px solid @@value[border];
+        border-color: @@value[border];
         color: if(@value = success or @value = warning or @value = danger, @warning[color], @@value[border]);
 
         &:hover {
           background-color: @color[transparent];
-          border: 1px solid @@value[active-border];
+          border-color: @@value[active-border];
           color: @@value[active-color];
         }
       }
 
       &[disabled] {
         background-color: @@value[disabled-background];
-        border: 1px solid @@value[disabled-border];
+        border-color: @@value[disabled-border];
         color: @@value[disabled-color];
       }
     }
@@ -122,7 +127,11 @@ button,
   button,
   .button {
     border-radius: 0;
-    margin: @margin[1] -1px;
+    margin: @margin[1] 0;
+
+    &:focus-visible {
+      outline-offset: -2px;
+    }
 
     &:first-child {
       border-top-left-radius: @radius;
