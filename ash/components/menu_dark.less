@@ -10,10 +10,7 @@ html.dark {
       & > a:not(.button):not(.link) {
         color: @color[gray-lightest];
 
-        &:active,
-        &.active,
-        &:focus,
-        &:hover {
+        &:is(:active, .active, :focus, :hover) {
           background-color: @color[black-lighten];
           color: @color[blue];
         }

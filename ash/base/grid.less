@@ -70,7 +70,6 @@ each(@breakpoint, .(@bvalue, @bkey, @bi) {
     }
 
     .column {
-
       &.-@{bkey} {
         flex: 1 0 0 !important;
       }
@@ -82,7 +81,6 @@ each(@breakpoint, .(@bvalue, @bkey, @bi) {
       }
 
       each(@column, .(@cvalue, @ckey, @ci) {
-
         &.-@{bkey}-@{ckey} {
           flex: 0 0 @cvalue;
           max-width: @cvalue;

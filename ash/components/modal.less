@@ -27,7 +27,7 @@ body.noscroll {
     background-color: @color[white];
     border-radius: @radius;
     margin: @margin[8] auto;
-    max-height: 598px;
+    max-height: calc(100vh - (@margin[8] * 2));
     overflow: hidden;
     position: relative;
     top: -20%;
@@ -41,7 +41,7 @@ body.noscroll {
     }
 
     > .content {
-      max-height: 500px;
+      max-height: calc(100vh - (@margin[8] * 2) - 98px);
       overflow-y: auto;
       padding: @padding[4] @padding[3];
     }
@@ -98,15 +98,12 @@ body.noscroll {
           border-bottom: 2px solid @@value[active-border];
         }
 
-        > footer {
+        > :is(footer, .actions) {
           border-top: 2px solid @@value[active-border];
         }
 
         > .actions {
-          border-top: 2px solid @@value[active-border];
-
-          a,
-          button {
+          :is(a, button) {
             &:not(.-primary):not(.-success):not(.-warning):not(.-danger):not(.-dark):not(.-light) {
               color: @@value[color];
             }
@@ -154,7 +151,7 @@ body.noscroll {
 }
 
 .modal-toggle {
-  display: inline-block;
+  display: contents;
   height: 0;
   margin: 0;
   opacity: 0;
@@ -182,12 +179,7 @@ body.noscroll {
   .modal {
     > .dialog {
       box-sizing: border-box;
-      max-height: calc(100vh - (@margin[8] * 2));
       width: 90%;
-
-      > .content {
-        max-height: calc(100vh - (@margin[8] * 2) - 98px);
-      }
     }
 
     &.-lightbox {
@@ -202,8 +194,6 @@ body.noscroll {
         > .dialog .content img {
           height: 100%;
           width: auto;
-          margin-left: auto;
-          margin-right: auto;
         }
       }
 
@@ -211,8 +201,6 @@ body.noscroll {
         > .dialog .content img {
           height: 50%;
           width: 100%;
-          margin-left: auto;
-          margin-right: auto;
         }
       }
     }
@@ -222,21 +210,11 @@ body.noscroll {
 @media (min-width: @breakpoint[md]) {
   .modal > .dialog {
     &.-small {
-      max-height: calc(100vh - (@margin[8] * 2));
       width: 40%;
-
-      > .content {
-        max-height: calc(100vh - (@margin[8] * 2) - 98px);
-      }
     }
 
     &.-normal {
-      max-height: calc(100vh - (@margin[8] * 2));
       width: 50%;
-
-      > .content {
-        max-height: calc(100vh - (@margin[8] * 2) - 98px);
-      }
     }
   }
 }
@@ -244,21 +222,11 @@ body.noscroll {
 @media (min-width: @breakpoint[lg]) {
   .modal > .dialog {
     &.-medium {
-      max-height: calc(100vh - (@margin[8] * 2));
       width: 60%;
-
-      > .content {
-        max-height: calc(100vh - (@margin[8] * 2) - 98px);
-      }
     }
 
     &.-large {
-      max-height: calc(100vh - (@margin[8] * 2));
       width: 70%;
-
-      > .content {
-        max-height: calc(100vh - (@margin[8] * 2) - 98px);
-      }
     }
   }
 }

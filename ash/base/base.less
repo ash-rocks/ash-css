@@ -68,10 +68,7 @@ small {
   font-size: 80%;
 }
 
-code,
-kbd,
-samp,
-pre {
+:is(code, kbd, samp, pre) {
   font-family:
     /* macOS 10.10+ */ "Menlo",
     /* Windows 6+ */ "Consolas",
@@ -109,42 +106,20 @@ a {
   color: @color[blue];
   text-decoration: none;
 
-  &:link {
+  &:is(:link, :visited) {
     color: @color[blue];
   }
 
-  &:visited {
-    color: @color[blue];
-  }
-
-  &:hover {
-    color: @color[blue-darken];
-  }
-
-  &:active {
+  &:is(:hover, :active) {
     color: @color[blue-darken];
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+:is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
   color: inherit;
   font-weight: 500;
   line-height: 1.5;
   margin: 0.5rem 0;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-weight: 500;
 }
 
 h1,
@@ -182,12 +157,7 @@ abbr[title] {
   text-decoration: underline dotted;
 }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+:is(audio, canvas, iframe, img, svg, video) {
   vertical-align: middle;
 }
 
@@ -244,15 +214,7 @@ mark {
   padding: 0 @padding[1];
 }
 
-a,
-area,
-button,
-input,
-label,
-select,
-summary,
-textarea,
-[tabindex] {
+:is(a, area, button, input, label, select, summary, textarea, [tabindex]) {
   touch-action: manipulation;
 }
 

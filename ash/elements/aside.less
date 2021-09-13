@@ -11,11 +11,7 @@ aside {
     font-size: normal;
     padding: @padding[2];
 
-    &.active {
-      color: @color[blue];
-    }
-
-    &:hover {
+    &:is(.active, :hover) {
       color: @color[blue];
     }
   }
@@ -47,11 +43,7 @@ aside {
       padding: @padding[1] @padding[2];
       text-transform: none;
 
-      &.active {
-        color: @color[blue];
-      }
-
-      &:hover {
+      &:is(.active, :hover) {
         color: @color[blue];
       }
     }

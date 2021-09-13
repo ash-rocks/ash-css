@@ -6,7 +6,7 @@ html.dark {
     .link {
       color: @color[gray-lighter];
 
-      &:hover {
+      &:is(.active, :hover) {
         color: @color[blue-lighten];
       }
     }
@@ -33,7 +33,7 @@ html.dark {
       }
 
       .link {
-        &:hover {
+        &:is(.active, :hover) {
           color: @color[blue-lighten];
         }
       }

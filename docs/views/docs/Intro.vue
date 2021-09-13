@@ -37,7 +37,7 @@
 
           <h3>Features</h3>
           <ul class="-circle">
-            <li>Accessible color pallete with 91 colors</li>
+            <li>Accessible color pallete with 99 colors</li>
             <li>Classless and symantic markup</li>
             <li>Dark mode that's easy on the eyes</li>
             <li>Mix of flat, fluent, and material design</li>

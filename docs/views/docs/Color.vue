@@ -4,10 +4,10 @@
     <div class="row">
       <div class="column -12">
         <h1>Color</h1>
-        <p>ASH uses a simple coloring palette for use in your projects and contains 92 colors in total. Most colors includes 7 steps which goes from darkest to lightest. The main color starts in the middle and is either lightened or darkened 10% each step.</p>
+        <p>ASH uses a simple coloring palette for use in your projects and contains 99 colors in total. Most colors includes 7 steps which goes from darkest to lightest. The main color starts in the middle and is either lightened or darkened 10% each step.</p>
         <div class="alert -primary" role="alert">
           <div class="content">
-            ASH strives to follow accessibility standards, but it is up to you to keep your project compliant. Click on the name of a color to see matching WCAG AA, 4.5 contrast ratio, or better combinations. Some colors have insufficient contrast and should only be used for non-text elements.
+            ASH strives to follow accessibility standards, but it is up to you to keep your project compliant. Click on the name of a color to see matching WCAG AA, 4.5 contrast ratio, or better combinations. All colors have at least one valid combination for white or black text.
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
         <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan-darker</label>
       </div>
       <div class="column -md --background-cyan-darken --padding-4">
-        <label class="tooltip --color-white --cursor-pointer" for="modal-accessibility" data-tooltip="for non-text elements only" v-on:click="renderModal"><i class="lni lni-star-half"></i> <u>cyan-darken</u></label>
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan-darken</label>
       </div>
       <div class="column -md --background-cyan --padding-4">
         <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">cyan</label>
@@ -144,7 +144,7 @@
         <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red-darken</label>
       </div>
       <div class="column -md --background-red --padding-4">
-        <label class="tooltip --color-white --cursor-pointer" for="modal-accessibility" data-tooltip="for non-text elements only" v-on:click="renderModal"><i class="lni lni-star-half"></i> <u>red</u></label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red</label>
       </div>
       <div class="column -md --background-red-lighten --padding-4">
         <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">red-lighten</label>
@@ -192,7 +192,7 @@
         <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta-darken</label>
       </div>
       <div class="column -md --background-magenta --padding-4">
-        <label class="tooltip --color-white --cursor-pointer" for="modal-accessibility" data-tooltip="for non-text elements only" v-on:click="renderModal"><i class="lni lni-star-half"></i> <u>magenta</u></label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta</label>
       </div>
       <div class="column -md --background-magenta-lighten --padding-4">
         <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">magenta-lighten</label>
@@ -230,6 +230,30 @@
     </div>
 
     <div class="row --align-center --margin-y-8">
+      <div class="column -md --background-indigo-darkest --padding-4">
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">indigo-darkest</label>
+      </div>
+      <div class="column -md --background-indigo-darker --padding-4">
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">indigo-darker</label>
+      </div>
+      <div class="column -md --background-indigo-darken --padding-4">
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">indigo-darken</label>
+      </div>
+      <div class="column -md --background-indigo --padding-4">
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">indigo</label>
+      </div>
+      <div class="column -md --background-indigo-lighten --padding-4">
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">indigo-lighten</label>
+      </div>
+      <div class="column -md --background-indigo-lighter --padding-4">
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">indigo-lighter</label>
+      </div>
+      <div class="column -md --background-indigo-lightest --padding-4">
+        <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">indigo-lightest</label>
+      </div>
+    </div>
+
+    <div class="row --align-center --margin-y-8">
       <div class="column -md --background-brown-darkest --padding-4">
         <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">brown-darkest</label>
       </div>
@@ -261,7 +285,7 @@
         <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray-darker</label>
       </div>
       <div class="column -md --background-gray-darken --padding-4">
-        <label class="tooltip --color-white --cursor-pointer" for="modal-accessibility" data-tooltip="for non-text elements only" v-on:click="renderModal"><i class="lni lni-star-half"></i> <u>gray-darken</u></label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray-darken</label>
       </div>
       <div class="column -md --background-gray --padding-4">
         <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">gray</label>
@@ -285,7 +309,7 @@
         <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel-darker</label>
       </div>
       <div class="column -md --background-steel-darken --padding-4">
-        <label class="tooltip --color-white --cursor-pointer" for="modal-accessibility" data-tooltip="for non-text elements only" v-on:click="renderModal"><i class="lni lni-star-half"></i> <u>steel-darken</u></label>
+        <label class="--color-white --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel-darken</label>
       </div>
       <div class="column -md --background-steel --padding-4">
         <label class="--color-black --cursor-pointer" for="modal-accessibility" v-on:click="renderModal">steel</label>
@@ -337,7 +361,7 @@
       <div class="dialog -medium" id="modal-dialog">
         <label class="close" for="modal-accessibility"><i class="lni lni-close"></i></label>
         <header v-if="palette">{{ palette.name }} - {{ palette.hex }}</header>
-        <div class="content --padding-0" v-if="palette">
+        <div id="modal-content" class="content --padding-0" v-if="palette">
           <div :class="['--padding-4 --background-' + palette.name]" v-if="palette.combinations.length > 0">
             <div class="--margin-bottom-16" v-for="combination in palette.combinations" :key="combination.name">
               <h3 :class="['--color-' + combination.name]">{{ combination.name }} - {{ combination.hex }}</h3>
@@ -379,13 +403,13 @@
           'blue-lightest': '#73beff',
 
           // CYAN
-          'cyan-darkest': '#093131',
-          'cyan-darker': '#115c5c',
-          'cyan-darken': '#188888',
-          'cyan': '#20b3b3',
-          'cyan-lighten': '#2dd9d9',
-          'cyan-lighter': '#58e1e1',
-          'cyan-lightest': '#83e9e9',
+          'cyan-darkest': '#145252',
+          'cyan-darker': '#1f7a7a',
+          'cyan-darken': '#29a3a3',
+          'cyan': '#33cccc',
+          'cyan-lighten': '#5cd6d6',
+          'cyan-lighter': '#85e0e0',
+          'cyan-lightest': '#adebeb',
 
           // GREEN
           'green-darkest': '#062218',
@@ -415,31 +439,31 @@
           'orange-lightest': '#ffbf82',
 
           // RED
-          'red-darkest': '#5f0f0b',
-          'red-darker': '#8d1710',
-          'red-darken': '#bb1e15',
-          'red': '#e6281d',
-          'red-lighten': '#eb544b',
-          'red-lighter': '#f07f79',
-          'red-lightest': '#f5aba7',
+          'red-darkest': '#66121a',
+          'red-darker': '#921925',
+          'red-darken': '#bd2130',
+          'red': '#dc3545',
+          'red-lighten': '#e4606d',
+          'red-lighter': '#eb8c95',
+          'red-lightest': '#f3b7bd',
 
           // PINK
-          'pink-darkest': '#520f26',
-          'pink-darker': '#7d1739',
-          'pink-darken': '#a81f4d',
-          'pink': '#d32761',
-          'pink-lighten': '#de4f7f',
-          'pink-lighter': '#e67a9e',
-          'pink-lightest': '#eea5be',
+          'pink-darkest': '#5d1338',
+          'pink-darker': '#881b51',
+          'pink-darken': '#b2246b',
+          'pink': '#d63384',
+          'pink-lighten': '#df5d9e',
+          'pink-lighter': '#e788b7',
+          'pink-lightest': '#f0b2d1',
 
           // MAGENTA
-          'magenta-darkest': '#4d023c',
-          'magenta-darker': '#7f0363',
-          'magenta-darken': '#b1048a',
-          'magenta': '#e305b1',
-          'magenta-lighten': '#fa21c9',
-          'magenta-lighter': '#fb53d5',
-          'magenta-lightest': '#fc85e1',
+          'magenta-darkest': '#460136',
+          'magenta-darker': '#78025d',
+          'magenta-darken': '#aa0383',
+          'magenta': '#dc04aa',
+          'magenta-lighten': '#fb18c6',
+          'magenta-lighter': '#fc4ad3',
+          'magenta-lightest': '#fd7cdf',
 
           // PURPLE
           'purple-darkest': '#320439',
@@ -449,6 +473,15 @@
           'purple-lighten': '#d519f0',
           'purple-lighter': '#dd49f3',
           'purple-lightest': '#e679f6',
+
+          // INDIGO
+          'indigo-darkest': '#290564',
+          'indigo-darker': '#3d0894',
+          'indigo-darken': '#510bc4',
+          'indigo': '#6610f2',
+          'indigo-lighten': '#8540f5',
+          'indigo-lighter': '#a471f7',
+          'indigo-lightest': '#c3a1fa',
 
           // BROWN
           'brown-darkest': '#17110e',
@@ -460,22 +493,22 @@
           'brown-lightest': '#bea399',
 
           // GRAY
-          'gray-darkest': '#484848',
-          'gray-darker': '#616161',
-          'gray-darken': '#7b7b7b',
-          'gray': '#949494',
-          'gray-lighten': '#aeaeae',
-          'gray-lighter': '#c7c7c7',
-          'gray-lightest': '#e1e1e1',
+          'gray-darkest': '#434343',
+          'gray-darker': '#5c5c5c',
+          'gray-darken': '#767676',
+          'gray': '#8f8f8f',
+          'gray-lighten': '#a9a9a9',
+          'gray-lighter': '#c2c2c2',
+          'gray-lightest': '#dcdcdc',
 
           // STEEL
-          'steel-darkest': '#43475c',
-          'steel-darker': '#585e7a',
-          'steel-darken': '#6e7697',
-          'steel': '#8c92ac',
-          'steel-lighten': '#aaaec1',
-          'steel-lighter': '#c7cad7',
-          'steel-lightest': '#e5e6ec',
+          'steel-darkest': '#414758',
+          'steel-darker': '#565e76',
+          'steel-darken': '#6c7693',
+          'steel': '#8991a9',
+          'steel-lighten': '#a6acbf',
+          'steel-lighter': '#c4c8d4',
+          'steel-lightest': '#e2e3e9',
 
           // WHITE
           'white': '#ffffff',
@@ -504,6 +537,7 @@
         if (this.palettes) {
           let palette = this.palettes.find(o => o.name === name)
           this.palette = (typeof palette !== 'undefined') ? palette : false
+          document.getElementById('modal-content').scrollTop = 0
         }
       }
     }

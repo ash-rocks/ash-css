@@ -1,7 +1,7 @@
 {
   "name": "ash-css",
   "description": "Accessible CSS-only semantic framework with a built-in dark mode. No JavaScript required!",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "keywords": [
     "css",
     "less",
@@ -34,16 +34,21 @@
     "build-ash": "lessc ./ash/ash.less ./dist/ash/ash.css --source-map=./dist/ash/ash.css.map && lessc ./ash/ash.less ./dist/ash/ash.min.css --clean-css=\"--s1 advanced\"",
     "build-all": "npm run build-ash && npm run build-docs"
   },
+  "files": [
+    "dist/ash/*",
+    "BACKERS.md",
+    "CODE_OF_CONDUCT.md"
+  ],
   "dependencies": {
-    "clipboard": "^2.0.6",
+    "clipboard": "^2.0.8",
     "colorable": "^1.0.5",
-    "core-js": "^3.8.3",
+    "core-js": "^3.15.2",
     "fuse.js": "^5.2.3",
-    "lodash": "^4.17.20",
-    "prismjs": "^1.23.0",
-    "vue": "^2.6.12",
+    "lodash": "^4.17.21",
+    "prismjs": "^1.24.1",
+    "vue": "^2.6.14",
     "vue-headful": "^2.1.0",
-    "vue-router": "^3.4.9"
+    "vue-router": "^3.5.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
@@ -51,7 +56,8 @@
     "@vue/cli-service": "~4.3.0",
     "less": "^3.13.1",
     "less-loader": "^5.0.0",
+    "less-plugin-autoprefix": "^2.0.0",
     "less-plugin-clean-css": "^1.5.1",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.14"
   }
 }

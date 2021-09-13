@@ -29,8 +29,7 @@
       padding: @padding[1] @padding[2];
       text-decoration: none;
 
-      &:focus,
-      &:hover {
+      &:is(:focus, :hover) {
         color: @color[blue-darken];
       }
     }
@@ -50,8 +49,7 @@
       }
     }
 
-    &.-prev,
-    &.-next {
+    &:is(.-prev, .-next) {
       flex: 1 0 50%;
     }
 

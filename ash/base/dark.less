@@ -33,19 +33,11 @@ html.dark {
     color: @color[blue-lighter];
     text-decoration: none;
 
-    &:link {
+    &:is(:link, :visited) {
       color: @color[blue-lighter];
     }
 
-    &:visited {
-      color: @color[blue-lighter];
-    }
-
-    &:hover {
-      color: @color[blue-lighten];
-    }
-
-    &:active {
+    &:is(:hover, :active) {
       color: @color[blue-lighten];
     }
   }

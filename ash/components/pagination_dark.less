@@ -12,8 +12,7 @@ html.dark {
       a:not(.button):not(.link) {
         color: @color[blue-lightest];
 
-        &:focus,
-        &:hover {
+        &:is(:focus, :hover) {
           color: @color[blue-lighter];
         }
       }

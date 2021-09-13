@@ -24,16 +24,12 @@
     z-index: 300;
   }
 
-  &:focus,
-  &:hover {
-    &::after {
-      opacity: 1;
-      transform: translate(-50%, -@margin[1]);
-    }
+  &:is(:focus, :hover)::after {
+    opacity: 1;
+    transform: translate(-50%, -@margin[1]);
   }
 
-  &[disabled],
-  &.disabled {
+  &:is([disabled], .disabled) {
     pointer-events: auto;
   }
 
@@ -44,11 +40,8 @@
       transform: translate(-@margin[1], 50%);
     }
 
-    &:focus,
-    &:hover {
-      &::after {
-        transform: translate(@margin[1], 50%);
-      }
+    &:is(:focus, :hover)::after {
+      transform: translate(@margin[1], 50%);
     }
   }
 
@@ -59,11 +52,8 @@
       transform: translate(-50%, -@margin[2]);
     }
 
-    &:focus,
-    &:hover {
-      &::after {
-        transform: translate(-50%, @margin[1]);
-      }
+    &:is(:focus, :hover)::after {
+      transform: translate(-50%, @margin[1]);
     }
   }
 
@@ -75,11 +65,8 @@
       transform: translate(@margin[2], 50%);
     }
 
-    &:focus,
-    &:hover {
-      &::after {
-        transform: translate(-@margin[1], 50%);
-      }
+    &:is(:focus, :hover)::after {
+      transform: translate(-@margin[1], 50%);
     }
   }
 }

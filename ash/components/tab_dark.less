@@ -2,8 +2,7 @@ html.dark {
   .tabs {
     background-color: @color[black-lighten];
 
-    > input[type="checkbox"],
-    > input[type="radio"] {
+    > :is(input[type="checkbox"], input[type="radio"]) {
       &:checked {
         + label {
           background-color: @color[black-lighter];

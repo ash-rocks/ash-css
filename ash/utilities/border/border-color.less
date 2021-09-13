@@ -1,24 +1,14 @@
 each(@color, {
-  .\--border-@{key} {
-    border-color: @value !important;
-  }
-  .\--focus-border-@{key}:focus {
-    border-color: @value !important;
-  }
+  .\--border-@{key},
+  .\--focus-border-@{key}:focus,
   .\--hover-border-@{key}:hover {
     border-color: @value !important;
   }
 });
 
 each(@swatches, {
-  .\--border-@{value} {
-    border-color: @@value[background] !important;
-  }
-
-  .\--focus-border-@{value}:focus {
-    border-color: @@value[background] !important;
-  }
-
+  .\--border-@{value},
+  .\--focus-border-@{value}:focus,
   .\--hover-border-@{value}:hover {
     border-color: @@value[background] !important;
   }

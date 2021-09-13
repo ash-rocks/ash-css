@@ -34,19 +34,14 @@
       padding: @padding[1] @padding[2];
       text-decoration: none;
 
-      &:active,
-      &.active,
-      &:focus,
-      &:hover {
+      &:is(:active, .active, :focus, :hover) {
         background-color: @color[gray-lightest];
         color: @color[blue];
         cursor: pointer;
       }
     }
 
-    label.checkbox,
-    label.radio,
-    label.switch {
+    label:is(.checkbox, .radio, .switch) {
       margin: @margin[2] 0;
     }
 

@@ -1,24 +1,14 @@
 each(@color, {
-  .\--background-@{key} {
-    background-color: @value !important;
-  }
-  .\--focus-background-@{key}:focus {
-    background-color: @value !important;
-  }
+  .\--background-@{key},
+  .\--focus-background-@{key}:focus,
   .\--hover-background-@{key}:hover {
     background-color: @value !important;
   }
 });
 
 each(@swatches, {
-  .\--background-@{value} {
-    background-color: @@value[background] !important;
-  }
-
-  .\--focus-background-@{value}:focus {
-    background-color: @@value[background] !important;
-  }
-
+  .\--background-@{value},
+  .\--focus-background-@{value}:focus,
   .\--hover-background-@{value}:hover {
     background-color: @@value[background] !important;
   }
